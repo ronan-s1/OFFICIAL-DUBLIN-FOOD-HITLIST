@@ -41,7 +41,7 @@ Very nice spicy box, big portion. However do NOT get it past like 10pm, they jus
 
 <hr>
 
-### Xian (7.2/10)
+### Xian Street Food (7.2/10)
 Staple place for a spice bag, some may say the best place for a spicy bag. Portions are good, sometimes a bit too salty though so maybe ask for less salt.
 
 <hr>

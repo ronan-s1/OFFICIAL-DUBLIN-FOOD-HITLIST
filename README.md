@@ -106,6 +106,11 @@ Good
 
 <hr>
 
+### Zaytoon (8/10)
+Nice place, nice venue, good food overall.
+
+<hr>
+
 ### Hot Chix by Ruby's (8.75/10)
 very nice place, burgers are good and on Wednesdays its half price on food. Cheesecake is also good but isn't really a cheesecake.
 

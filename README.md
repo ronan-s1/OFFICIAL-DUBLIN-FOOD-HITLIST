@@ -2,6 +2,8 @@
 
 The following list presents an assessment of dining establishments and culinary offerings in Dublin, appraised on a scale of 1 to 10. This evaluation encompasses factors such as taste, portion size, pricing, and other pertinent criteria.
 
+If you'd like to make an addition to this list, please read the [contributing documentation](CONTRIBUTING.md).
+
 # LIST
 
 ### OH!MY STREET FOOD (7/10)

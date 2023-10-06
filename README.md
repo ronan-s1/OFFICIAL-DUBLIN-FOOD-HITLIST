@@ -7,7 +7,7 @@ If you'd like to make an addition to this list, please read the [contributing do
 # LIST
 
 ### OH!MY STREET FOOD (7/10)
-Xian burger pretty good, over priced now. Spice bags are very nice too but just not worth price anymore.
+Xian burger is pretty good, over priced now. Spice bags are very nice too but just not worth the price anymore.
 
 <hr>
 

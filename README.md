@@ -32,7 +32,7 @@ All day special goes hard, worth the price.
 <hr>
 
 ### Gala (deprecated 😢) (8/10)
-€2.50 mini spice box went slapped. It is now unfortunately €3 something, honestly very upsetting.
+€2.50 mini spice box slapped. It is now unfortunately €3 something, honestly very upsetting.
 
 <hr>
 

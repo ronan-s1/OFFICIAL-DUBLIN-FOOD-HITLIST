@@ -101,7 +101,7 @@ Good
 
 <hr>
 
-### The Ramen Bar
+### The Ramen Bar (8/10)
 Good
 
 <hr>

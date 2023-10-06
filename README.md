@@ -71,8 +71,8 @@ Very good place, unfortunately they closed the one on tara street.
 
 <hr>
 
-### Arisu
-Nice Korean food place
+### Arisu (7.7/10)
+Nice Korean food, big portions, bit pricey.
 
 <hr>
 

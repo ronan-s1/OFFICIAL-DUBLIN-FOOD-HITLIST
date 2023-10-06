@@ -126,6 +126,11 @@ Nice food, good for corn dogs. However there's like barely anywhere to sit/
 
 <hr>
 
+### Roseland Chinese (7.1/10)
+Big spice bag for the price and it's pretty good. Cash only though!
+
+<hr>
+
 ### El siliencio
 
 <hr>

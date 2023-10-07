@@ -22,7 +22,7 @@ Decent spice bag.
 <hr>
 
 ### Fasta (6/10)
-Kinda mid, venue is nice though.
+Kinda mid, venue is nice though. Just found out this place is permanently closed rip.
 
 <hr>
 

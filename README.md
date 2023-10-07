@@ -16,7 +16,7 @@ Hashbrowns are good.
 
 <hr>
 
-### Charlies (7.8/10)
+### Charlies 3 (7.8/10)
 Decent spice bag.
 
 <hr>

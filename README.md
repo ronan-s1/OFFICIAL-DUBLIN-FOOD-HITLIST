@@ -12,7 +12,7 @@ Xian burger is pretty good, over priced now. Spice bags are very nice too but ju
 <hr>
 
 ### Wing's World Cuisine (7/10)
-Hashbrowns are good.
+Decent buffet in the city center. Dinner is better than lunch, more variety and seems fresher. Hashbrowns are very succulent.
 
 <hr>
 
@@ -27,7 +27,7 @@ Kinda mid, venue is nice though. Just found out this place is permanently closed
 <hr>
 
 ### Star Pizza (8/10)
-All day special goes hard, worth the price. 
+Nice little pizza and burger place in on talbot street. All day special goes hard, worth the price. 
 
 <hr>
 

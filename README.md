@@ -11,7 +11,7 @@ Xian burger is pretty good, over priced now. Spice bags are very nice too but ju
 
 <hr>
 
-### Wing's World Cuisine (7/10)
+### Wing's World Cuisine (6.2/10)
 Decent buffet in the city center. Dinner is better than lunch, more variety and seems fresher. Hashbrowns are very succulent.
 
 <hr>

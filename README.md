@@ -188,3 +188,7 @@ Big spice bag for the price and it's pretty good. Cash only though!
 <hr>
 
 ### Declan & Donal's Deli
+
+<hr>
+
+Kasi Cafe

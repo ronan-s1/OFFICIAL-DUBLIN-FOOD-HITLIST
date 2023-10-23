@@ -126,8 +126,13 @@ Nice food, good for corn dogs. However there's like barely anywhere to sit/
 
 <hr>
 
-### Roseland Chinese (7.1/10)
+### Roseland Chinese (6.9/10)
 Big spice bag for the price and it's pretty good. Cash only though!
+
+<hr>
+
+### Hannah BBQ (7.5/10)
+Kebabs and wraps kinda place, basically a less boujee [Zaytoon](#Zaytoon-(8/10)). The kebab is quite good and baklava was quite nice too. It's worth the price I would say if you're feeling a doner kebab and in the area.
 
 <hr>
 

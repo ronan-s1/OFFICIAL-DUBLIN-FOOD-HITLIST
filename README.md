@@ -132,7 +132,7 @@ Big spice bag for the price and it's pretty good. Cash only though!
 <hr>
 
 ### Hannah BBQ (7.5/10)
-Kebabs and wraps kinda place, basically a less boujee [Zaytoon](#zaytoon-810). The kebab is quite good and baklava was quite nice too. It's worth the price I would say if you're feeling a doner kebab and in the area.
+Kebabs and wraps kinda place, basically a less boujee Zaytoon. The kebab is quite good and baklava was quite nice too. It's worth the price I would say if you're feeling a doner kebab and in the area.
 
 <hr>
 

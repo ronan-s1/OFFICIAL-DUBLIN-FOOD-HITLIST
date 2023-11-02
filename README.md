@@ -1,5 +1,7 @@
 # OFFICIAL DUBLIN FOOD HITLIST 😱🔥😫🍴  <!-- {docsify-ignore} -->
-
+<p align="center">
+  <img src="https://media.tenor.com/g0WGanWAe88AAAAM/cat-eating-corn.gif" alt="SaleSights Logo", style="width: 220px">
+</p>
 The following list presents an assessment of dining establishments and culinary offerings in Dublin, appraised on a scale of 1 to 10. This evaluation encompasses factors such as taste, portion size, pricing, and other pertinent criteria. Please note that establishments lacking a rating are currently on our list for future visits and assessments.
 
 If you'd like to make an addition to this list, please read the [contributing documentation](CONTRIBUTING.md).
@@ -16,13 +18,18 @@ Decent buffet in the city center. Dinner is better than lunch, more variety and 
 
 <hr>
 
-### Charlies 3 (7.8/10)
+### Charlies 3 (7/10)
 Decent spice bag.
 
 <hr>
 
 ### Fasta (6/10)
 Kinda mid, venue is nice though. Just found out this place is permanently closed rip.
+
+<hr>
+
+### Wowburger (7.7/10)
+Good burgers, nice student deal. The wowburger near grafton street opposite Brown Thomas over cook the fries though. Atmosphere in all there locations are nice.
 
 <hr>
 
@@ -92,7 +99,9 @@ Good place, student deals.
 <hr>
 
 ### Chimac (8.35/10)
-Good place, very nice burgers and poutine. Ice cream sandwhich is so ass though don't get.
+Good place, very nice burgers and poutine. Ice cream sandwich is so ass though don't get, it was like €8 for super tough, mid icecream sandwich.
+
+<img src="images/chimac.jpg" title="chimac munch" style="width: 215px;">
 
 <hr>
 
@@ -196,4 +205,4 @@ Kebabs and wraps kinda place, basically a less boujee Zaytoon. The kebab is quit
 
 <hr>
 
-Kasi Cafe
+### Kasi Cafe

@@ -105,7 +105,7 @@ very good place, nice milkshakes.
 <hr>
 
 ### Captain Americas (7.2/10)
-Good place, they have a pretty good student deal.
+Decent place on Grafton street. They got student deal (€10.95) which is quite good. Nachos are very good.
 
 <hr>
 
@@ -118,12 +118,12 @@ Good place, very nice burgers and poutine. Ice cream sandwich is so ass though d
 <hr>
 
 ### Neon (8/10)
-Good
+@optimisedrice
 
 <hr>
 
 ### The Ramen Bar (8/10)
-Good
+@optimisedrice
 
 <hr>
 
@@ -168,6 +168,13 @@ Big spice bag for the price and it's pretty good. Cash only though!
 Kebabs and wraps kinda place, basically a less boujee Zaytoon. The kebab is quite good and baklava was quite nice too. It's worth the price I would say if you're feeling a doner kebab and in the area.
 
 <img src="images/hannah-bbq.jpg" title="doner" style="width: 215px;">
+
+<hr>
+
+### Chopsticks (7.8/10)
+Chinese dine-in/takeaway place in Ilac. For the price the food is quite good, tiny bit sus though ngl but nevertheless food is good.
+
+<hr>
 
 ### Brewdog (6.6/10)
 The venue is very nice, always seems busy. The food is good but overpriced tbh. There are better places out there.

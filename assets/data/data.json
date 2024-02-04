@@ -5,5 +5,12 @@
         "category": "chinese",
         "images": ["ohmy-spicebag.jpg", "ohmy-rice.jpg"],
         "description": "Xian burger is pretty good, over priced now. Spice bags are very nice too but just not worth the price anymore."
+    },
+    {
+        "place": "OH! MY STREET FOOD",
+        "rating": 7,
+        "category": "buffet",
+        "images": ["wings.jpg"],
+        "description": "Decent buffet in the city center. Dinner is better than lunch, more variety and seems fresher. Hashbrowns are very good."
     }
 ]

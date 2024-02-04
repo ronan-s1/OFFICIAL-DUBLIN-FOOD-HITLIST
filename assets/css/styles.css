@@ -1,0 +1,42 @@
+.card {
+    padding-top: 15px;
+    margin: auto;
+}
+
+.card-text {
+    margin-top: 25px !important;
+}
+
+#foodList {
+    width: 80% !important;
+    margin: auto;
+}
+
+.badge {
+    background-color: #ea8a15 !important;
+}
+
+.rating {
+    color: #d97904;
+}
+
+body{
+    background-color: #e2963a26 !important;
+}
+
+.carousel {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+.carousel img {
+    object-fit: contain;
+    max-height: 300px;
+}
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: #e2963a70 !important;
+    border-radius: 10px;
+}

@@ -1,6 +1,16 @@
 .card {
     padding-top: 15px;
     margin: auto;
+    border: 1px solid #a38a6d !important;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.filter-container {
+    width: 60% !important;
+    margin-bottom: 50px;
 }
 
 .card-text {

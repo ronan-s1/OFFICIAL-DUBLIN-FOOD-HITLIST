@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
+    container = document.getElementById("foodList");
     // Fetch data from the JSON file
     fetch("assets/data/data.json")
-        .then(response => response.json())
-        .then(data => {
-            // Call a function to display the data
-            displayFoodList(data);
-        })
-        .catch(error => console.error("Error fetching data:", error));
+    .then(response => response.json())
+    .then(data => {
+        // Call a function to display the data
+        displayFoodList(data);
+        populateCategoryFilter(data);
+    })
+    .catch(error => console.error("Error fetching data:", error));
 
     // Function to display the food list
     function displayFoodList(foodList) {
@@ -20,6 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
             for (let j = 0; j < 2 && i + j < foodList.length; j++) {
                 const item = foodList[i + j];
+                const searchTerm = document.getElementById("searchBar").value.toLowerCase();
+                if (!item.place.toLowerCase().includes(searchTerm)) {
+                    continue; // Skip to the next iteration if the search term is not found
+                }
+
 
                 // Create the card column
                 const col = document.createElement("div");
@@ -50,17 +57,19 @@ document.addEventListener("DOMContentLoaded", function () {
                     carouselInner.appendChild(carouselItem);
                 });
 
-                // Add previous and next buttons for the carousel
-                carouselContainer.innerHTML += `
-                    <button class="carousel-control-prev" type="button" data-bs-target="#${carouselContainer.id}" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#${carouselContainer.id}" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                `;
+                if (item.images.length > 1) {
+                    // Add previous and next buttons for the carousel
+                    carouselContainer.innerHTML += `
+                        <button class="carousel-control-prev" type="button" data-bs-target="#${carouselContainer.id}" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#${carouselContainer.id}" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    `;
+                }
 
                 carouselContainer.appendChild(carouselInner);
 
@@ -91,5 +100,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
             container.appendChild(row);
         }
+    }
+    
+    // Function to populate the filter dropdown with unique category values
+    function populateCategoryFilter(foodList) {
+        const categoryFilter = document.getElementById("categoryFilter");
+        const categories = ["all"].concat(Array.from(new Set(foodList.map(item => item.category))));
+
+        categories.forEach(category => {
+            const option = document.createElement("option");
+            option.value = category;
+            option.textContent = category.charAt(0).toUpperCase() + category.slice(1);
+            categoryFilter.appendChild(option);
+        });
+
+        // Add an event listener to the filter dropdown
+        categoryFilter.addEventListener("change", function () {
+            const selectedCategory = this.value;
+
+            // Filter and display the food list based on the selected category
+            const filteredFoodList = selectedCategory === "all"
+                ? foodList
+                : foodList.filter(item => item.category === selectedCategory);
+
+            // Clear the existing content before displaying the filtered list
+            container.innerHTML = "";
+            displayFoodList(filteredFoodList);
+        });
+
+        // Add an event listener to the search bar
+        document.getElementById("searchBar").addEventListener("input", function () {
+            container.innerHTML = "";
+            displayFoodList(foodList);
+        });
     }
 });

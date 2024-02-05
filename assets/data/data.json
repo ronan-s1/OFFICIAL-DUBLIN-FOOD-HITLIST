@@ -117,5 +117,12 @@
         "category": "Korean",
         "images": ["chimac.jpg"],
         "description": "Nice place where you can get Korean style burgers. The K-BBQ burger and poutine are great. Ice-cream sandwich is so ass though don't get, it was like €8 a for super tough, mid ice-cream sandwich."
+    },
+    {
+        "place": "Zaytoon",
+        "rating": 8,
+        "category": "Persian",
+        "images": ["zaytoon.jpg", "zaytoon2.jpg"],
+        "description": "Nice persian restaurant with great food. I would recommend the lamb doner. Can be a bit awkward to eat though but still very nice."
     }
 ]

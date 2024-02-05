@@ -1,5 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const cursorElement = document.querySelector(".cursor");
+    const foodEmojis = ["🍕", "🌮", "🌯", "🍣", "🌭", "🍜", "🍪", "🍦", "🥪", "🍩", "🍝", "🍔", "🥐", "🥞", "🍟", "🍖"];
+    foodEmojis.push("🍔")
+    let currentIndex = 0;
+
+    // Function to change the cursor emoji
+    function changeCursor() {
+        const newEmoji = foodEmojis[currentIndex];
+        const newCursor = `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>${newEmoji}</text></svg>") 16 0, auto`;
+        cursorElement.style.cursor = newCursor;
+        currentIndex = (currentIndex + 1) % foodEmojis.length;
+    }
+
+    // Add click event listener to change the cursor on each click
+    cursorElement.addEventListener("click", changeCursor);
     container = document.getElementById("foodList");
+
+
+
     // Fetch data from the JSON file
     fetch("assets/data/data.json")
     .then(response => response.json())
@@ -13,6 +31,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to display the food list
     function displayFoodList(foodList) {
         const container = document.getElementById("foodList");
+        const ratingSort = document.getElementById("ratingSort").value;
+        if (ratingSort === "asc") {
+            foodList.sort((a, b) => a.rating - b.rating);
+        } else if (ratingSort === "desc") {
+            foodList.sort((a, b) => b.rating - a.rating);
+        }
 
         // Loop through the foodList array and create HTML elements for each item
         for (let i = 0; i < foodList.length; i += 2) {
@@ -82,15 +106,28 @@ document.addEventListener("DOMContentLoaded", function () {
                 categoryBadge.className = "badge badge-warning";
                 categoryBadge.textContent = item.category;
 
-                // Style the rating to make it stand out
+
                 const ratingText = document.createElement("p");
                 ratingText.className = "card-text";
-                // ratingText.innerHTML = `<strong>Rating:</strong> ${item.rating}`;
 
-                cardBody.innerHTML += `<h5 class="card-title">${item.place} ⇝ <span class="rating">${item.rating}/10</span></h5>`;
-                // cardBody.appendChild(ratingText);
+                const mapButton = document.createElement("a");
+                mapButton.href = "https://www.google.com/maps/search/" + item.place;
+                mapButton.className = "map-button btn btn-sm";
+                mapButton.textContent = "Maps";
+                mapButton.target = "_blank";
+                mapButton.style.backgroundColor = "#e69f49";
+                mapButton.style.color = "white";
+
+
+                cardBody.innerHTML += `
+                    <h5 class="card-title">
+                        <span class="place-title">${item.place}</span>
+                        ⇝ 
+                        <span class="rating-title">${item.rating}/10</span>
+                    </h5>`;
                 cardBody.appendChild(categoryBadge);
                 cardBody.innerHTML += `<p class="card-text">${item.description}</p>`;
+                cardBody.appendChild(mapButton);
 
                 card.appendChild(carouselContainer);
                 card.appendChild(cardBody);
@@ -101,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
             container.appendChild(row);
         }
     }
-    
+
     // Function to populate the filter dropdown with unique category values
     function populateCategoryFilter(foodList) {
         const categoryFilter = document.getElementById("categoryFilter");
@@ -130,6 +167,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Add an event listener to the search bar
         document.getElementById("searchBar").addEventListener("input", function () {
+            container.innerHTML = "";
+            displayFoodList(foodList);
+        });
+
+        // Add an event listener to the rating sort dropdown
+        document.getElementById("ratingSort").addEventListener("change", function () {
             container.innerHTML = "";
             displayFoodList(foodList);
         });

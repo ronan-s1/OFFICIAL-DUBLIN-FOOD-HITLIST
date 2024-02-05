@@ -1,7 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+.cursor {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🍔</text></svg>")
+        16 0, auto;
+}
+
 .card {
-    padding-top: 15px;
+    /* padding-top: 20px; */
+    padding: 15px 10px 10px 10px;
     margin: auto;
-    border: 1px solid #a38a6d !important;
+    border: 5px dashed #e4ad6d !important;
+    border-radius: 0px !important;
+}
+
+.place-title {
+    font-weight: bolder;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #b57e1644;
+    padding: 30px;
+    margin-bottom: 50px !important;
+}
+
+body{
+    background-color: #eb902129 !important;
+}
+
+.heading h1 {
+    font-size: 50px;
+    font-family: 'SAROIGO', sans-serif;
+    font-family: 'Nabla', system-ui;
+}
+
+.heading:hover {
+    animation: spin 1.2s linear 1;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.map-button {
+    border-radius: 0px !important;
+    border: 3px solid #d1740a !important;
 }
 
 .row {
@@ -9,12 +58,12 @@
 }
 
 .filter-container {
-    width: 60% !important;
+    width: 70% !important;
     margin-bottom: 50px;
 }
 
 .card-text {
-    margin-top: 25px !important;
+    margin-top: 35px !important;
 }
 
 #foodList {
@@ -24,14 +73,12 @@
 
 .badge {
     background-color: #ea8a15 !important;
+    border-radius: 0px !important;
 }
 
-.rating {
+.rating-title {
     color: #d97904;
-}
-
-body{
-    background-color: #e2963a26 !important;
+    text-decoration: underline;
 }
 
 .carousel {
@@ -39,14 +86,31 @@ body{
     overflow: hidden;
 }
 
-
 .carousel img {
     object-fit: contain;
     max-height: 300px;
 }
 
-
 .carousel-control-prev-icon, .carousel-control-next-icon{
     background-color: #e2963a70 !important;
-    border-radius: 10px;
+    border-radius: 1px;
+}
+
+#searchBar, select {
+    border-radius: 0px !important;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .filter-container {
+        width: 92% !important;
+        margin-bottom: 50px;
+    }
+
+    #foodList {
+        width: 92% !important;
+        margin: auto;
+    }
 }

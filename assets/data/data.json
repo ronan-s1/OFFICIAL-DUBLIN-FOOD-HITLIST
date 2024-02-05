@@ -2,15 +2,78 @@
     {
         "place": "OH! MY STREET FOOD",
         "rating": 7,
-        "category": "chinese",
+        "category": "Chinese",
         "images": ["ohmy-spicebag.jpg", "ohmy-rice.jpg"],
         "description": "Xian burger is pretty good, over priced now. Spice bags are very nice too but just not worth the price anymore."
     },
     {
         "place": "Wing's World Cuisine",
         "rating": 7,
-        "category": "buffet",
+        "category": "Buffet",
         "images": ["wings.jpg"],
         "description": "Decent buffet in the city center. Dinner is better than lunch, more variety and seems fresher. Hashbrowns are very good."
+    },
+    {
+        "place": "Charlies 3",
+        "rating": 6.75,
+        "category": "Chinese",
+        "images": ["charlies3.jpg"],
+        "description": "The typical chinese, nothing crazy. Decent portion for the price and food is good enough."
+    },
+    {
+        "place": "Fasta",
+        "rating": 5,
+        "category": "Italian",
+        "images": ["fasta.png"],
+        "description": "<strong>CLOSED!</strong> Kinda mid, the venue and atmosphere is really nice though. Unfortunately, Fasta has permanently closed down, rip."
+    },
+    {
+        "place": "Wowburger",
+        "rating": 7.3,
+        "category": "American",
+        "images": ["wowburger.png"],
+        "description": "Good burgers, nice student deal. The wowburger near grafton street opposite Brown Thomas over cook the fries though. Atmosphere in all there locations are nice."
+    },
+    {
+        "place": "Star Pizza",
+        "rating": 8.1,
+        "category": "American",
+        "images": ["starpizza.gif"],
+        "description": "This is the go to. Nice little pizza and burger place on talbot street. All day special goes hard, worth the price. The area is just a bit dodgey tho lol"
+    },
+    {
+        "place": "Wok on Inn",
+        "rating": 7,
+        "category": "Chinese",
+        "images": ["wokoninn.gif"],
+        "description": "Very nice spicy box, big portion. However do NOT get it past like 10pm, they just chuck random stuff in there and for this reason they have gotten a lower score"
+    },
+    {
+        "place": "Brother Hubbard (North)",
+        "rating": 5,
+        "category": "Brunch",
+        "images": ["brotherhubbard.jpg"],
+        "description": "mid, thats about it. Venue and atmosphere is very nice though. If you're vegan or vegetarian I guess it's good."
+    },
+    {
+        "place": "Paesano",
+        "rating": 7,
+        "category": "Italian",
+        "images": ["paesano.jpg"],
+        "description": "Cheap food - not bad, would rather go star pizza though." 
+    },
+    {
+        "place": "Mad Egg",
+        "rating": 8.3,
+        "category": "American",
+        "images": ["madegg.jpg"],
+        "description": "Very nice place if you like chicken burgers. The GOAT burger is the best in my opinion. Cheesecakes there are also very good."
+    },
+    {
+        "place": "Gaucho's Dog",
+        "rating": 8.7,
+        "category": "American",
+        "images": ["gauchos.png"],
+        "description": "Very good place, best hot dogs in Dublin from what I know. Unfortunately they closed the one on tara street."   
     }
 ]

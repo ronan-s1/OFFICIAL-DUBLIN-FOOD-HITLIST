@@ -57,7 +57,7 @@
     },
     {
         "place": "Paesano",
-        "rating": 7,
+        "rating": 6.1,
         "category": "Italian",
         "images": ["paesano.jpg"],
         "description": "Cheap food - not bad, would rather go star pizza though." 
@@ -75,5 +75,47 @@
         "category": "American",
         "images": ["gauchos.png"],
         "description": "Very good place, best hot dogs in Dublin from what I know. Unfortunately they closed the one on tara street."   
+    },
+    {
+        "place": "Krewe",
+        "rating": 7.2,
+        "category": "American",
+        "images": ["Krewe.jpg"],
+        "description": "Nice place, food was good and the place was full. A bit pricey though. Loaded fries are swag."  
+    },
+    {
+        "place": "Arisu",
+        "rating": 6.2,
+        "category": "Korean",
+        "images": ["arisu.jpg"],
+        "description": "This place use to be better, now they made the portions smaller. Also quite expensive. Staff are friendly and the atmosphere is nice."  
+    },
+    {
+        "place": "Pizza Max",
+        "rating": 2,
+        "category": "American",
+        "images": ["placeholder.png"],
+        "description": "very mid, microwave ah food. Lucky it's even getting mentioned. Doesn't even deserve a picture."
+    },
+    {
+        "place": "Shake Dog",
+        "rating": 7.8,
+        "category": "American",
+        "images": ["shakedog.png"],
+        "description": "Pretty good food, good milkshakes and they got a nice student deal. Solid place to munch."
+    },
+    {
+        "place": "Captain Americas",
+        "rating": 7.2,
+        "category": "American",
+        "images": ["captainamericas.png"],
+        "description": "Decent place on Grafton street. They got student deal (€10.95) which is quite good. The nachos are pretty good too."
+    },
+    {
+        "place": "Chimac",
+        "rating": 8.35,
+        "category": "Korean",
+        "images": ["chimac.jpg"],
+        "description": "Nice place where you can get Korean style burgers. The K-BBQ burger and poutine are great. Ice-cream sandwich is so ass though don't get, it was like €8 a for super tough, mid ice-cream sandwich."
     }
 ]

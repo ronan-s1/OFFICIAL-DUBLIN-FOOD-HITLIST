@@ -54,7 +54,11 @@ body{
 }
 
 .row {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
+}
+
+.row input, #categoryFilter, #ratingSort {
+    border: 1px solid #c5761b !important;
 }
 
 .filter-container {

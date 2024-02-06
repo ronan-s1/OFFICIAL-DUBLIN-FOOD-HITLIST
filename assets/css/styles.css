@@ -5,29 +5,49 @@
         16 0, auto;
 }
 
+
+.site-description {
+    margin: auto;
+    text-align: center;
+    width: 50% !important;
+    margin-bottom: 75px !important;
+    margin-top: 50px !important;
+}
+
+
+.site-description p {
+    font-size: 11px;
+    font-weight: bolder;
+    text-decoration: underline solid #f38200b7 2.2px;
+}
+
+
+.heading {
+    text-align: center;
+    margin-top: 50px;
+    padding: 25px;
+    background-color: #b57e1644;
+    border: 3px solid #c5761b !important;
+}
+
+
 .card {
-    /* padding-top: 20px; */
-    padding: 15px 10px 10px 10px;
+    padding: 25px 10px 10px 10px;
     margin: auto;
     border: 5px dashed #e4ad6d !important;
     border-radius: 0px !important;
 }
 
+
 .place-title {
     font-weight: bolder;
 }
 
-.heading {
-    text-align: center;
-    margin-top: 50px;
-    background-color: #b57e1644;
-    padding: 30px;
-    margin-bottom: 50px !important;
-}
 
 body{
     background-color: #eb902129 !important;
 }
+
 
 .heading h1 {
     font-size: 50px;
@@ -35,9 +55,11 @@ body{
     font-family: 'Nabla', system-ui;
 }
 
+
 .heading:hover {
     animation: spin 1.2s linear 1;
 }
+
 
 @keyframes spin {
     from {
@@ -48,63 +70,91 @@ body{
     }
 }
 
+
 .map-button {
     border-radius: 0px !important;
     border: 3px solid #d1740a !important;
 }
 
+
 .row {
     margin-bottom: 23px;
 }
+
 
 .row input, #categoryFilter, #ratingSort {
     border: 1px solid #c5761b !important;
 }
 
+
 .filter-container {
     width: 70% !important;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
+
 
 .card-text {
     margin-top: 35px !important;
 }
+
 
 #foodList {
     width: 80% !important;
     margin: auto;
 }
 
+
 .badge {
     background-color: #ea8a15 !important;
     border-radius: 0px !important;
 }
+
 
 .rating-title {
     color: #d97904;
     text-decoration: underline;
 }
 
+
 .carousel {
     max-width: 100%;
     overflow: hidden;
 }
+
 
 .carousel img {
     object-fit: contain;
     max-height: 300px;
 }
 
+
 .carousel-control-prev-icon, .carousel-control-next-icon{
     background-color: #e2963a70 !important;
     border-radius: 1px;
 }
+
 
 #searchBar, select {
     border-radius: 0px !important;
 }
 
 
+footer { 
+    text-align: center;
+    bottom: 0; 
+    left: 0; 
+    z-index: 10;
+    background-color: #b57e1644;
+    padding: 5px;
+    margin-top: 50px !important;
+}
+
+
+footer a {
+    font-size: 20px;
+    color: #c5761b !important;
+    text-decoration: none;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -117,4 +167,13 @@ body{
         width: 92% !important;
         margin: auto;
     }
+}
+
+
+.corn-cat {
+    width: 40%;
+    min-width: 140px;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
 }

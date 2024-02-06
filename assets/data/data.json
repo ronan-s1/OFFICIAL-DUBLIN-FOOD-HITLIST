@@ -94,7 +94,7 @@
         "place": "Pizza Max",
         "rating": 2,
         "category": "American",
-        "images": ["placeholder.png"],
+        "images": ["pizzamax.jpg"],
         "description": "very mid, microwave ah food. Lucky it's even getting mentioned. Doesn't even deserve a picture."
     },
     {
@@ -108,7 +108,7 @@
         "place": "Captain Americas",
         "rating": 7.2,
         "category": "American",
-        "images": ["captainamericas.png"],
+        "images": ["captainamericas2.png", "captainamericas.png"],
         "description": "Decent place on Grafton street. They got student deal (€10.95) which is quite good. The nachos are pretty good too."
     },
     {
@@ -124,5 +124,194 @@
         "category": "Persian",
         "images": ["zaytoon.jpg", "zaytoon2.jpg"],
         "description": "Nice persian restaurant with great food. I would recommend the lamb doner. Can be a bit awkward to eat though but still very nice."
+    },
+    {
+        "place": "Hot Chix by Ruby's",
+        "rating": 8.7,
+        "category": "American",
+        "images": ["hotchix.png"],
+        "description": "very nice place, burgers are good and on Wednesdays its half price on food. Cheesecake is also good but isn't really a cheesecake."
+    },
+    {
+        "place": "Takara ramen & deli sushi bar",
+        "rating": 6.9,
+        "category": "Japanese",
+        "images": ["takara.jpg"],
+        "description": "Honestly? Overrated. Food is decent and place looks nice but I don't get why there's always a queue outside the place."
+    },
+    {
+        "place": "Han Sung",
+        "rating": 8.1,
+        "category": "Korean",
+        "images": ["hansung.jpg"],
+        "description": "At the back of this asian store theres a nice korean restaurant that serves one of the most underrated food in town. The chicken mayo is very nice. The Only thing is the seating. The place feels a bit cramped and can be a bit of a struggle trying to find a place to sit. Not ideal if you're going in a big group."
+    },
+    {
+        "place": "White Rabbit Capel Street",
+        "rating": 7.66,
+        "category": "Korean",
+        "images": ["whiterabbit.png"],
+        "description": "Nice food, good for corn dogs. However there's like barely anywhere to sit. Slightly overpriced too."
+    },
+    {
+        "place": "Hannah BBQ",
+        "rating": 7,
+        "category": "Persian",
+        "images": ["hannah-bbq.jpg"],
+        "description": "Kebabs and wraps kinda place, basically a less boujee Zaytoon. The kebab is quite good and baklava was quite nice too. It's worth the price I would say if you're feeling a doner kebab and in the area."
+    },
+    {
+        "place": "Chopsticks",
+        "rating": 7,
+        "category": "Chinese",
+        "images": ["chopsticks.gif"],
+        "description": "Chinese dine-in/takeaway place in Ilac. For the price the food is quite good, tiny bit sus though ngl but nevertheless food is good."
+    },
+    {
+        "place": "Brewdog",
+        "rating": 6.6,
+        "category": "Chinese",
+        "images": ["brewdog.jpg"],
+        "description": "The venue is very nice, always seems busy. The food is good but overpriced tbh. There are better places out there but it's nice to try out once in a while. They have a couple of cool deals from time to time. Also if you beat the waiter in rock paper scissors you get free dessert 😎"
+    },
+    {
+        "place": "Andhra Bhavan",
+        "rating": 8,
+        "category": "Indian",
+        "images": ["andhra.jpg"],
+        "description": "Nice south indian restaurant in town. Food was very nice and the place was a vibe. Food is a bit spicy though so yeah. The chicken 65 went hard ngl."
+    },
+    {
+        "place": "Cinnamon Garden Restaurant",
+        "rating": 8,
+        "category": "Indian",
+        "images": ["cinnamon-garden.jpg"],
+        "description": "If you're in Ashbourne and want some indian food, you need to try this place. Food is very good and the venue and decor is cool."
+    },
+    {
+        "place": "El siliencio",
+        "rating": "?",
+        "category": "PENDING",
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "El siliencio",
+        "rating": "?",
+        "category": "PENDING",
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "El siliencio",
+        "rating": "?",
+        "category": "PENDING",
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "El siliencio",
+        "rating": "?",
+        "category": "PENDING",
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "El siliencio",
+        "rating": "?",
+        "category": "PENDING",
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "The Rolling Stove at Pillar Bar",
+        "rating": "?",
+        "category": "PENDING",
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "Masa",
+        "rating": "?",
+        "category": "PENDING",
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "Hang dai",
+        "rating": "?",
+        "category": "PENDING",
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "Pi",
+        "rating": "?",
+        "category": "PENDING",
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "Shouk",
+        "rating": "?",
+        "category": "PENDING",
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "BIGFAN",
+        "rating": "?",
+        "category": "PENDING",
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "Padoca",
+        "rating": "?",
+        "category": "PENDING",
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "Mad Yolks",
+        "rating": "?",
+        "category": "PENDING",
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "Masa",
+        "rating": "?",
+        "category": "PENDING",
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "Drunken Fish",
+        "rating": "?",
+        "category": "PENDING",
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "Kasi Cafe",
+        "rating": "?",
+        "category": "PENDING",
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "Declan & Donal's Deli",
+        "rating": "?",
+        "category": "PENDING",
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "Reyna",
+        "rating": "?",
+        "category": "PENDING",
+        "images": ["placeholder.png"],
+        "description": "???"
     }
 ]

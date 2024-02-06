@@ -189,6 +189,13 @@
         "description": "If you're in Ashbourne and want some indian food, you need to try this place. Food is very good and the venue and decor is cool."
     },
     {
+        "place": "IKEA",
+        "rating": "7.5",
+        "category": "Swedish",
+        "images": ["ikea.jpg", "ikea2.jpg"],
+        "description": "Nice atmosphere with many options. Cheesecake slapped and so did the Daim cake. The meatballs were good too. Would recommend to go munch there. Soft serve icecream was also good quality."
+    },
+    {
         "place": "El siliencio",
         "rating": "?",
         "category": "PENDING",

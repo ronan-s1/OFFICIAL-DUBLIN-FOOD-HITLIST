@@ -115,6 +115,10 @@ body{
     text-decoration: underline;
 }
 
+#placesReviewed {
+    color: #ff8c00;
+}
+
 
 .carousel {
     max-width: 100%;
@@ -138,6 +142,10 @@ body{
     border-radius: 0px !important;
 }
 
+.places-reviewed {
+    color: #c5761b;
+    font-weight: bold;
+}
 
 footer { 
     text-align: center;

@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Call a function to display the data
         displayFoodList(data);
         populateCategoryFilter(data);
+        updatePlacesReviewed(data);
     })
     .catch(error => console.error("Error fetching data:", error));
 
@@ -177,5 +178,20 @@ document.addEventListener("DOMContentLoaded", function () {
             container.innerHTML = "";
             displayFoodList(foodList);
         });
+    }
+
+    function updatePlacesReviewed(foodList) {
+        const placesReviewedSpan = document.getElementById("placesReviewed");
+        placesReviewedSpan.textContent = countReviewedPlaces(foodList);
+    }
+    
+    // Function to count the reviewed places
+    function countReviewedPlaces(foodList) {
+        return foodList.reduce((count, item) => {
+            if (item.category !== "PENDING") {
+                count++;
+            }
+            return count;
+        }, 0);
     }
 });

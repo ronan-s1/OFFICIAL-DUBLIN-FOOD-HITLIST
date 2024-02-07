@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const categoryDropdownMenu = document.getElementById("categoryDropdownMenu");
         // Flatten the array of categories and create a set of unique values
         const categories = ["all"].concat(Array.from(new Set(foodList.flatMap(item => item.category))));
-        console.log(categories)
+        // console.log(categories)
         categories.forEach(category => {
             const checkboxId = `category-${category}`;
             const listItem = document.createElement("li");
@@ -180,7 +180,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Filter and display the food list based on the selected categories
                 const filteredFoodList = selectedCategories.includes("all")
                     ? foodList
-                    : foodList.filter(item => selectedCategories.includes(item.category));
+                    : foodList.filter(item => {
+                        // Check if any of the item's categories match any of the selected categories
+                        return item.category.some(category => selectedCategories.includes(category));
+                    });
 
                 // Clear the existing content before displaying the filtered list
                 container.innerHTML = "";
@@ -192,11 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Add an event listener to the search bar
         document.getElementById("searchBar").addEventListener("input", function () {
             const searchTerm = this.value.toLowerCase();
-
-            // Filter the food list based on the search term
             const filteredFoodList = foodList.filter(item => item.place.toLowerCase().includes(searchTerm));
-
-            // Clear the existing content before displaying the filtered list
             container.innerHTML = "";
             displayFoodList(filteredFoodList);
         });

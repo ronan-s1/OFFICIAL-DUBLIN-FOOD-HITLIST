@@ -13,18 +13,37 @@ document.addEventListener("DOMContentLoaded", function () {
         cursorElement.style.cursor = newCursor;
         currentIndex = (currentIndex + 1) % foodEmojis.length;
     }
+    cursorElement.addEventListener("click", changeCursor);
+
 
     const catGif = document.getElementById("catGif");
     let gifIndex = 0;
     let gifs = [];
 
-    cursorElement.addEventListener("click", changeCursor);
-    container = document.getElementById("foodList");
+    fetch("assets/img/cats/")
+        .then(response => response.text())
+        .then(text => {
+            // Parse the HTML response to extract the GIF file names
+            const parser = new DOMParser();
+            const htmlDocument = parser.parseFromString(text, "text/html");
+            const links = Array.from(htmlDocument.querySelectorAll("a"));
+
+            gifs = links
+                .map(link => link.href)
+                .filter(href => href.endsWith(".gif"));
+            
+            console.log(gifs)
+            console.log(gifs[gifIndex])
+            catGif.src = gifs[gifIndex];
+        })
+        .catch(error => console.error("Error fetching data:", error));
+
 
     catGif.addEventListener("click", function() {
         gifIndex = (gifIndex + 1) % gifs.length;
         catGif.src = gifs[gifIndex];
     });
+
 
 
     // Fetch data from the JSON file

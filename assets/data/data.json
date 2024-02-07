@@ -2,294 +2,294 @@
     {
         "place": "OH! MY STREET FOOD",
         "rating": 7,
-        "category": "Chinese",
+        "category": ["Chinese", "hi"],
         "images": ["ohmy-spicebag.jpg", "ohmy-rice.jpg"],
         "description": "Xian burger is pretty good, over priced now. Spice bags are very nice too but just not worth the price anymore."
     },
     {
         "place": "Wing's World Cuisine",
         "rating": 7,
-        "category": "Buffet",
+        "category": ["Buffet"],
         "images": ["wings.jpg"],
         "description": "Decent buffet in the city center. Dinner is better than lunch, more variety and seems fresher. Hashbrowns are very good."
     },
     {
         "place": "Charlies 3",
         "rating": 6.75,
-        "category": "Chinese",
+        "category": ["Chinese"],
         "images": ["charlies3.jpg"],
         "description": "The typical chinese, nothing crazy. Decent portion for the price and food is good enough."
     },
     {
         "place": "Fasta",
         "rating": 5,
-        "category": "Italian",
+        "category": ["Italian"],
         "images": ["fasta.png"],
         "description": "<strong>CLOSED!</strong> Kinda mid, the venue and atmosphere is really nice though. Unfortunately, Fasta has permanently closed down, rip."
     },
     {
         "place": "Wowburger",
         "rating": 7.3,
-        "category": "American",
+        "category": ["American"],
         "images": ["wowburger.png"],
         "description": "Good burgers, nice student deal. The wowburger near grafton street opposite Brown Thomas over cook the fries though. Atmosphere in all there locations are nice."
     },
     {
         "place": "Star Pizza",
         "rating": 8.1,
-        "category": "American",
+        "category": ["American"],
         "images": ["starpizza.gif"],
         "description": "This is the go to. Nice little pizza and burger place on talbot street. All day special goes hard, worth the price. The area is just a bit dodgey tho lol"
     },
     {
         "place": "Wok on Inn",
         "rating": 7,
-        "category": "Chinese",
+        "category": ["Chinese"],
         "images": ["wokoninn.gif"],
         "description": "Very nice spicy box, big portion. However do NOT get it past like 10pm, they just chuck random stuff in there and for this reason they have gotten a lower score"
     },
     {
         "place": "Brother Hubbard (North)",
         "rating": 5,
-        "category": "Brunch",
+        "category": ["Brunch"],
         "images": ["brotherhubbard.jpg"],
         "description": "mid, thats about it. Venue and atmosphere is very nice though. If you're vegan or vegetarian I guess it's good."
     },
     {
         "place": "Paesano",
         "rating": 6.1,
-        "category": "Italian",
+        "category": ["Italian"],
         "images": ["paesano.jpg"],
         "description": "Cheap food - not bad, would rather go star pizza though." 
     },
     {
         "place": "Mad Egg",
         "rating": 8.8,
-        "category": "American",
+        "category": ["American"],
         "images": ["madegg.jpg"],
         "description": "Very nice place if you like chicken burgers. The GOAT burger is the best in my opinion. Cheesecakes there are also very good."
     },
     {
         "place": "Gaucho's Dog",
         "rating": 8.7,
-        "category": "American",
+        "category": ["American"],
         "images": ["gauchos.png"],
         "description": "Very good place, best hot dogs in Dublin from what I know. Unfortunately they closed the one on tara street."   
     },
     {
         "place": "Krewe",
         "rating": 7.2,
-        "category": "American",
+        "category": ["American"],
         "images": ["krewe.jpg"],
         "description": "Nice place, food was good and the place was full. A bit pricey though. Loaded fries are swag."  
     },
     {
         "place": "Arisu",
         "rating": 6.2,
-        "category": "Korean",
+        "category": ["Korean"],
         "images": ["arisu.jpg"],
         "description": "This place use to be better, now they made the portions smaller. Also quite expensive. Staff are friendly and the atmosphere is nice."  
     },
     {
         "place": "Pizza Max",
         "rating": 2,
-        "category": "American",
+        "category": ["American"],
         "images": ["pizzamax.jpg"],
         "description": "very mid, microwave ah food. Lucky it's even getting mentioned. Doesn't even deserve a picture."
     },
     {
         "place": "Shake Dog",
         "rating": 7.8,
-        "category": "American",
+        "category": ["American"],
         "images": ["shakedog.png"],
         "description": "Pretty good food, good milkshakes and they got a nice student deal. Solid place to munch."
     },
     {
         "place": "Captain Americas",
         "rating": 7.2,
-        "category": "American",
+        "category": ["American"],
         "images": ["captainamericas2.png", "captainamericas.png"],
         "description": "Decent place on Grafton street. They got student deal (€10.95) which is quite good. The nachos are pretty good too."
     },
     {
         "place": "Chimac",
         "rating": 8.35,
-        "category": "Korean",
+        "category": ["Korean"],
         "images": ["chimac.jpg"],
         "description": "Nice place where you can get Korean style burgers. The K-BBQ burger and poutine are great. Ice-cream sandwich is so ass though don't get, it was like €8 a for super tough, mid ice-cream sandwich."
     },
     {
         "place": "Zaytoon",
         "rating": 8,
-        "category": "Persian",
+        "category": ["Persian"],
         "images": ["zaytoon.jpg", "zaytoon2.jpg"],
         "description": "Nice persian restaurant with great food. I would recommend the lamb doner. Can be a bit awkward to eat though but still very nice."
     },
     {
         "place": "Hot Chix by Ruby's",
         "rating": 8.7,
-        "category": "American",
+        "category": ["American"],
         "images": ["hotchix.png"],
         "description": "very nice place, burgers are good and on Wednesdays its half price on food. Cheesecake is also good but isn't really a cheesecake."
     },
     {
         "place": "Takara ramen & deli sushi bar",
         "rating": 6.9,
-        "category": "Japanese",
+        "category": ["Japanese"],
         "images": ["takara.jpg"],
         "description": "Honestly? Overrated. Food is decent and place looks nice but I don't get why there's always a queue outside the place."
     },
     {
         "place": "Han Sung",
         "rating": 8.1,
-        "category": "Korean",
+        "category": ["Korean"],
         "images": ["hansung.jpg"],
         "description": "At the back of this asian store theres a nice korean restaurant that serves one of the most underrated food in town. The chicken mayo is very nice. The Only thing is the seating. The place feels a bit cramped and can be a bit of a struggle trying to find a place to sit. Not ideal if you're going in a big group."
     },
     {
         "place": "White Rabbit Capel Street",
         "rating": 7.66,
-        "category": "Korean",
+        "category": ["Korean"],
         "images": ["whiterabbit.png"],
         "description": "Nice food, good for corn dogs. However there's like barely anywhere to sit. Slightly overpriced too."
     },
     {
         "place": "Hannah BBQ",
         "rating": 7,
-        "category": "Persian",
+        "category": ["Persian"],
         "images": ["hannah-bbq.jpg"],
         "description": "Kebabs and wraps kinda place, basically a less boujee Zaytoon. The kebab is quite good and baklava was quite nice too. It's worth the price I would say if you're feeling a doner kebab and in the area."
     },
     {
         "place": "Chopsticks",
         "rating": 7,
-        "category": "Chinese",
+        "category": ["Chinese"],
         "images": ["chopsticks.gif"],
         "description": "Chinese dine-in/takeaway place in Ilac. For the price the food is quite good, tiny bit sus though ngl but nevertheless food is good."
     },
     {
         "place": "Brewdog",
         "rating": 6.6,
-        "category": "American",
+        "category": ["American"],
         "images": ["brewdog.jpg"],
         "description": "The venue is very nice, always seems busy. The food is good but overpriced tbh. There are better places out there but it's nice to try out once in a while. They have a couple of cool deals from time to time. Also if you beat the waiter in rock paper scissors you get free dessert 😎"
     },
     {
         "place": "Andhra Bhavan",
         "rating": 8,
-        "category": "Indian",
+        "category": ["Indian"],
         "images": ["andhra.jpg"],
         "description": "Nice south indian restaurant in town. Food was very nice and the place was a vibe. Food is a bit spicy though so yeah. The chicken 65 went hard ngl."
     },
     {
         "place": "Cinnamon Garden Restaurant",
         "rating": 8,
-        "category": "Indian",
+        "category": ["Indian"],
         "images": ["cinnamon-garden.jpg"],
         "description": "If you're in Ashbourne and want some indian food, you need to try this place. Food is very good and the venue and decor is cool."
     },
     {
         "place": "IKEA",
         "rating": "7.5",
-        "category": "Swedish",
+        "category": ["Swedish"],
         "images": ["ikea.jpg", "ikea2.jpg"],
         "description": "Nice atmosphere with many options. Cheesecake slapped and so did the Daim cake. The meatballs were good too. Would recommend to go munch there. Soft serve icecream was also good quality."
     },
     {
         "place": "El siliencio",
         "rating": "?",
-        "category": "PENDING",
+        "category": ["PENDING"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "The Rolling Stove at Pillar Bar",
         "rating": "?",
-        "category": "PENDING",
+        "category": ["PENDING"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Masa",
         "rating": "?",
-        "category": "PENDING",
+        "category": ["PENDING"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Hang dai",
         "rating": "?",
-        "category": "PENDING",
+        "category": ["PENDING"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Pi",
         "rating": "?",
-        "category": "PENDING",
+        "category": ["PENDING"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Shouk",
         "rating": "?",
-        "category": "PENDING",
+        "category": ["PENDING"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "BIGFAN",
         "rating": "?",
-        "category": "PENDING",
+        "category": ["PENDING"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Padoca",
         "rating": "?",
-        "category": "PENDING",
+        "category": ["PENDING"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Mad Yolks",
         "rating": "?",
-        "category": "PENDING",
+        "category": ["PENDING"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Masa",
         "rating": "?",
-        "category": "PENDING",
+        "category": ["PENDING"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Drunken Fish",
         "rating": "?",
-        "category": "PENDING",
+        "category": ["PENDING"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Kasi Cafe",
         "rating": "?",
-        "category": "PENDING",
+        "category": ["PENDING"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Declan & Donal's Deli",
         "rating": "?",
-        "category": "PENDING",
+        "category": ["PENDING"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Reyna",
         "rating": "?",
-        "category": "PENDING",
+        "category": ["PENDING"],
         "images": ["placeholder.png"],
         "description": "???"
     }

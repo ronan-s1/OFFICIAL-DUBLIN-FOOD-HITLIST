@@ -16,8 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
     cursorElement.addEventListener("click", changeCursor);
     container = document.getElementById("foodList");
 
-
-
     // Fetch data from the JSON file
     fetch("assets/data/data.json")
     .then(response => response.json())
@@ -97,12 +95,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 const cardBody = document.createElement("div");
                 cardBody.className = "card-body";
 
-                // Add a badge for the category
-                const categoryBadge = document.createElement("span");
-                categoryBadge.className = "badge badge-warning";
-                categoryBadge.textContent = item.category;
-
-
                 const ratingText = document.createElement("p");
                 ratingText.className = "card-text";
 
@@ -121,7 +113,15 @@ document.addEventListener("DOMContentLoaded", function () {
                         ⇝
                         <span class="rating-title">${item.rating}/10</span>
                     </h5>`;
-                cardBody.appendChild(categoryBadge);
+
+                // Add a badge for each category
+                item.category.forEach(cat => {
+                    const categoryBadge = document.createElement("span");
+                    categoryBadge.className = "badge badge-warning";
+                    categoryBadge.textContent = cat;
+                    cardBody.appendChild(categoryBadge);
+                });
+
                 cardBody.innerHTML += `<p class="card-text">${item.description}</p>`;
                 cardBody.appendChild(mapButton);
 
@@ -138,8 +138,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to populate the filter dropdown with unique category values
     function populateCategoryFilter(foodList) {
         const categoryDropdownMenu = document.getElementById("categoryDropdownMenu");
-        const categories = ["all"].concat(Array.from(new Set(foodList.map(item => item.category))));
-
+        // Flatten the array of categories and create a set of unique values
+        const categories = ["all"].concat(Array.from(new Set(foodList.flatMap(item => item.category))));
+        console.log(categories)
         categories.forEach(category => {
             const checkboxId = `category-${category}`;
             const listItem = document.createElement("li");

@@ -125,6 +125,7 @@ body{
 .badge {
     background-color: #ea8a15 !important;
     border-radius: 0px !important;
+    margin-right: 5px;
 }
 
 

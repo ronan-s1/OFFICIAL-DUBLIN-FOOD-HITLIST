@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     cursorElement.addEventListener("click", changeCursor);
     container = document.getElementById("foodList");
 
-    fetch("assets/img/cats")
+    fetch("assets/img/catGifs")
     .then(response => response.text())
     .then(text => {
         // Parse the HTML response to extract the GIF file names

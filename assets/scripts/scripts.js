@@ -231,7 +231,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to count the reviewed places
     function countReviewedPlaces(foodList) {
         return foodList.reduce((count, item) => {
-            if (item.category !== "PENDING") {
+            if (!item.category.includes("PENDING")) {
                 count++;
             }
             return count;

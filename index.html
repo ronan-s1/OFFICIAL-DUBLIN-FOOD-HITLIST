@@ -23,21 +23,26 @@
     <!-- Filter Section -->
     <div class="filter-container container mt-4">
         <div class="row">
-            <div class="col-md-7 px-0">
+            <div class="col-md-6 px-0">
                 <input type="text" id="searchBar" class="form-control" placeholder="Search">
                 <p class="places-reviewed mt-1">Places Reviewed: <span id="placesReviewed"></span></p>
             </div>
             <div class="col-md-3 px-0">
-                <select id="categoryFilter" class="form-select">
-                    <option value="" disabled selected>Category</option>
-                </select>
-            </div>
-            <div class="col-md-2 px-0">
                 <select id="ratingSort" class="form-select">
                     <option value="" disabled selected>Rating</option>
                     <option value="asc">Ascending</option>
                     <option value="desc">Descending</option>
                 </select>
+            </div>
+            <div class="col-md-3 px-0">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Categories
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="categoryDropdown" id="categoryDropdownMenu">
+                        <!-- Categories will be populated dynamically -->
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

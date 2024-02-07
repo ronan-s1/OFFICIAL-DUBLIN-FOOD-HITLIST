@@ -137,29 +137,56 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to populate the filter dropdown with unique category values
     function populateCategoryFilter(foodList) {
-        const categoryFilter = document.getElementById("categoryFilter");
+        const categoryDropdownMenu = document.getElementById("categoryDropdownMenu");
         const categories = ["all"].concat(Array.from(new Set(foodList.map(item => item.category))));
 
         categories.forEach(category => {
-            const option = document.createElement("option");
-            option.value = category;
-            option.textContent = category.charAt(0).toUpperCase() + category.slice(1);
-            categoryFilter.appendChild(option);
+            const checkboxId = `category-${category}`;
+            const listItem = document.createElement("li");
+            listItem.className = "dropdown-item";
+            
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.name = "category";
+            checkbox.value = category;
+            checkbox.id = checkboxId;
+            checkbox.className = "form-check-input";
+            checkbox.style.marginRight = "5px";
+            
+            const label = document.createElement("label");
+            label.textContent = category.charAt(0).toUpperCase() + category.slice(1);
+            label.htmlFor = checkboxId;
+            label.className = "form-check-label";
+
+            listItem.appendChild(checkbox);
+            listItem.appendChild(label);
+            categoryDropdownMenu.appendChild(listItem);
         });
 
-        // Add an event listener to the filter dropdown
-        categoryFilter.addEventListener("change", function () {
-            const selectedCategory = this.value;
+        // Add an event listener to the checkboxes
+        const checkboxes = categoryDropdownMenu.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener("change", function () {
+                let selectedCategories = Array.from(checkboxes)
+                    .filter(checkbox => checkbox.checked)
+                    .map(checkbox => checkbox.value);
 
-            // Filter and display the food list based on the selected category
-            const filteredFoodList = selectedCategory === "all"
-                ? foodList
-                : foodList.filter(item => item.category === selectedCategory);
+                // If no checkboxes are checked, default to "all"
+                if (selectedCategories.length === 0) {
+                    selectedCategories = ["all"];
+                }
 
-            // Clear the existing content before displaying the filtered list
-            container.innerHTML = "";
-            displayFoodList(filteredFoodList);
+                // Filter and display the food list based on the selected categories
+                const filteredFoodList = selectedCategories.includes("all")
+                    ? foodList
+                    : foodList.filter(item => selectedCategories.includes(item.category));
+
+                // Clear the existing content before displaying the filtered list
+                container.innerHTML = "";
+                displayFoodList(filteredFoodList);
+            });
         });
+
 
         // Add an event listener to the search bar
         document.getElementById("searchBar").addEventListener("input", function () {

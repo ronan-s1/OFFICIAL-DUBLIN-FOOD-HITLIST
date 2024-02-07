@@ -89,7 +89,25 @@ body{
 
 .filter-container {
     width: 70% !important;
-    margin-bottom: -35px;
+    margin-bottom: -22px;
+
+}
+
+
+.dropdown button, .dropdown button:hover, .dropdown button:active {
+    background-color: #c5761b !important;
+    border: 1px solid #c5761b !important;
+    border-radius: 0px;
+    width: 100%;
+};
+
+
+.form-check-input:checked {
+    background-color: #c5761b !important;
+}
+
+.show {
+    width: 100%;
 }
 
 
@@ -155,6 +173,7 @@ footer {
     background-color: #b57e1644;
     padding: 5px;
     margin-top: 50px !important;
+    bottom: 0
 }
 
 

@@ -21,20 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     cursorElement.addEventListener("click", changeCursor);
     container = document.getElementById("foodList");
 
-    fetch("assets/img/")
-    .then(response => response.text())
-    .then(text => {
-        // Parse the HTML response to extract the GIF file names
-        const parser = new DOMParser();
-        const htmlDocument = parser.parseFromString(text, "text/html");
-        const links = Array.from(htmlDocument.querySelectorAll("a"));
-
-        // Filter out any non-GIF files and store the remaining ones
-        gifs = links
-            .map(link => link.href)
-            .filter(href => href.endsWith(".gif"));
-    });
-
     catGif.addEventListener("click", function() {
         gifIndex = (gifIndex + 1) % gifs.length;
         catGif.src = gifs[gifIndex];

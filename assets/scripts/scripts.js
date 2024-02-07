@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 cardBody.innerHTML += `
                     <h5 class="card-title">
                         <span class="place-title">${item.place}</span>
-                        ⇝
+                        <span class="silly-arrow">➜</span>
                         <span class="rating-title">${item.rating}/10</span>
                     </h5>`;
 
@@ -178,7 +178,6 @@ document.addEventListener("DOMContentLoaded", function () {
             categoryDropdownMenu.appendChild(listItem);
         });
 
-
         // Add an event listener to the checkboxes
         const checkboxes = categoryDropdownMenu.querySelectorAll('input[type="checkbox"]');
         checkboxes.forEach(checkbox => {
@@ -203,6 +202,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Clear the existing content before displaying the filtered list
                 container.innerHTML = "";
                 displayFoodList(filteredFoodList);
+            });
+            categoryDropdownMenu.addEventListener("click", function(event) {
+                event.stopPropagation(); 
             });
         });
 

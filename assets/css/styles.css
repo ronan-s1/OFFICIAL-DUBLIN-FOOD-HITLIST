@@ -82,6 +82,12 @@ body{
 }
 
 
+.silly-arrow {
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+
 .row input, #categoryFilter, #ratingSort {
     border: 1px solid #c5761b !important;
 }
@@ -93,7 +99,8 @@ body{
 }
 
 .dropdown button, .dropdown button:hover, .dropdown button:active {
-    background-color: #c5761b !important;
+    color: #212529 !important;
+    background-color: #fff !important; 
     border: 1px solid #c5761b !important;
     border-radius: 0px;
     width: 100%;

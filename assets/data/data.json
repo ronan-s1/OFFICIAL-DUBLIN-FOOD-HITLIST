@@ -190,14 +190,14 @@
     },
     {
         "place": "IKEA",
-        "rating": "7.5",
+        "rating": 7.5,
         "category": ["Swedish"],
         "images": ["ikea.jpg", "ikea2.jpg"],
         "description": "Nice atmosphere with many options. Cheesecake slapped and so did the Daim cake. The meatballs were good too. Would recommend to go munch there. Soft serve icecream was also good quality."
     },
     {
         "place": "Bison Bar & BBQ",
-        "rating": "8.3",
+        "rating": 8.3,
         "category": ["American", "Bar"],
         "images": ["bisonbar.jpg", "bisonbar2.jpg"],
         "description": "The atmosphere and vibe was cool. Nice place for a brisket. The burgers are nice and they also have a student deal. The peach cobler was okay, a bit hard and crunchy but everything else was great."

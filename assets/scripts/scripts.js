@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     foodEmojis.push("🍔")
     let currentIndex = 0;
 
+
     // Function to change the cursor emoji
     function changeCursor() {
         const newEmoji = foodEmojis[currentIndex];
@@ -12,20 +13,23 @@ document.addEventListener("DOMContentLoaded", function () {
         currentIndex = (currentIndex + 1) % foodEmojis.length;
     }
 
+
     // Add click event listener to change the cursor on each click
     cursorElement.addEventListener("click", changeCursor);
     container = document.getElementById("foodList");
 
+
     // Fetch data from the JSON file
     fetch("assets/data/data.json")
-    .then(response => response.json())
-    .then(data => {
-        // Call a function to display the data
-        displayFoodList(data);
-        populateCategoryFilter(data);
-        updatePlacesReviewed(data);
-    })
-    .catch(error => console.error("Error fetching data:", error));
+        .then(response => response.json())
+        .then(data => {
+            // Call a function to display the data
+            displayFoodList(data);
+            populateCategoryFilter(data);
+            updatePlacesReviewed(data);
+        })
+        .catch(error => console.error("Error fetching data:", error));
+
 
     // Function to display the food list
     function displayFoodList(foodList) {
@@ -138,14 +142,15 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to populate the filter dropdown with unique category values
     function populateCategoryFilter(foodList) {
         const categoryDropdownMenu = document.getElementById("categoryDropdownMenu");
-        // Flatten the array of categories and create a set of unique values
-        const categories = ["all"].concat(Array.from(new Set(foodList.flatMap(item => item.category))));
+        const categories = Array.from(new Set(foodList.flatMap(item => item.category)))
+        .sort((a, b) => a.localeCompare(b));
+
         // console.log(categories)
         categories.forEach(category => {
             const checkboxId = `category-${category}`;
             const listItem = document.createElement("li");
             listItem.className = "dropdown-item";
-            
+
             const checkbox = document.createElement("input");
             checkbox.type = "checkbox";
             checkbox.name = "category";
@@ -153,21 +158,32 @@ document.addEventListener("DOMContentLoaded", function () {
             checkbox.id = checkboxId;
             checkbox.className = "form-check-input";
             checkbox.style.marginRight = "5px";
-            
+            checkbox.style.padding = "4px";
+
             const label = document.createElement("label");
             label.textContent = category.charAt(0).toUpperCase() + category.slice(1);
             label.htmlFor = checkboxId;
             label.className = "form-check-label";
+
+            checkbox.addEventListener("click", function() {
+                if (this.checked) {
+                    this.style.backgroundColor = "#c5761b";
+                } else {
+                    this.style.backgroundColor = ""; // Reset to default background color
+                }
+            });
 
             listItem.appendChild(checkbox);
             listItem.appendChild(label);
             categoryDropdownMenu.appendChild(listItem);
         });
 
+
         // Add an event listener to the checkboxes
         const checkboxes = categoryDropdownMenu.querySelectorAll('input[type="checkbox"]');
         checkboxes.forEach(checkbox => {
             checkbox.addEventListener("change", function () {
+                // Get all checked checkboxes with the class .form-check-input
                 let selectedCategories = Array.from(checkboxes)
                     .filter(checkbox => checkbox.checked)
                     .map(checkbox => checkbox.value);
@@ -181,7 +197,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 const filteredFoodList = selectedCategories.includes("all")
                     ? foodList
                     : foodList.filter(item => {
-                        // Check if any of the item's categories match any of the selected categories
                         return item.category.some(category => selectedCategories.includes(category));
                     });
 
@@ -200,6 +215,7 @@ document.addEventListener("DOMContentLoaded", function () {
             displayFoodList(filteredFoodList);
         });
 
+
         // Add an event listener to the rating sort dropdown
         document.getElementById("ratingSort").addEventListener("change", function () {
             container.innerHTML = "";
@@ -211,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const placesReviewedSpan = document.getElementById("placesReviewed");
         placesReviewedSpan.textContent = countReviewedPlaces(foodList);
     }
-    
+
     // Function to count the reviewed places
     function countReviewedPlaces(foodList) {
         return foodList.reduce((count, item) => {

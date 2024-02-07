@@ -90,15 +90,14 @@ body{
 .filter-container {
     width: 70% !important;
     margin-bottom: -22px;
-
 }
-
 
 .dropdown button, .dropdown button:hover, .dropdown button:active {
     background-color: #c5761b !important;
     border: 1px solid #c5761b !important;
     border-radius: 0px;
     width: 100%;
+    text-align: left;
 };
 
 

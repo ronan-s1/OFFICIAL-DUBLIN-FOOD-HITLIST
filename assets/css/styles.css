@@ -10,7 +10,7 @@
     margin: auto;
     text-align: center;
     width: 50% !important;
-    margin-bottom: 75px !important;
+    margin-bottom: 80px;
     margin-top: 50px !important;
 }
 
@@ -89,7 +89,7 @@ body{
 
 .filter-container {
     width: 70% !important;
-    margin-bottom: 35px;
+    margin-bottom: -35px;
 }
 
 
@@ -133,7 +133,7 @@ body{
 
 
 .carousel-control-prev-icon, .carousel-control-next-icon{
-    background-color: #e2963a70 !important;
+    background-color: #e2963a80 !important;
     border-radius: 1px;
 }
 
@@ -177,11 +177,25 @@ footer a {
     }
 }
 
-
 .corn-cat {
     width: 40%;
     min-width: 140px;
     max-width: 500px;
     margin: auto;
     text-align: center;
+}
+
+.disclaimer {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    width: 7.5px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c47311;
+    height: 70px;
+    border-radius: 6px;
 }

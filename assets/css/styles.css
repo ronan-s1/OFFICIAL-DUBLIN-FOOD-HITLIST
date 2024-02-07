@@ -221,6 +221,7 @@ footer a {
 
 #emptyList {
     margin-top: 6px;
+    display: none;
 }
  
 #emptyList .error {

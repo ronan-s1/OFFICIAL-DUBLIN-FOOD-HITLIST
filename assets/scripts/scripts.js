@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const emptyListDiv = document.getElementById("emptyList");
     const cursorElement = document.querySelector(".cursor");
     const foodEmojis = ["🍕", "🌮", "🌯", "🍣", "🌭", "🍜", "🍪", "🍦", "🥪", "🍩", "🍝", "🍔", "🥐", "🥞", "🍟", "🍖"];
     foodEmojis.push("🍔")
@@ -13,10 +14,31 @@ document.addEventListener("DOMContentLoaded", function () {
         currentIndex = (currentIndex + 1) % foodEmojis.length;
     }
 
+    const catGif = document.getElementById("catGif");
+    let gifIndex = 0;
+    let gifs = [];
 
-    // Add click event listener to change the cursor on each click
     cursorElement.addEventListener("click", changeCursor);
     container = document.getElementById("foodList");
+
+    fetch("assets/img/cats")
+    .then(response => response.text())
+    .then(text => {
+        // Parse the HTML response to extract the GIF file names
+        const parser = new DOMParser();
+        const htmlDocument = parser.parseFromString(text, "text/html");
+        const links = Array.from(htmlDocument.querySelectorAll("a"));
+
+        // Filter out any non-GIF files and store the remaining ones
+        gifs = links
+            .map(link => link.href)
+            .filter(href => href.endsWith(".gif"));
+    });
+
+    catGif.addEventListener("click", function() {
+        gifIndex = (gifIndex + 1) % gifs.length;
+        catGif.src = gifs[gifIndex];
+    });
 
 
     // Fetch data from the JSON file
@@ -72,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     carouselItem.className = index === 0 ? "carousel-item active" : "carousel-item";
 
                     const img = document.createElement("img");
-                    img.src = `assets/img/${image}`;
+                    img.src = `assets/img/food/${image}`;
                     img.className = "d-block w-100";
 
                     carouselItem.appendChild(img);
@@ -199,12 +221,19 @@ document.addEventListener("DOMContentLoaded", function () {
                         return item.category.some(category => selectedCategories.includes(category));
                     });
 
-                // Clear the existing content before displaying the filtered list
                 container.innerHTML = "";
+
+                if (filteredFoodList.length === 0) {
+                    emptyListDiv.style.display = "block";
+                    return;
+                } else {
+                    emptyListDiv.style.display = "none";
+                }
+
                 displayFoodList(filteredFoodList);
             });
             categoryDropdownMenu.addEventListener("click", function(event) {
-                event.stopPropagation(); 
+                event.stopPropagation();
             });
         });
 
@@ -214,6 +243,14 @@ document.addEventListener("DOMContentLoaded", function () {
             const searchTerm = this.value.toLowerCase();
             const filteredFoodList = foodList.filter(item => item.place.toLowerCase().includes(searchTerm));
             container.innerHTML = "";
+
+            if (filteredFoodList.length === 0) {
+                emptyListDiv.style.display = "block";
+                return;
+            } else {
+                emptyListDiv.style.display = "none";
+            }
+
             displayFoodList(filteredFoodList);
         });
 

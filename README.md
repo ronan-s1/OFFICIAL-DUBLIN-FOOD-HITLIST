@@ -16,7 +16,7 @@ If you'd like to recommend additional restaurants or places to the list, you can
 {
     "place": <NAME OF PLACE>,
     "rating": "?",
-    "category": "PENDING",
+    "category": ["PENDING"],
     "images": ["placeholder.png"],
     "description": "???"
 }

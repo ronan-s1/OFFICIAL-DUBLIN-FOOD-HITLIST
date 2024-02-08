@@ -182,8 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to populate the filter dropdown with unique category values
     function populateCategoryFilter(foodList) {
         const categoryDropdownMenu = document.getElementById("categoryDropdownMenu");
-        const categories = Array.from(new Set(foodList.flatMap(item => item.category)))
-        .sort((a, b) => a.localeCompare(b));
+        const categories = Array.from(new Set(foodList.flatMap(item => item.category))).sort((a, b) => a.localeCompare(b));
 
         // console.log(categories)
         categories.forEach(category => {
@@ -269,6 +268,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Add an event listener to the rating sort dropdown
         document.getElementById("ratingSort").addEventListener("change", function () {
+            container.innerHTML = "";
+            displayFoodList(foodList);
+        });
+
+
+        document.getElementById("clearButton").addEventListener("click", function() {
+            checkboxes.forEach(checkbox => {
+                checkbox.style.backgroundColor = "#fff";
+                checkbox.checked = false;
+            });
+        
+            document.getElementById("searchBar").value = "";
+        
             container.innerHTML = "";
             displayFoodList(foodList);
         });

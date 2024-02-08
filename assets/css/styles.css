@@ -82,13 +82,24 @@ body{
     margin-left: 2px;
 }
 
-.row input, #categoryFilter, #ratingSort {
+.row #searchBar, #searchBar:hover, #categoryFilter, #ratingSort {
     border: 1px solid #c5761b !important;
+    background-color: #fff !important; 
 }
 
 .filter-container {
     width: 70% !important;
-    margin-bottom: -35px;
+    margin-bottom: -30px;
+}
+
+#clearButton {
+    background-color: #c5761b !important; 
+    border: 1px solid #c5761b !important;
+    border-radius: 0px;
+    width: 100%;
+    text-align: left;
+    margin-top: 5px;
+    color: #fff;
 }
 
 .dropdown button, .dropdown button:hover, .dropdown button:active {
@@ -100,10 +111,14 @@ body{
     text-align: left;
 };
 
-.form-check-input:checked {
-    background-color: #c5761b !important;
+.form-check-input {
+    border: 1px solid #864e0f !important;
 }
 
+.form-check-input:checked {
+    border: 1px solid #c5761b !important;
+    background-color: #c5761b !important;
+}
 
 .dropdown ul {
     height: 300px;
@@ -214,7 +229,7 @@ footer a {
 }
 
 #emptyList {
-    margin-top: 30px;
+    margin-top: 50px;
     display: none;
 }
  

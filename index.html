@@ -19,11 +19,11 @@
     <div class="filter-container container mt-4">
         <div class="row">
             <div class="col-md-8 px-0">
-                <input type="text" id="searchBar" class="form-control" placeholder="Search">
+                <input type="text" id="searchBar" class="form-control btn-warning" placeholder="Search">
                 <p class="places-reviewed mt-1">Places Reviewed: <span id="placesReviewed"></span></p>
             </div>
             <div class="col-md-2 px-0">
-                <select id="ratingSort" class="form-select">
+                <select id="ratingSort" class="form-select btn-warning">
                     <option value="" disabled selected>Rating</option>
                     <option value="asc">Ascending</option>
                     <option value="desc">Descending</option>
@@ -31,13 +31,16 @@
             </div>
             <div class="col-md-2 px-0">
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-warning dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         Categories
                     </button>
                     <ul class="dropdown-menu" data-size="5" aria-labelledby="categoryDropdown" id="categoryDropdownMenu">
                         <!-- Categories will be populated dynamically -->
                     </ul>
                 </div>
+                <button class="btn btn-warning" type="button" id="clearButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Clear Filters
+                </button>
             </div>
         </div>
     </div>

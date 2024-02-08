@@ -128,10 +128,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 const mapButton = document.createElement("a");
                 mapButton.href = "https://www.google.com/maps/search/" + item.place;
-                mapButton.className = "map-button btn btn-sm";
+                mapButton.className = "map-button btn btn-sm mt-auto";
                 mapButton.textContent = "Maps";
                 mapButton.target = "_blank";
-                mapButton.style.backgroundColor = "#e69f49";
+                mapButton.style.backgroundColor = "#f2992c";
                 mapButton.style.color = "white";
 
 
@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (this.checked) {
                     this.style.backgroundColor = "#c5761b";
                 } else {
-                    this.style.backgroundColor = ""; // Reset to default background color
+                    this.style.backgroundColor = "";
                 }
             });
 

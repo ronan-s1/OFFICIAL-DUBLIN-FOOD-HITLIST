@@ -4,7 +4,7 @@ The following list presents an assessment of dining establishments and culinary 
 
 ## Theme and Style
 
-Funky, Playful, Warm, Fun, Sharp
+Funky, Playful, Warm, Old School
 
 ## Contributing
 

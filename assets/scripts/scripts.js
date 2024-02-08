@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     // Set the src of the catGif element
+    let catGif = document.getElementById("catGif")
     catGif.src = "https://foodindublin.com/assets/img/cats/" + gifs[gifIndex];
 
     catGif.addEventListener("click", function() {
@@ -65,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
         for (let i = 0; i < foodList.length; i += 2) {
             // Create a row container for each pair of cards
             const row = document.createElement("div");
-            row.className = "row row-cols-1 row-cols-md-2 g-4"; // Bootstrap classes for a grid with two columns
+            row.className = "row row-cols-1 row-cols-md-2 g-4";
 
             for (let j = 0; j < 2 && i + j < foodList.length; j++) {
                 const item = foodList[i + j];
@@ -223,9 +224,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 if (filteredFoodList.length === 0) {
                     emptyListDiv.style.display = "block";
+                    catGif.style.display = "none";
                     return;
                 } else {
                     emptyListDiv.style.display = "none";
+                    catGif.style.display = "block";
                 }
 
                 displayFoodList(filteredFoodList);
@@ -244,9 +247,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (filteredFoodList.length === 0) {
                 emptyListDiv.style.display = "block";
+                catGif.style.display = "none";
                 return;
             } else {
                 emptyListDiv.style.display = "none";
+                catGif.style.display = "block";
             }
 
             displayFoodList(filteredFoodList);

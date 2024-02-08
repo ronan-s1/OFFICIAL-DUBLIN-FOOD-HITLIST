@@ -1,22 +1,18 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 
 .cursor {
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:25px;'><text y='50%'>🍔</text></svg>")
         16 0, auto;
 }
 
-
-.site-description {
+.bottom-container {
     margin: auto;
     text-align: center;
     width: 50% !important;
-    margin-bottom: 60px;
     margin-top: 60px !important;
 }
 
-.site-description p {
+.bottom-container p {
     font-size: 11px;
     font-weight: bolder;
     text-decoration: underline solid #f38200b7 2.2px;
@@ -24,11 +20,13 @@
 
 .heading {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
     padding: 8px;
+    padding-top: 14px;
     vertical-align: middle;
     background-color: #b57d163b;
     border: 3px solid #c5761b5f !important;
+    margin-bottom: 80px;
 }
 
 
@@ -38,15 +36,13 @@
     color: #c5761b;
     font-weight: bolder;
     fill: #d97904;
-    font-family: 'Rubik Doodle Shadow', system-ui;
+    font-family: 'Limelight', sans-serif;
 }
 
 
 .heading:hover {
     animation: spin 1.2s linear 1;
 }
-
-
 
 .card {
     padding: 25px 10px 10px 10px;
@@ -55,16 +51,13 @@
     border-radius: 0px !important;
 }
 
-
 .place-title {
     font-weight: bolder;
 }
 
-
 body{
     background-color: #eb902129 !important;
 }
-
 
 @keyframes spin {
     from {
@@ -75,34 +68,28 @@ body{
     }
 }
 
-
 .map-button {
     border-radius: 0px !important;
     border: 3px solid #d1740a !important;
 }
 
-
 .row {
     margin-bottom: 23px;
 }
-
 
 .silly-arrow {
     margin-right: 2px;
     margin-left: 2px;
 }
 
-
 .row input, #categoryFilter, #ratingSort {
     border: 1px solid #c5761b !important;
 }
 
-
 .filter-container {
     width: 70% !important;
-    margin-bottom: -22px;
+    margin-bottom: -35px;
 }
-
 
 .dropdown button, .dropdown button:hover, .dropdown button:active {
     color: #212529 !important;
@@ -113,21 +100,17 @@ body{
     text-align: left;
 };
 
-
 .form-check-input:checked {
     background-color: #c5761b !important;
 }
-
 
 .show {
     width: 100%;
 }
 
-
 .card-text {
     margin-top: 35px !important;
 }
-
 
 #foodList {
     width: 80% !important;
@@ -182,8 +165,9 @@ body{
 footer { 
     text-align: center;
     bottom: 0; 
-    left: 0; 
+    left: 0;
     z-index: 10;
+    margin-top: 100vh;
     background-color: #b57e1644;
     padding: 5px;
     margin-top: 50px !important;
@@ -198,10 +182,10 @@ footer a {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 760px) {
     .filter-container {
         width: 92% !important;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     #foodList {
@@ -211,7 +195,7 @@ footer a {
 }
 
 .cat {
-    width: 40%;
+    width: 42%;
     min-width: 140px;
     max-width: 500px;
     margin: auto;

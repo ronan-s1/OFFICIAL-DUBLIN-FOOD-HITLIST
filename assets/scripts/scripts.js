@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById("foodList");
     const emptyListDiv = document.getElementById("emptyList");
     const cursorElement = document.querySelector(".cursor");
     const foodEmojis = ["🍕", "🌮", "🌯", "🍣", "🌭", "🍜", "🍪", "🍦", "🥪", "🍩", "🍝", "🍔", "🥐", "🥞", "🍟", "🍖"];
@@ -52,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to display the food list
     function displayFoodList(foodList) {
-        const container = document.getElementById("foodList");
+        // const container = document.getElementById("foodList");
         const ratingSort = document.getElementById("ratingSort").value;
         if (ratingSort === "asc") {
             foodList.sort((a, b) => a.rating - b.rating);

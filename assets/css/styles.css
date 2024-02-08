@@ -228,6 +228,7 @@ footer a {
     background-color: #ee6e5a5f;
     border: #e25640 solid 3px;
     text-align: center;
+    margin: auto;
 }
 
 #emptyList .error p{

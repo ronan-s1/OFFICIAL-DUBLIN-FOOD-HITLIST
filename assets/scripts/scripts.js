@@ -16,34 +16,26 @@ document.addEventListener("DOMContentLoaded", function () {
     cursorElement.addEventListener("click", changeCursor);
 
 
-    const catGif = document.getElementById("catGif");
     let gifIndex = 0;
-    let gifs = [];
+    const gifs = [
+        "cat_1.gif",
+        "cat_2.gif",
+        "cat_3.gif",
+        "cat_4.gif",
+        "cat_5.gif",
+        "cat_6.gif",
+        "cat_7.gif",
+        "cat_8.gif",
+        "cat_9.gif"
+    ];
 
-    fetch("assets/img/cats/")
-        .then(response => response.text())
-        .then(text => {
-            // Parse the HTML response to extract the GIF file names
-            const parser = new DOMParser();
-            const htmlDocument = parser.parseFromString(text, "text/html");
-            const links = Array.from(htmlDocument.querySelectorAll("a"));
-
-            gifs = links
-                .map(link => link.href)
-                .filter(href => href.endsWith(".gif"));
-            
-            console.log(gifs)
-            console.log(gifs[gifIndex])
-            catGif.src = gifs[gifIndex];
-        })
-        .catch(error => console.error("Error fetching data:", error));
-
+    // Set the src of the catGif element
+    catGif.src = "https://foodindublin.com/assets/img/cats/" + gifs[gifIndex];
 
     catGif.addEventListener("click", function() {
         gifIndex = (gifIndex + 1) % gifs.length;
-        catGif.src = gifs[gifIndex];
+        catGif.src = "https://foodindublin.com/assets/img/cats/" + gifs[gifIndex];
     });
-
 
 
     // Fetch data from the JSON file

@@ -2,10 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const container = document.getElementById("foodList");
     const emptyListDiv = document.getElementById("emptyList");
     const cursorElement = document.querySelector(".cursor");
+    const footer = document.querySelector("footer");
+    const catGifContainer = document.getElementById("catGifContainer")
+
     const foodEmojis = ["🍕", "🌮", "🌯", "🍣", "🌭", "🍜", "🍪", "🍦", "🥪", "🍩", "🍝", "🍔", "🥐", "🥞", "🍟", "🍖"];
     foodEmojis.push("🍔")
     let currentIndex = 0;
-
 
     // Function to change the cursor emoji
     function changeCursor() {
@@ -17,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     cursorElement.addEventListener("click", changeCursor);
 
 
+    // switch gif on click
     let gifIndex = 0;
     const gifs = [
         "cat_1.gif",
@@ -160,6 +163,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+
+    function noFoodData(filteredFoodList) {
+        if (filteredFoodList.length === 0) {
+            emptyListDiv.style.display = "block";
+            catGifContainer.style.display = "none";
+            footer.style.display = "none";
+            return true;
+        }
+    
+        emptyListDiv.style.display = "none";
+        catGifContainer.style.display = "block";
+        footer.style.display = "block";
+        return false;
+    }
+    
+
     // Function to populate the filter dropdown with unique category values
     function populateCategoryFilter(foodList) {
         const categoryDropdownMenu = document.getElementById("categoryDropdownMenu");
@@ -222,13 +241,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 container.innerHTML = "";
 
-                if (filteredFoodList.length === 0) {
-                    emptyListDiv.style.display = "block";
-                    catGif.style.display = "none";
+                if (noFoodData(filteredFoodList)) {
                     return;
-                } else {
-                    emptyListDiv.style.display = "none";
-                    catGif.style.display = "block";
                 }
 
                 displayFoodList(filteredFoodList);
@@ -245,13 +259,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const filteredFoodList = foodList.filter(item => item.place.toLowerCase().includes(searchTerm));
             container.innerHTML = "";
 
-            if (filteredFoodList.length === 0) {
-                emptyListDiv.style.display = "block";
-                catGif.style.display = "none";
+            if (noFoodData(filteredFoodList)) {
                 return;
-            } else {
-                emptyListDiv.style.display = "none";
-                catGif.style.display = "block";
             }
 
             displayFoodList(filteredFoodList);

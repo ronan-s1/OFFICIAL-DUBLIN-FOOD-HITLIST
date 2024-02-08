@@ -104,6 +104,27 @@ body{
     background-color: #c5761b !important;
 }
 
+
+.dropdown ul {
+    height: 300px;
+}
+
+.dropdown ul{
+    overflow: hidden; 
+    overflow-y: scroll;
+}
+
+.dropdown ::-webkit-scrollbar {
+    width: 3.1px; 
+    background-color: #fff;
+}
+
+.dropdown ::-webkit-scrollbar-thumb {
+    background: #c47311;
+    border-radius: 0px;
+    height: 20px !important;
+}
+
 .show {
     width: 100%;
 }
@@ -117,13 +138,11 @@ body{
     margin: auto;
 }
 
-
 .badge {
     background-color: #ea8a15 !important;
     border-radius: 0px !important;
     margin-right: 5px;
 }
-
 
 .rating-title {
     color: #d97904;
@@ -134,24 +153,20 @@ body{
     color: #ff8c00;
 }
 
-
 .carousel {
     max-width: 100%;
     overflow: hidden;
 }
-
 
 .carousel img {
     object-fit: contain;
     max-height: 300px;
 }
 
-
 .carousel-control-prev-icon, .carousel-control-next-icon{
     background-color: #e2963a80 !important;
     border-radius: 1px;
 }
-
 
 #searchBar, select {
     border-radius: 0px !important;
@@ -164,23 +179,19 @@ body{
 
 footer { 
     text-align: center;
-    bottom: 0; 
-    left: 0;
-    z-index: 10;
-    margin-top: 100vh;
+    bottom: 0;
     background-color: #b57e1644;
     padding: 5px;
+    width: 100%;
     margin-top: 50px !important;
-    bottom: 0
+    bottom: 0;
 }
-
 
 footer a {
     font-size: 20px;
     color: #c5761b !important;
     text-decoration: none;
 }
-
 
 @media screen and (max-width: 760px) {
     .filter-container {
@@ -202,9 +213,8 @@ footer a {
     text-align: center;
 }
 
-
 #emptyList {
-    margin-top: 6px;
+    margin-top: 30px;
     display: none;
 }
  

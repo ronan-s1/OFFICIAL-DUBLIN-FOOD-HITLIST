@@ -11,7 +11,7 @@
         "rating": 7,
         "category": ["Buffet", "Chinese", "Indian", "Japanese"],
         "images": ["wings.jpg"],
-        "description": "Decent buffet in the city center. Dinner is better than lunch, more variety and seems fresher. Hashbrowns are very good."
+        "description": "Decent buffet in the city center. Dinner is better than lunch, more variety and seems fresher. There's lots of diferent types of cuisines so if you're a picky eater its fine. Don't expect the best quality food though."
     },
     {
         "place": "Charlies 3",
@@ -30,7 +30,7 @@
     {
         "place": "Wowburger",
         "rating": 7.3,
-        "category": ["American", "Burgers"],
+        "category": ["American", "Burgers", "Student Deal"],
         "images": ["wowburger.png"],
         "description": "Good burgers, nice student deal. The wowburger near grafton street opposite Brown Thomas over cook the fries though. Atmosphere in all there locations are nice."
     },
@@ -100,14 +100,14 @@
     {
         "place": "Shake Dog",
         "rating": 7.8,
-        "category": ["American", "Burgers"],
+        "category": ["American", "Burgers", "Hotdogs", "Student Deal"],
         "images": ["shakedog.png"],
         "description": "Pretty good food, good milkshakes and they got a nice student deal. Solid place to munch."
     },
     {
         "place": "Captain Americas",
         "rating": 7.2,
-        "category": ["American", "Burgers", "Bar"],
+        "category": ["American", "Burgers", "Bar", "Student Deal"],
         "images": ["captainamericas2.png", "captainamericas.png"],
         "description": "Decent place on Grafton street. They got student deal (€10.95) which is quite good. The nachos are pretty good too."
     },
@@ -170,7 +170,7 @@
     {
         "place": "Brewdog",
         "rating": 6.6,
-        "category": ["American", "Burgers", "Bar"],
+        "category": ["American", "Burgers", "Bar", "Student Deal"],
         "images": ["brewdog.jpg"],
         "description": "The venue is very nice, always seems busy. The food is good but overpriced tbh. There are better places out there but it's nice to try out once in a while. They have a couple of cool deals from time to time. Also if you beat the waiter in rock paper scissors you get free dessert 😎"
     },
@@ -193,12 +193,12 @@
         "rating": 7.5,
         "category": ["Swedish"],
         "images": ["ikea.jpg", "ikea2.jpg"],
-        "description": "Nice atmosphere with many options. Cheesecake slapped and so did the Daim cake. The meatballs were good too. Would recommend to go munch there. Soft serve icecream was also good quality."
+        "description": "Nice atmosphere with many options. Cheesecake slapped and so did the Daim cake. The meatballs were good too. Would recommend to go munch there. Soft serve icecream was also good quality. The kids meal portion is actually quite big too so lowkey you could get like 3 kids meals, get more food and save money."
     },
     {
         "place": "Bison Bar & BBQ",
         "rating": 8.3,
-        "category": ["American", "Bar"],
+        "category": ["American", "Bar", "Student Deal"],
         "images": ["bisonbar.jpg", "bisonbar2.jpg"],
         "description": "The atmosphere and vibe was cool. Nice place for a brisket. The burgers are nice and they also have a student deal. The peach cobler was okay, a bit hard and crunchy but everything else was great."
     },

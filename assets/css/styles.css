@@ -48,6 +48,14 @@
     border-radius: 0px !important;
 }
 
+.card-text {
+    margin-top: 35px !important;
+}
+
+.card:hover {
+    border: 5px dashed #db8a28 !important;
+}
+
 .place-title {
     font-weight: bolder;
 }
@@ -148,10 +156,6 @@ body{
 
 .show {
     width: 100%;
-}
-
-.card-text {
-    margin-top: 35px !important;
 }
 
 #foodList {

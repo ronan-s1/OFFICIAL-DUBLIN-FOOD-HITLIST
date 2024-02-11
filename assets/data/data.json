@@ -79,7 +79,7 @@
     {
         "place": "Krewe",
         "rating": 7.2,
-        "category": ["American", "Burgers"],
+        "category": ["American", "Burgers", "Bar"],
         "images": ["krewe2.jpg", "krewe.jpg"],
         "description": "Nice place, food was good and the place was full. A bit pricey though. Loaded fries are swag."  
     },
@@ -177,7 +177,7 @@
     {
         "place": "Andhra Bhavan",
         "rating": 8,
-        "category": ["Indian"],
+        "category": ["Indian", "Bar"],
         "images": ["andhra.jpg"],
         "description": "Nice south indian restaurant in town. Food was very nice and the place was a vibe. Food is a bit spicy though so yeah. The chicken 65 went hard ngl."
     },

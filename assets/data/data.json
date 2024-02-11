@@ -31,7 +31,7 @@
         "place": "Wowburger",
         "rating": 7.3,
         "category": ["American", "Burgers", "Student Deal"],
-        "images": ["wowburger.png"],
+        "images": ["wowburger2.jpg", "wowburger.png"],
         "description": "Good burgers, nice student deal. The wowburger near grafton street opposite Brown Thomas over cook the fries though. Atmosphere in all there locations are nice."
     },
     {
@@ -45,7 +45,7 @@
         "place": "Wok on Inn",
         "rating": 7,
         "category": ["Chinese"],
-        "images": ["wokoninn.gif"],
+        "images": ["wokoninn2.jpg", "wokoninn.gif"],
         "description": "Very nice spicy box, big portion. However do NOT get it past like 10pm, they just chuck random stuff in there and for this reason they have gotten a lower score"
     },
     {
@@ -80,7 +80,7 @@
         "place": "Krewe",
         "rating": 7.2,
         "category": ["American", "Burgers"],
-        "images": ["krewe.jpg"],
+        "images": ["krewe2.jpg", "krewe.jpg"],
         "description": "Nice place, food was good and the place was full. A bit pricey though. Loaded fries are swag."  
     },
     {
@@ -143,7 +143,7 @@
         "place": "Han Sung",
         "rating": 8.1,
         "category": ["Korean", "Halal"],
-        "images": ["hansung.jpg"],
+        "images": ["hansung.jpg", "hansung2.jpg"],
         "description": "At the back of this asian store theres a nice korean restaurant that serves one of the most underrated food in town. The chicken mayo is very nice. The Only thing is the seating. The place feels a bit cramped and can be a bit of a struggle trying to find a place to sit. Not ideal if you're going in a big group."
     },
     {

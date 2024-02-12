@@ -114,7 +114,7 @@
     {
         "place": "Chimac",
         "rating": 8.35,
-        "category": ["Korean", "Burgers"],
+        "category": ["Korean", "Burgers", "Brunch"],
         "images": ["chimac.jpg"],
         "description": "Nice place where you can get Korean style burgers. The K-BBQ burger and poutine are great. Ice-cream sandwich is so ass though don't get, it was like €8 a for super tough, mid ice-cream sandwich."
     },

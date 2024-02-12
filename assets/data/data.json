@@ -203,6 +203,13 @@
         "description": "The atmosphere and vibe was cool. Nice place for a brisket. The burgers are nice and they also have a student deal. The peach cobler was okay, a bit hard and crunchy but everything else was great."
     },
     {
+        "place": "Born for Burgers",
+        "rating": "?",
+        "category": ["PENDING"],
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
         "place": "El siliencio",
         "rating": "?",
         "category": ["PENDING"],

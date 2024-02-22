@@ -203,6 +203,13 @@
         "description": "The atmosphere and vibe was cool. Nice place for a brisket. The burgers are nice and they also have a student deal. The peach cobler was okay, a bit hard and crunchy but everything else was great."
     },
     {
+        "place": "Wayback Burgers",
+        "rating": 8.3,
+        "category": ["American", "Student Deal", "Halal"],
+        "images": ["wayback.jpg"],
+        "description": "The venue is nice, lots of seating upstairs. The food is decent and they have a student discount. The price isn't too bad either. The double cheese and bacon burger I got was acc so fat and heavy will defo fill you up."
+    },
+    {
         "place": "Born for Burgers",
         "rating": "?",
         "category": ["PENDING"],

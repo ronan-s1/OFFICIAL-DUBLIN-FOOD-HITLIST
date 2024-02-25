@@ -24,4 +24,4 @@ If you'd like to recommend additional restaurants or places to the list, you can
 
 If you wish to make additional adjustments, such as correcting spelling errors and other improvements, you are welcome to do so.
 
-If you intend to modify the user interface, please keep in mind the theme and style of the site.
+If you intend on modifying the user interface, please keep in mind the theme and style of the site.

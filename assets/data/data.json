@@ -9,7 +9,7 @@
     {
         "place": "Wing's World Cuisine",
         "rating": 7,
-        "category": ["Buffet", "Chinese", "Indian", "Japanese"],
+        "category": ["Buffet", "Chinese", "Indian", "Japanese", "Halal"],
         "images": ["wings.jpg"],
         "description": "Decent buffet in the city center. Dinner is better than lunch, more variety and seems fresher. There's lots of diferent types of cuisines so if you're a picky eater its fine. Don't expect the best quality food though."
     },

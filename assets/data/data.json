@@ -64,10 +64,10 @@
     },
     {
         "place": "Mad Egg",
-        "rating": 8.8,
+        "rating": 8.1,
         "category": ["American", "Burgers"],
-        "images": ["madegg.jpg"],
-        "description": "Very nice place if you like chicken burgers. The GOAT burger is the best in my opinion. Cheesecakes there are also very good."
+        "images": ["madegg.jpg", "madegg2.jpg", "madegg3.jpg"],
+        "description": "Very nice place if you like chicken burgers. The GOAT burger is the best in my opinion. Cheesecakes there are also very good. Slighty on the pricey side but worth it."
     },
     {
         "place": "Gaucho's Dog",

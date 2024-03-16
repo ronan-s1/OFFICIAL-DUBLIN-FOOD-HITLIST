@@ -10,7 +10,7 @@
         "place": "Wing's World Cuisine",
         "rating": 7,
         "category": ["Buffet", "Chinese", "Indian", "Japanese", "Halal", "Student Deal"],
-        "images": ["wings.jpg"],
+        "images": ["wings.jpg", "wings2.jpg"],
         "description": "Decent buffet in the city center. Dinner is better than lunch, more variety and seems fresher. There's lots of diferent types of cuisines so if you're a picky eater its fine. Don't expect the best quality food though."
     },
     {
@@ -208,6 +208,13 @@
         "category": ["American", "Student Deal", "Halal"],
         "images": ["wayback.jpg"],
         "description": "The venue is nice, lots of seating upstairs. The food is decent and they have a student discount. The price isn't too bad either. The double cheese and bacon burger I got was acc so fat and heavy will defo fill you up."
+    },
+    {
+        "place": "Dash Burger",
+        "rating": 7.2,
+        "category": ["American"],
+        "images": ["dashburger.jpg"],
+        "description": "The food was good and the place seemed to be quite popular. The price is okay for what you get, expect to spend between €12-€25. The seating was a bit crowded and the place was a bit cramped. If you like smash burgers, it's worth a try."
     },
     {
         "place": "Born for Burgers",

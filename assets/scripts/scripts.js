@@ -177,7 +177,12 @@ document.addEventListener("DOMContentLoaded", function () {
         footer.style.display = "block";
         return false;
     }
-    
+
+    function catsOnDemand() {
+        emptyListDiv.style.display = "none";
+        catGifContainer.style.display = "block";
+        footer.style.display = "none";
+    }
 
     // Function to populate the filter dropdown with unique category values
     function populateCategoryFilter(foodList) {
@@ -257,6 +262,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const searchTerm = this.value.toLowerCase();
             const filteredFoodList = foodList.filter(item => item.place.toLowerCase().includes(searchTerm));
             container.innerHTML = "";
+
+            if (searchTerm === "cats!") {
+                catsOnDemand();
+                return;
+            }
 
             if (noFoodData(filteredFoodList)) {
                 return;

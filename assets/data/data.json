@@ -157,8 +157,8 @@
         "place": "Hannah BBQ",
         "rating": 7,
         "category": ["Persian", "Halal"],
-        "images": ["hannah-bbq.jpg"],
-        "description": "Kebabs and wraps kinda place, basically a less boujee Zaytoon. The kebab is quite good and baklava was quite nice too. It's worth the price I would say if you're feeling a doner kebab and in the area."
+        "images": ["hannah-bbq.jpg", "hannah-bbq2.jpg"],
+        "description": "Kebabs and wraps kinda place, basically a less boujee Zaytoon. The kebab is decent and for the price you can't complain. The baklava though? Its a bit dry but its huge and only €6 so defo worth it. If you go home, microwave it for like 20ish seconds and have it with vanilla ice-cream, it's amazing."
     },
     {
         "place": "Chopsticks",

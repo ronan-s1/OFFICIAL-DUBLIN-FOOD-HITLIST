@@ -66,8 +66,8 @@
         "place": "Mad Egg",
         "rating": 8.1,
         "category": ["American", "Burgers"],
-        "images": ["madegg.jpg", "madegg2.jpg", "madegg3.jpg"],
-        "description": "Very nice place if you like chicken burgers. The GOAT burger is the best in my opinion. Cheesecakes there are also very good. Slighty on the pricey side but worth it."
+        "images": ["madegg.jpg", "madegg2.jpg", "madegg3.jpg", "madegg4.jpg"],
+        "description": "Very nice place if you like chicken burgers. The GOAT burger is the best in my opinion. Cheesecakes there are also very good. Slighty on the pricey side but worth it. Staff are nice."
     },
     {
         "place": "Gaucho's Dog",
@@ -210,6 +210,13 @@
         "description": "The venue is nice, lots of seating upstairs. The food is decent and they have a student discount. The price isn't too bad either. The double cheese and bacon burger I got was acc so fat and heavy will defo fill you up."
     },
     {
+        "place": "Pi",
+        "rating": "8",
+        "category": ["Pizza", "Italian"],
+        "images": ["pi.jpg"],
+        "description": "Nice place, if you're looking for neapolitan pizza, this is the place to go. The staff are also very friendly."
+    },
+    {
         "place": "Dash Burger",
         "rating": 7.2,
         "category": ["American"],
@@ -246,13 +253,6 @@
     },
     {
         "place": "Hang dai",
-        "rating": "?",
-        "category": ["PENDING"],
-        "images": ["placeholder.png"],
-        "description": "???"
-    },
-    {
-        "place": "Pi",
         "rating": "?",
         "category": ["PENDING"],
         "images": ["placeholder.png"],

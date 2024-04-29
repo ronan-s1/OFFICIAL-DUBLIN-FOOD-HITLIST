@@ -36,10 +36,10 @@
     },
     {
         "place": "Star Pizza",
-        "rating": 8.1,
+        "rating": 8,
         "category": ["American", "Pizza"],
-        "images": ["starpizza2.jpg", "starpizza.gif"],
-        "description": "This is the go to. Nice little pizza and burger place on talbot street. All day special goes hard, worth the price. The area is just a bit dodgey tho lol"
+        "images": ["starpizza2.jpg", "starpizza.gif", "starpizza3.jpg", "starpizza4.jpg"],
+        "description": "This is the go to. Nice little pizza and burger place on talbot street. All day special goes hard, worth the price. Great chips and surprisingly the slushies there are prob the best I ever had. Only downside is that it's on talbot street."
     },
     {
         "place": "Wok on Inn",
@@ -229,6 +229,13 @@
         "category": ["PENDING"],
         "images": ["placeholder.png"],
         "description": "???"
+    },
+    {
+        "place": "Salsa - Authentic Mexican Food",
+        "rating": "?",
+        "category": ["PENDING"],
+        "images": ["placeholder.png"],
+        "description": "???" 
     },
     {
         "place": "Space Jaru",

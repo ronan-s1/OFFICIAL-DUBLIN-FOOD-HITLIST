@@ -231,6 +231,20 @@
         "description": "???"
     },
     {
+        "place": "Space Jaru",
+        "rating": "?",
+        "category": ["PENDING"],
+        "images": ["placeholder.png"],
+        "description": "???" 
+    },
+    {
+        "place": "Happy's Bar & Street Food",
+        "rating": "?",
+        "category": ["PENDING"],
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
         "place": "El siliencio",
         "rating": "?",
         "category": ["PENDING"],

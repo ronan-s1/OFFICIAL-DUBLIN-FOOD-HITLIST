@@ -273,6 +273,13 @@
         "description": "???"
     },
     {
+        "place": "The Sweetest Thing",
+        "rating": "?",
+        "category": ["PENDING"],
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
         "place": "Masa",
         "rating": "?",
         "category": ["PENDING"],

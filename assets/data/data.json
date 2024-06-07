@@ -2,7 +2,7 @@
     {
         "place": "Gaucho's Dog",
         "rating": 8.7,
-        "category": ["American", "Hotdogs"],
+        "category": ["American", "Hotdogs", "Dessert"],
         "images": ["gauchos.png"],
         "description": "Very good place, best hot dogs in Dublin from what I know. Unfortunately they closed the one on tara street."   
     },
@@ -23,14 +23,14 @@
     {
         "place": "Krewe",
         "rating": 7.2,
-        "category": ["American", "Burgers", "Bar"],
+        "category": ["American", "Burgers", "Bar", "Dessert"],
         "images": ["krewe2.jpg", "krewe.jpg"],
         "description": "Nice place, food was good and the place was full. A bit pricey though. Loaded fries are swag."  
     },
     {
         "place": "Brewdog",
         "rating": 6.6,
-        "category": ["American", "Burgers", "Bar", "Student Deal"],
+        "category": ["American", "Burgers", "Bar", "Student Deal", "Dessert"],
         "images": ["brewdog.jpg"],
         "description": "The venue is very nice, always seems busy. The food is good but overpriced tbh. There are better places out there but it's nice to try out once in a while. They have a couple of cool deals from time to time. Also if you beat the waiter in rock paper scissors you get free dessert 😎"
     },
@@ -93,7 +93,7 @@
     {
         "place": "Mad Egg",
         "rating": 8.1,
-        "category": ["American", "Burgers"],
+        "category": ["American", "Burgers", "Dessert"],
         "images": ["madegg.jpg", "madegg2.jpg", "madegg3.jpg", "madegg4.jpg"],
         "description": "Very nice place if you like chicken burgers. The GOAT burger is the best in my opinion. Cheesecakes there are also very good. Slighty on the pricey side but worth it. Staff are nice."
     },
@@ -114,14 +114,14 @@
     {
         "place": "Shake Dog",
         "rating": 7.8,
-        "category": ["American", "Burgers", "Hotdogs", "Student Deal"],
+        "category": ["American", "Burgers", "Hotdogs", "Student Deal", "Dessert"],
         "images": ["shakedog.png"],
         "description": "Pretty good food, good milkshakes and they got a nice student deal. Solid place to munch."
     },
     {
         "place": "Captain Americas",
         "rating": 7.2,
-        "category": ["American", "Burgers", "Bar", "Student Deal"],
+        "category": ["American", "Burgers", "Bar", "Student Deal", "Dessert"],
         "images": ["captainamericas2.png", "captainamericas.png"],
         "description": "Decent place on Grafton street. They got student deal (€10.95) which is quite good. The nachos are pretty good too."
     },
@@ -135,14 +135,14 @@
     {
         "place": "Zaytoon",
         "rating": 8,
-        "category": ["Persian", "Halal"],
+        "category": ["Persian", "Halal", "Dessert"],
         "images": ["zaytoon.jpg", "zaytoon2.jpg"],
         "description": "Nice persian restaurant with great food. I would recommend the lamb doner. Can be a bit awkward to eat though but still very nice."
     },
     {
         "place": "Hot Chix by Ruby's",
         "rating": 8.7,
-        "category": ["American", "Burgers", "Bar"],
+        "category": ["American", "Burgers", "Bar", "Dessert"],
         "images": ["hotchix.png"],
         "description": "very nice place, burgers are good and on Wednesdays its half price on food. Cheesecake is also good but isn't really a cheesecake."
     },
@@ -170,7 +170,7 @@
     {
         "place": "Hannah BBQ",
         "rating": 7,
-        "category": ["Persian", "Halal"],
+        "category": ["Persian", "Halal", "Dessert"],
         "images": ["hannah-bbq.jpg", "hannah-bbq2.jpg"],
         "description": "Kebabs and wraps kinda place, basically a less boujee Zaytoon. The kebab is decent and for the price you can't complain. The baklava though? Its a bit dry but its huge and only €6 so defo worth it. If you go home, microwave it for like 20ish seconds and have it with vanilla ice-cream, it's amazing."
     },
@@ -184,7 +184,7 @@
     {
         "place": "Andhra Bhavan",
         "rating": 8,
-        "category": ["Indian", "Bar"],
+        "category": ["Indian", "Bar", "Dessert"],
         "images": ["andhra.jpg"],
         "description": "Nice south indian restaurant in town. Food was very nice and the place was a vibe. Food is a bit spicy though so yeah. The chicken 65 went hard ngl."
     },
@@ -198,70 +198,70 @@
     {
         "place": "IKEA",
         "rating": 7.5,
-        "category": ["Swedish"],
+        "category": ["Swedish", "Dessert"],
         "images": ["ikea.jpg", "ikea2.jpg"],
         "description": "Nice atmosphere with many options. Cheesecake slapped and so did the Daim cake. The meatballs were good too. Would recommend to go munch there. Soft serve icecream was also good quality. The kids meal portion is actually quite big too so lowkey you could get like 3 kids meals, get more food and save money."
     },
     {
         "place": "Bison Bar & BBQ",
         "rating": 8.3,
-        "category": ["American", "Bar", "Student Deal"],
+        "category": ["American", "Bar", "Student Deal", "Dessert"],
         "images": ["bisonbar.jpg", "bisonbar2.jpg", "bisonbar3.jpg"],
         "description": "The atmosphere and vibe was cool. Nice place for a brisket. The burgers are nice and they also have a student deal. The peach cobler was okay, a bit hard and crunchy but everything else was great."
     },
     {
         "place": "Wing's World Cuisine",
         "rating": 7,
-        "category": ["Buffet", "Chinese", "Indian", "Japanese", "Halal", "Student Deal"],
+        "category": ["Buffet", "Chinese", "Indian", "Japanese", "Halal", "Student Deal", "Dessert"],
         "images": ["wings.jpg", "wings2.jpg"],
         "description": "Decent buffet in the city center. Dinner is better than lunch, more variety and seems fresher. There's lots of diferent types of cuisines so if you're a picky eater its fine. Don't expect the best quality food though."
     },
     {
         "place": "Pi",
         "rating": "8",
-        "category": ["Pizza", "Italian"],
+        "category": ["Pizza", "Italian", "Dessert"],
         "images": ["pi.jpg"],
         "description": "Nice place, if you're looking for neapolitan pizza, this is the place to go. The staff are also very friendly."
     },
     {
         "place": "Born for Burgers",
         "rating": "?",
-        "category": ["PENDING"],
+        "category": ["PENDING", "American"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Salsa - Authentic Mexican Food",
         "rating": "?",
-        "category": ["PENDING"],
+        "category": ["PENDING", "Mexican"],
         "images": ["placeholder.png"],
         "description": "???" 
     },
     {
         "place": "Space Jaru",
         "rating": "?",
-        "category": ["PENDING"],
+        "category": ["PENDING", "American", "Korean"],
         "images": ["placeholder.png"],
         "description": "???" 
     },
     {
         "place": "Happy's Bar & Street Food",
         "rating": "?",
-        "category": ["PENDING"],
+        "category": ["PENDING", "American", "Bar"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
-        "place": "El siliencio",
+        "place": "El Siliencio",
         "rating": "?",
-        "category": ["PENDING"],
+        "category": ["PENDING", "Bar", "El Siliencio"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Hei.GaGa",
         "rating": "?",
-        "category": ["PENDING"],
+        "category": ["PENDING", "Dessert", "Chinese"],
         "images": ["placeholder.png"],
         "description": "???" 
     },
@@ -275,84 +275,91 @@
     {
         "place": "The Sweetest Thing",
         "rating": "?",
-        "category": ["PENDING"],
+        "category": ["PENDING", "Dessert"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Masa",
         "rating": "?",
-        "category": ["PENDING"],
+        "category": ["PENDING", "Mexican"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Hang dai",
         "rating": "?",
-        "category": ["PENDING"],
+        "category": ["PENDING", "Chinese", "Bar"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Shouk",
         "rating": "?",
-        "category": ["PENDING"],
+        "category": ["PENDING", "Persian"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "BIGFAN",
         "rating": "?",
-        "category": ["PENDING"],
+        "category": ["PENDING", "Chinese"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Padoca",
         "rating": "?",
-        "category": ["PENDING"],
+        "category": ["PENDING", "Brazilian"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Mad Yolks",
         "rating": "?",
-        "category": ["PENDING"],
+        "category": ["PENDING", "Brunch", "American"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Masa",
         "rating": "?",
-        "category": ["PENDING"],
+        "category": ["PENDING", "Mexican"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Drunken Fish",
         "rating": "?",
-        "category": ["PENDING"],
+        "category": ["PENDING", "Korean"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Kasi Cafe",
         "rating": "?",
-        "category": ["PENDING"],
+        "category": ["PENDING", "Indian"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Declan & Donal's Deli",
         "rating": "?",
-        "category": ["PENDING"],
+        "category": ["PENDING", "Brunch"],
         "images": ["placeholder.png"],
         "description": "???"
     },
     {
         "place": "Reyna",
         "rating": "?",
-        "category": ["PENDING"],
+        "category": ["PENDING", "Persian", "Halal"],
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "Dolce Sicily",
+        "rating": "?",
+        "category": ["PENDING", "Dessert"],
         "images": ["placeholder.png"],
         "description": "???"
     }

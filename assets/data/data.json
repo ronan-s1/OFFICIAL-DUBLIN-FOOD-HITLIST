@@ -2,7 +2,7 @@
     {
         "place": "Gaucho's Dog",
         "rating": 8.7,
-        "category": ["American", "Hotdogs", "Dessert"],
+        "category": ["Brazilian", "Hotdogs", "Dessert"],
         "images": ["gauchos.png"],
         "description": "Very good place, best hot dogs in Dublin from what I know. Unfortunately they closed the one on tara street."   
     },
@@ -360,6 +360,13 @@
         "place": "Dolce Sicily",
         "rating": "?",
         "category": ["PENDING", "Dessert"],
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "2 Lads",
+        "rating": "?",
+        "category": ["PENDING", "American", "Brazilian"],
         "images": ["placeholder.png"],
         "description": "???"
     }

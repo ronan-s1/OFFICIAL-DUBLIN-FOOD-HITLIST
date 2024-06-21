@@ -231,6 +231,13 @@
         "description": "Very nice burger joint in town for a decent price. The quality of the food was high from the meat to the buns. The only thing is that the place could have more variety in the menu."
     },
     {
+        "place": "Dolce Sicily",
+        "rating": "7.1",
+        "category": ["Italian", "Dessert"],
+        "images": ["dolcesicily.jpg ", "dolcesicily2.jpg"],
+        "description": "Small cafe in town, very nice pastries and cakes. We got the pistachio tiramisu and it was very light and fluffy however there wasn't much of a pistachio taste. It's a bit pricey but worth it once in a while. Took the jar home too lmao."
+    },
+    {
         "place": "Salsa - Authentic Mexican Food",
         "rating": "?",
         "category": ["PENDING", "Mexican"],

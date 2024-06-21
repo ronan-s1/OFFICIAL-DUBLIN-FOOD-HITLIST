@@ -224,11 +224,18 @@
         "description": "Nice place, if you're looking for neapolitan pizza, this is the place to go. The staff are also very friendly."
     },
     {
+        "place": "Dolce Sicily",
+        "rating": "7.1",
+        "category": ["Italian", "Dessert"],
+        "images": ["dolcesicily.jpg ", "dolcesicily2.jpg"],
+        "description": "Small cafe in town, very nice pastries and cakes. We got the pistachio tiramisu and it was very light and fluffy however there wasn't much of a pistachio taste. It's a bit pricey but worth it once in a while. Took the jar home too lmao."
+    },
+    {
         "place": "Born for Burgers",
         "rating": "?",
-        "category": ["PENDING", "American"],
-        "images": ["placeholder.png"],
-        "description": "???"
+        "category": ["American", "Halal", "Student Deal"],
+        "images": ["bornforburgers.jpg"],
+        "description": "Very nice burger joint in town for a decent price. The quality of the food was high from the meat to the buns. The only thing is that the place could have more variety in the menu."
     },
     {
         "place": "Salsa - Authentic Mexican Food",
@@ -353,13 +360,6 @@
         "place": "Reyna",
         "rating": "?",
         "category": ["PENDING", "Persian", "Halal"],
-        "images": ["placeholder.png"],
-        "description": "???"
-    },
-    {
-        "place": "Dolce Sicily",
-        "rating": "?",
-        "category": ["PENDING", "Dessert"],
         "images": ["placeholder.png"],
         "description": "???"
     }

@@ -2,7 +2,7 @@
     {
         "place": "Gaucho's Dog",
         "rating": 8.7,
-        "category": ["American", "Hotdogs", "Dessert"],
+        "category": ["Brazilian", "Hotdogs", "Dessert"],
         "images": ["gauchos.png"],
         "description": "Very good place, best hot dogs in Dublin from what I know. Unfortunately they closed the one on tara street."   
     },
@@ -221,14 +221,7 @@
         "rating": "8",
         "category": ["Pizza", "Italian", "Dessert"],
         "images": ["pi.jpg"],
-        "description": "Nice place, if you're looking for neapolitan pizza, this is the place to go. The staff are also very friendly."
-    },
-    {
-        "place": "Dolce Sicily",
-        "rating": "7.1",
-        "category": ["Italian", "Dessert"],
-        "images": ["dolcesicily.jpg ", "dolcesicily2.jpg"],
-        "description": "Small cafe in town, very nice pastries and cakes. We got the pistachio tiramisu and it was very light and fluffy however there wasn't much of a pistachio taste. It's a bit pricey but worth it once in a while. Took the jar home too lmao."
+        "description": "Nice place, if you're looking for neapolitan pizza, this is a really great place to go. The staff are also very friendly. The Nduja pizza was interesting with the honey and that (ask for chilli oil if you like it a bit spicy), would recommend."
     },
     {
         "place": "Born for Burgers",
@@ -261,7 +254,7 @@
     {
         "place": "El Siliencio",
         "rating": "?",
-        "category": ["PENDING", "Bar", "El Siliencio"],
+        "category": ["PENDING", "Bar", "Mexican"],
         "images": ["placeholder.png"],
         "description": "???"
     },
@@ -360,6 +353,13 @@
         "place": "Reyna",
         "rating": "?",
         "category": ["PENDING", "Persian", "Halal"],
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "2 Lads",
+        "rating": "?",
+        "category": ["PENDING", "American", "Brazilian"],
         "images": ["placeholder.png"],
         "description": "???"
     }

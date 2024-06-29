@@ -204,9 +204,9 @@
     },
     {
         "place": "Bison Bar & BBQ",
-        "rating": 8.3,
+        "rating": 8,
         "category": ["American", "Bar", "Student Deal", "Dessert"],
-        "images": ["bisonbar.jpg", "bisonbar2.jpg", "bisonbar3.jpg"],
+        "images": ["bisonbar.jpg", "bisonbar2.jpg", "bisonbar3.jpg", "bisonbar4.jpg", "bisonbar5.jpg"],
         "description": "The atmosphere and vibe was cool. Nice place for a brisket. The burgers are nice and they also have a student deal. The peach cobler was okay, a bit hard and crunchy but everything else was great."
     },
     {
@@ -225,10 +225,17 @@
     },
     {
         "place": "Born for Burgers",
-        "rating": "?",
+        "rating": "8",
         "category": ["American", "Halal", "Student Deal"],
         "images": ["bornforburgers.jpg"],
         "description": "Very nice burger joint in town for a decent price. The quality of the food was high from the meat to the buns. The only thing is that the place could have more variety in the menu."
+    },
+    {
+        "place": "Bambino",
+        "rating": "7",
+        "category": ["American", "Pizza"],
+        "images": ["bambinos.jpg"],
+        "description": "Nice place to get NYC style pizza slice in town. Good pizza, okay prices. The place is a bit small and can be a bit cramped."
     },
     {
         "place": "Dolce Sicily",

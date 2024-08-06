@@ -94,7 +94,7 @@
         "place": "Mad Egg",
         "rating": 8.1,
         "category": ["American", "Burgers", "Dessert"],
-        "images": ["madegg.jpg", "madegg2.jpg", "madegg3.jpg", "madegg4.jpg"],
+        "images": ["madegg.jpg", "madegg2.jpg", "madegg3.jpg", "madegg4.jpg", "madegg5.jpg"],
         "description": "Very nice place if you like chicken burgers. The GOAT burger is the best in my opinion. Cheesecakes there are also very good. Slighty on the pricey side but worth it. Staff are nice."
     },
     {
@@ -136,7 +136,7 @@
         "place": "Zaytoon",
         "rating": 8,
         "category": ["Persian", "Halal", "Dessert"],
-        "images": ["zaytoon.jpg", "zaytoon2.jpg"],
+        "images": ["zaytoon.jpg", "zaytoon2.jpg", "zaytoon3.jpg"],
         "description": "Nice persian restaurant with great food. I would recommend the lamb doner. Can be a bit awkward to eat though but still very nice."
     },
     {
@@ -157,7 +157,7 @@
         "place": "Han Sung",
         "rating": 7.6,
         "category": ["Korean", "Halal"],
-        "images": ["hansung.jpg", "hansung2.jpg", "hansung3.jpg"],
+        "images": ["hansung.jpg", "hansung2.jpg", "hansung3.jpg", "hansung4.jpg", "hansung5.jpg"],
         "description": "At the back of this asian store theres a nice korean restaurant that serves one of the most underrated food in town. The chicken mayo is very nice. The Only thing is the seating. The place feels a bit cramped and can be a bit of a struggle trying to find a place to sit. Not ideal if you're going in a big group."
     },
     {

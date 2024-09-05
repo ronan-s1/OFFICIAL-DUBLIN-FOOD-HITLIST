@@ -376,5 +376,12 @@
         "category": ["PENDING", "American", "Brazilian"],
         "images": ["placeholder.png"],
         "description": "???"
+    },
+    {
+        "place": "Brasileirinho",
+        "rating": "?",
+        "category": ["PENDING", "Brazilian"],
+        "images": ["placeholder.png"],
+        "description": "???"
     }
 ]

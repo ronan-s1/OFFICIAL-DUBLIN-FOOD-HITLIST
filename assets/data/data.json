@@ -1,5 +1,12 @@
 [
     {
+        "place": "Featherblade",
+        "rating": 6.9,
+        "category": ["Steakhouse", "Burgers", "Dessert"],
+        "images": ["featherblade1.jpg", "featherblade2.jpg", "featherblade3.jpg"],
+        "description": "You get what you pay for. Do NOT get that crab tostada, its mid af some cracker with a bit of crab on top. The steak was alright though, the chips were really good though. The cheesecake was very nice. Seating is good and the place is quite nice. The staff are also very friendly."
+    },
+    {
         "place": "Gaucho's Dog",
         "rating": 8.7,
         "category": ["Brazilian", "Hotdogs", "Dessert"],
@@ -21,10 +28,17 @@
         "description": "The venue is nice, lots of seating upstairs. The food is decent and they have a student discount. The price isn't too bad either. The double cheese and bacon burger I got was acc so fat and heavy will defo fill you up."
     },
     {
+        "place": "Cinnamon Garden Restaurant",
+        "rating": 8,
+        "category": ["Indian"],
+        "images": ["cinnamon-garden.jpg"],
+        "description": "If you're in Ashbourne and want some indian food, you need to try this place. Food is very good and the venue and decor is cool."
+    },
+    {
         "place": "Krewe",
         "rating": 7.2,
         "category": ["American", "Burgers", "Bar", "Dessert"],
-        "images": ["krewe2.jpg", "krewe.jpg"],
+        "images": ["krewe.jpg", "krewe.jpg2"],
         "description": "Nice place, food was good and the place was full. A bit pricey though. Loaded fries are swag."  
     },
     {
@@ -54,13 +68,6 @@
         "category": ["Chinese"],
         "images": ["charlies3.jpg"],
         "description": "The typical chinese, nothing crazy. Decent portion for the price and food is good enough. (2nd Oct 2024) After massive public outrage on the rating we have revisited Charlie's however my opinion hasn't change much. The chow mein was fine, nothing amazing, too wet. The seating there isn't great actually, just wooden flat seats, not so comfy. Service was alright, the food did come quite fast tbf."
-    },
-    {
-        "place": "Fasta",
-        "rating": 5,
-        "category": ["Italian", "Pasta"],
-        "images": ["fasta.png"],
-        "description": "<strong>CLOSED!</strong> Kinda mid, the venue and atmosphere is really nice though. Unfortunately, Fasta has permanently closed down, rip."
     },
     {
         "place": "Star Pizza",
@@ -175,6 +182,13 @@
         "description": "Kebabs and wraps kinda place, basically a less boujee Zaytoon. The kebab is decent and for the price you can't complain. The baklava though? Its a bit dry but its huge and only €6 so defo worth it. If you go home, microwave it for like 20ish seconds and have it with vanilla ice-cream, it's amazing."
     },
     {
+        "place": "Fasta",
+        "rating": 5,
+        "category": ["Italian", "Pasta"],
+        "images": ["fasta.png"],
+        "description": "<strong>CLOSED!</strong> Kinda mid, the venue and atmosphere is really nice though. Unfortunately, Fasta has permanently closed down, rip."
+    },
+    {
         "place": "Chopsticks",
         "rating": 7,
         "category": ["Chinese"],
@@ -187,13 +201,6 @@
         "category": ["Indian", "Bar", "Dessert"],
         "images": ["andhra.jpg"],
         "description": "Nice south indian restaurant in town. Food was very nice and the place was a vibe. Food is a bit spicy though so yeah. The chicken 65 went hard ngl."
-    },
-    {
-        "place": "Cinnamon Garden Restaurant",
-        "rating": 8,
-        "category": ["Indian"],
-        "images": ["cinnamon-garden.jpg"],
-        "description": "If you're in Ashbourne and want some indian food, you need to try this place. Food is very good and the venue and decor is cool."
     },
     {
         "place": "IKEA",

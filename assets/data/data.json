@@ -21,6 +21,13 @@
         "description": "The food was good and the place seemed to be quite popular. The price is okay for what you get, expect to spend between €12-€25. The seating was a bit crowded and the place was a bit cramped. If you like smash burgers, it's worth a try."
     },
     {
+        "place": "Mad Egg",
+        "rating": 8.1,
+        "category": ["American", "Burgers", "Dessert"],
+        "images": ["madegg.jpg", "madegg2.jpg", "madegg3.jpg", "madegg4.jpg", "madegg5.jpg"],
+        "description": "Very nice place if you like chicken burgers. The GOAT burger is the best in my opinion. Cheesecakes there are also very good. Worth the price, Staff are nice."
+    },
+    {
         "place": "Wayback Burgers",
         "rating": 7.1,
         "category": ["American", "Student Deal", "Halal"],
@@ -40,6 +47,13 @@
         "category": ["Persian", "Halal", "Dessert"],
         "images": ["zaytoon.jpg", "zaytoon2.jpg", "zaytoon3.jpg"],
         "description": "Nice persian restaurant with great food. I would recommend the lamb doner. Can be a bit awkward to eat though but still very nice."
+    },
+    {
+        "place": "Born for Burgers",
+        "rating": "8",
+        "category": ["American", "Halal", "Student Deal"],
+        "images": ["bornforburgers.jpg"],
+        "description": "Very nice burger joint in town for a decent price. The quality of the food was high from the meat to the buns. The only thing is that the place could have more variety in the menu."
     },
     {
         "place": "Krewe",
@@ -103,20 +117,6 @@
         "category": ["Brunch"],
         "images": ["brotherhubbard.jpg"],
         "description": "mid, thats about it. Venue and atmosphere is very nice though. If you're vegan or vegetarian I guess it's good."
-    },
-    {
-        "place": "Paesano",
-        "rating": 6.1,
-        "category": ["Italian", "Pizza", "Pasta"],
-        "images": ["paesano.jpg"],
-        "description": "Cheap food - not bad, would rather go star pizza though." 
-    },
-    {
-        "place": "Mad Egg",
-        "rating": 8.1,
-        "category": ["American", "Burgers", "Dessert"],
-        "images": ["madegg.jpg", "madegg2.jpg", "madegg3.jpg", "madegg4.jpg", "madegg5.jpg"],
-        "description": "Very nice place if you like chicken burgers. The GOAT burger is the best in my opinion. Cheesecakes there are also very good. Slighty on the pricey side but worth it. Staff are nice."
     },
     {
         "place": "Arisu",
@@ -186,7 +186,7 @@
         "rating": 5,
         "category": ["Italian", "Pasta"],
         "images": ["fasta.png"],
-        "description": "<strong>CLOSED!</strong> Kinda mid, the venue and atmosphere is really nice though. Unfortunately, Fasta has permanently closed down, rip."
+        "description": "<strong>CLOSED!</strong> Kinda mid, kinda looks like resident evil food, the venue and atmosphere is really nice though. Unfortunately, Fasta has permanently closed down, rip."
     },
     {
         "place": "Chopsticks",
@@ -231,18 +231,18 @@
         "description": "Nice place, if you're looking for neapolitan pizza, this is a really great place to go. The staff are also very friendly. The Nduja pizza was interesting with the honey and that (ask for chilli oil if you like it a bit spicy), would recommend."
     },
     {
-        "place": "Born for Burgers",
-        "rating": "8",
-        "category": ["American", "Halal", "Student Deal"],
-        "images": ["bornforburgers.jpg"],
-        "description": "Very nice burger joint in town for a decent price. The quality of the food was high from the meat to the buns. The only thing is that the place could have more variety in the menu."
-    },
-    {
         "place": "Bambino",
         "rating": "7",
         "category": ["American", "Pizza"],
         "images": ["bambinos.jpg"],
         "description": "Nice place to get NYC style pizza slice in town. Good pizza, okay prices. The place is a bit small and can be a bit cramped."
+    },
+    {
+        "place": "Paesano",
+        "rating": 6.1,
+        "category": ["Italian", "Pizza", "Pasta"],
+        "images": ["paesano.jpg"],
+        "description": "Cheap food - not bad, would rather go star pizza though." 
     },
     {
         "place": "Dolce Sicily",

@@ -35,6 +35,13 @@
         "description": "If you're in Ashbourne and want some indian food, you need to try this place. Food is very good and the venue and decor is cool."
     },
     {
+        "place": "Zaytoon",
+        "rating": 8,
+        "category": ["Persian", "Halal", "Dessert"],
+        "images": ["zaytoon.jpg", "zaytoon2.jpg", "zaytoon3.jpg"],
+        "description": "Nice persian restaurant with great food. I would recommend the lamb doner. Can be a bit awkward to eat though but still very nice."
+    },
+    {
         "place": "Krewe",
         "rating": 7.2,
         "category": ["American", "Burgers", "Bar", "Dessert"],
@@ -47,6 +54,13 @@
         "category": ["American", "Burgers", "Bar", "Student Deal", "Dessert"],
         "images": ["brewdog.jpg"],
         "description": "The venue is very nice, always seems busy. The food is good but overpriced tbh. There are better places out there but it's nice to try out once in a while. They have a couple of cool deals from time to time. Also if you beat the waiter in rock paper scissors you get free dessert 😎"
+    },
+    {
+        "place": "Hot Chix by Ruby's",
+        "rating": 8.7,
+        "category": ["American", "Burgers", "Bar", "Dessert"],
+        "images": ["hotchix.png"],
+        "description": "very nice place, burgers are good and on Wednesdays its half price on food. Cheesecake is also good but isn't really a cheesecake."
     },
     {
         "place": "OH! MY STREET FOOD",
@@ -138,20 +152,6 @@
         "category": ["Korean", "Burgers", "Brunch"],
         "images": ["chimac.jpg"],
         "description": "Nice place where you can get Korean style burgers. The K-BBQ burger and poutine are great. Ice-cream sandwich is so ass though don't get, it was like €8 a for super tough, mid ice-cream sandwich."
-    },
-    {
-        "place": "Zaytoon",
-        "rating": 8,
-        "category": ["Persian", "Halal", "Dessert"],
-        "images": ["zaytoon.jpg", "zaytoon2.jpg", "zaytoon3.jpg"],
-        "description": "Nice persian restaurant with great food. I would recommend the lamb doner. Can be a bit awkward to eat though but still very nice."
-    },
-    {
-        "place": "Hot Chix by Ruby's",
-        "rating": 8.7,
-        "category": ["American", "Burgers", "Bar", "Dessert"],
-        "images": ["hotchix.png"],
-        "description": "very nice place, burgers are good and on Wednesdays its half price on food. Cheesecake is also good but isn't really a cheesecake."
     },
     {
         "place": "Takara ramen & deli sushi bar",

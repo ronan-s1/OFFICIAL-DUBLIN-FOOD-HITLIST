@@ -28,11 +28,18 @@
         "description": "Very nice place if you like chicken burgers. The GOAT burger is the best in my opinion. Cheesecakes there are also very good. Worth the price, Staff are nice."
     },
     {
+        "place": "BAH33º",
+        "rating": 6.9,
+        "category": ["Buffet", "Brazilian", "Dessert"],
+        "images": ["bah2.jpg", "bah1.jpg", "bah3.jpg", "bah4.jpg"],
+        "description": "Brazillian buffet in town that serves lots of meat. The staff are great and services was excellent. The quality of the food was good but the place is expensive (€60pp). The grilled pineapple with cinnamon was actually surprisingly good. The seating was also nice and atompshere was good."
+    },
+    {
         "place": "Wayback Burgers",
         "rating": 7.1,
         "category": ["American", "Student Deal", "Halal"],
         "images": ["wayback.jpg"],
-        "description": "The venue is nice, lots of seating upstairs. The food is decent and they have a student discount. The price isn't too bad either. The double cheese and bacon burger I got was acc so fat and heavy will defo fill you up."
+        "description": "<strong>CLOSED!</strong> The venue is nice, lots of seating upstairs. The food is decent and they have a student discount. The price isn't too bad either. The double cheese and bacon burger I got was acc so fat and heavy will defo fill you up."
     },
     {
         "place": "Cinnamon Garden Restaurant",

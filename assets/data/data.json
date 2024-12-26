@@ -24,7 +24,7 @@
         "place": "Mad Egg",
         "rating": 8.1,
         "category": ["American", "Burgers", "Dessert"],
-        "images": ["madegg.jpg", "madegg2.jpg", "madegg3.jpg", "madegg4.jpg", "madegg5.jpg"],
+        "images": ["madegg.jpg", "madegg2.jpg", "madegg3.jpg", "madegg4.jpg", "madegg5.jpg", "madegg6.jpg"],
         "description": "Very nice place if you like chicken burgers. The GOAT burger is the best in my opinion. Cheesecakes there are also very good. Worth the price, Staff are nice."
     },
     {
@@ -176,10 +176,10 @@
     },
     {
         "place": "White Rabbit Capel Street",
-        "rating": 7.66,
+        "rating": 6.5,
         "category": ["Korean"],
-        "images": ["whiterabbit.png"],
-        "description": "Nice food, good for corn dogs. However there's like barely anywhere to sit. Slightly overpriced too."
+        "images": ["whiterabbit.png", "whiterabbit2.jpg"],
+        "description": "Nice food, good for corn dogs. However there's like barely anywhere to sit. Slightly overpriced too. I would rather go to Han Sung tbh."
     },
     {
         "place": "Hannah BBQ",
@@ -213,7 +213,7 @@
         "place": "IKEA",
         "rating": 7.5,
         "category": ["Swedish", "Dessert"],
-        "images": ["ikea.jpg", "ikea2.jpg"],
+        "images": ["ikea.jpg", "ikea2.jpg", "ikea3.jpg", "ikea4.jpg"],
         "description": "Nice atmosphere with many options. Cheesecake slapped and so did the Daim cake. The meatballs were good too. Would recommend to go munch there. Soft serve icecream was also good quality. The kids meal portion is actually quite big too so lowkey you could get like 3 kids meals, get more food and save money."
     },
     {
@@ -242,6 +242,13 @@
         "rating": "7",
         "category": ["American", "Pizza"],
         "images": ["bambinos.jpg"],
+        "description": "Nice place to get NYC style pizza slice in town. Good pizza, okay prices. The place is a bit small and can be a bit cramped."
+    },
+    {
+        "place": "Tokyo Kitchen",
+        "rating": "7.9",
+        "category": ["Japanese", "Korean"],
+        "images": ["tokyo1.jpg", "tokyo2.jpg"],
         "description": "Nice place to get NYC style pizza slice in town. Good pizza, okay prices. The place is a bit small and can be a bit cramped."
     },
     {

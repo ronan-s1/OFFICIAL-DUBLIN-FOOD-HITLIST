@@ -246,10 +246,10 @@
     },
     {
         "place": "Tokyo Kitchen",
-        "rating": "7.9",
+        "rating": "8",
         "category": ["Japanese", "Korean"],
         "images": ["tokyo1.jpg", "tokyo2.jpg"],
-        "description": "Nice place to get NYC style pizza slice in town. Good pizza, okay prices. The place is a bit small and can be a bit cramped."
+        "description": "Nice small place in Smithsfield, has good food, good portions and good prices. The katsu curry is very nice."
     },
     {
         "place": "Paesano",

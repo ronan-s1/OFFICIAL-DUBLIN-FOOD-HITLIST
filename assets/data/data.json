@@ -213,7 +213,7 @@
         "place": "IKEA",
         "rating": 7.5,
         "category": ["Swedish", "Dessert"],
-        "images": ["ikea.jpg", "ikea2.jpg", "ikea3.jpg", "ikea4.jpg"],
+        "images": ["ikea.jpg", "ikea2.jpg", "ikea3.jpg", "ikea4.jpg", "ikea5.jpg"],
         "description": "Nice atmosphere with many options. Cheesecake slapped and so did the Daim cake. The meatballs were good too. Would recommend to go munch there. Soft serve icecream was also good quality. The kids meal portion is actually quite big too so lowkey you could get like 3 kids meals, get more food and save money."
     },
     {
@@ -264,6 +264,13 @@
         "category": ["Italian", "Dessert"],
         "images": ["dolcesicily.jpg ", "dolcesicily2.jpg"],
         "description": "Small cafe in town, very nice pastries and cakes. We got the pistachio tiramisu and it was very light and fluffy however there wasn't much of a pistachio taste. It's a bit pricey but worth it once in a while. Took the jar home too lmao."
+    },
+    {
+        "place": "Boeuf and Frites",
+        "rating": "7",
+        "category": ["Steakhouse", "Dessert"],
+        "images": ["b_and_f.jpg", "b_and_f2.jpg", "b_and_f3.jpg", "b_and_f4.jpg"],
+        "description": "The atmosphere was nice and food was okay. My steak was NOT medium rare, it was mooing. Chips were good and the garlic bread was amazing. Staff seemed busy but were alright. The profiteroles were nice too. Would get a higher rating if my steak was cooked as I asked." 
     },
     {
         "place": "Salsa - Authentic Mexican Food",

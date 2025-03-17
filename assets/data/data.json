@@ -11,7 +11,7 @@
         "rating": 8.7,
         "category": ["Brazilian", "Hotdogs", "Dessert"],
         "images": ["gauchos.png"],
-        "description": "Very good place, best hot dogs in Dublin from what I know. Unfortunately they closed the one on tara street."   
+        "description": "Very good place, best hot dogs in Dublin from what I know. Unfortunately they closed the one on tara street."
     },
     {
         "place": "Dash Burger",
@@ -67,7 +67,7 @@
         "rating": 7.2,
         "category": ["American", "Burgers", "Bar", "Dessert"],
         "images": ["krewe.jpg", "krewe2.jpg"],
-        "description": "Nice place, food was good and the place was full. A bit pricey though. Loaded fries are swag."  
+        "description": "Nice place, food was good and the place was full. A bit pricey though. Loaded fries are swag."
     },
     {
         "place": "Brewdog",
@@ -130,7 +130,7 @@
         "rating": 6.2,
         "category": ["Korean", "Halal"],
         "images": ["arisu.jpg", "arisu.gif"],
-        "description": "This place use to be better, now they made the portions smaller. Also quite expensive. Staff are friendly and the atmosphere is nice."  
+        "description": "This place use to be better, now they made the portions smaller. Also quite expensive. Staff are friendly and the atmosphere is nice."
     },
     {
         "place": "Pizza Max",
@@ -172,7 +172,7 @@
         "rating": 7.8,
         "category": ["Japanese", "Dessert"],
         "images": ["fujiyama1.jpg", "fujiyama2.jpg", "fujiyama3.jpg"],
-        "description": "The vibe is nice, presentation is very good, a bit more on the expensive side but worth it. They have these cat server things so bonus points for that 🙀. Nice for groups." 
+        "description": "The vibe is nice, presentation is very good, a bit more on the expensive side but worth it. They have these cat server things so bonus points for that 🙀. Nice for groups."
     },
     {
         "place": "Han Sung",
@@ -255,7 +255,7 @@
         "place": "Tokyo Kitchen",
         "rating": "8",
         "category": ["Japanese", "Korean"],
-        "images": ["tokyo1.jpg", "tokyo2.jpg", "toyko3.jpg"],
+        "images": ["tokyo1.jpg", "tokyo2.jpg", "tokyo3.jpg"],
         "description": "Nice small place in Smithsfield, has good food, good portions and good prices. The katsu curry is very nice."
     },
     {
@@ -263,7 +263,7 @@
         "rating": 6.1,
         "category": ["Italian", "Pizza", "Pasta"],
         "images": ["paesano.jpg"],
-        "description": "Cheap food - not bad, would rather go star pizza though." 
+        "description": "Cheap food - not bad, would rather go star pizza though."
     },
     {
         "place": "Dolce Sicily",
@@ -277,13 +277,13 @@
         "rating": "7",
         "category": ["Steakhouse", "Dessert"],
         "images": ["b_and_f_1.jpg", "b_and_f_2.jpg", "b_and_f_3.jpg", "b_and_f_4.jpg"],
-        "description": "The atmosphere was nice and food was okay. My steak was NOT medium rare, it was mooing. Chips were good and the garlic bread was amazing. Staff seemed busy but were alright. The profiteroles were nice too. Would get a higher rating if my steak was cooked as I asked." 
+        "description": "The atmosphere was nice and food was okay. My steak was NOT medium rare, it was mooing. Chips were good and the garlic bread was amazing. Staff seemed busy but were alright. The profiteroles were nice too. Would get a higher rating if my steak was cooked as I asked."
     },
     {
         "place": "Padoca",
         "rating": "8.2",
         "category": ["Brazilian", "Dessert"],
-        "images": ["padoca.png"],
+        "images": ["padoca.jpg"],
         "description": "Nice Brazilian cafe in town. The food is good and the staff are very friendly. The coxinha was nice but the desserts were sooo good istg had me in tears almost."
     },
     {
@@ -291,14 +291,14 @@
         "rating": "6.2",
         "category": ["Mexican"],
         "images": ["salsa.jpg"],
-        "description": "A bit dissapointing tbh, was hyped for the birria tacos but wasn't that great imo. Was quite expensive too almost €20 for what you see above. Staff were nice but place was a bit cramped." 
+        "description": "A bit dissapointing tbh, was hyped for the birria tacos but wasn't that great imo. Was quite expensive too almost €20 for what you see above. Staff were nice but place was a bit cramped."
     },
     {
         "place": "Space Jaru",
         "rating": "?",
         "category": ["PENDING", "American", "Korean"],
         "images": ["placeholder.png"],
-        "description": "???" 
+        "description": "???"
     },
     {
         "place": "Happy's Bar & Street Food",
@@ -319,7 +319,7 @@
         "rating": "?",
         "category": ["PENDING", "Dessert", "Chinese"],
         "images": ["placeholder.png"],
-        "description": "???" 
+        "description": "???"
     },
     {
         "place": "The Rolling Stove at Pillar Bar",

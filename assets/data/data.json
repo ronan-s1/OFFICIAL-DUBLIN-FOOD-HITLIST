@@ -168,10 +168,17 @@
         "description": "Honestly? Overrated. Food is decent and place looks nice but I don't get why there's always a queue outside the place."
     },
     {
+        "place": "Fujiyama",
+        "rating": 7.8,
+        "category": ["Japanese", "Dessert"],
+        "images": ["fujiyama1.jpg", "fujiyama2.jpg", "fujiyama3.jpg"],
+        "description": "The vibe is nice, presentation is very good, a bit more on the expensive side but worth it. They have these cat server things so bonus points for that 🙀. Nice for groups." 
+    },
+    {
         "place": "Han Sung",
-        "rating": 7.6,
+        "rating": 8,
         "category": ["Korean", "Halal"],
-        "images": ["hansung.jpg", "hansung2.jpg", "hansung3.jpg", "hansung4.jpg", "hansung5.jpg"],
+        "images": ["hansung.jpg", "hansung2.jpg", "hansung3.jpg", "hansung4.jpg", "hansung5.jpg", "hansung6.jpg"],
         "description": "At the back of this asian store theres a nice korean restaurant that serves one of the most underrated food in town. The chicken mayo is very nice. The Only thing is the seating. The place feels a bit cramped and can be a bit of a struggle trying to find a place to sit. Not ideal if you're going in a big group."
     },
     {
@@ -197,7 +204,7 @@
     },
     {
         "place": "Chopsticks",
-        "rating": 7,
+        "rating": 6.8,
         "category": ["Chinese"],
         "images": ["chopsticks.gif"],
         "description": "Chinese dine-in/takeaway place in Ilac. For the price the food is quite good, tiny bit sus though ngl but nevertheless food is good."
@@ -248,7 +255,7 @@
         "place": "Tokyo Kitchen",
         "rating": "8",
         "category": ["Japanese", "Korean"],
-        "images": ["tokyo1.jpg", "tokyo2.jpg"],
+        "images": ["tokyo1.jpg", "tokyo2.jpg", "toyko3.jpg"],
         "description": "Nice small place in Smithsfield, has good food, good portions and good prices. The katsu curry is very nice."
     },
     {
@@ -273,11 +280,18 @@
         "description": "The atmosphere was nice and food was okay. My steak was NOT medium rare, it was mooing. Chips were good and the garlic bread was amazing. Staff seemed busy but were alright. The profiteroles were nice too. Would get a higher rating if my steak was cooked as I asked." 
     },
     {
+        "place": "Padoca",
+        "rating": "8.2",
+        "category": ["Brazilian", "Dessert"],
+        "images": ["padoca.png"],
+        "description": "Nice Brazilian cafe in town. The food is good and the staff are very friendly. The coxinha was nice but the desserts were sooo good istg had me in tears almost."
+    },
+    {
         "place": "Salsa - Authentic Mexican Food",
-        "rating": "?",
-        "category": ["PENDING", "Mexican"],
-        "images": ["placeholder.png"],
-        "description": "???" 
+        "rating": "6.2",
+        "category": ["Mexican"],
+        "images": ["salsa.jpg"],
+        "description": "A bit dissapointing tbh, was hyped for the birria tacos but wasn't that great imo. Was quite expensive too almost €20 for what you see above. Staff were nice but place was a bit cramped." 
     },
     {
         "place": "Space Jaru",
@@ -346,13 +360,6 @@
         "place": "BIGFAN",
         "rating": "?",
         "category": ["PENDING", "Chinese"],
-        "images": ["placeholder.png"],
-        "description": "???"
-    },
-    {
-        "place": "Padoca",
-        "rating": "?",
-        "category": ["PENDING", "Brazilian"],
         "images": ["placeholder.png"],
         "description": "???"
     },

@@ -176,8 +176,9 @@ body{
     text-decoration: underline;
 }
 
-#placesReviewed {
+#placesReviewed, #averageRating {
     color: #ff8c00;
+    margin-right: 17px;
 }
 
 .carousel {

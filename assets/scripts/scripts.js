@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
             displayFoodList(data);
             populateCategoryFilter(data);
             updatePlacesReviewed(data);
+            updateAverageRating(data);
         })
         .catch(error => console.error("Error fetching data:", error));
 
@@ -76,11 +77,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Create the card column
                 const col = document.createElement("div");
-                col.className = "col-md-6"; // Bootstrap class for half-width columns
+                col.className = "col-md-6";
 
                 // Create the card
                 const card = document.createElement("div");
-                card.className = "card h-100"; // Set height to 100% to fill the row height
+                card.className = "card h-100";
 
                 // Display images in a carousel
                 const carouselContainer = document.createElement("div");
@@ -301,6 +302,20 @@ document.addEventListener("DOMContentLoaded", function () {
         placesReviewedSpan.textContent = countReviewedPlaces(foodList);
     }
 
+    function updateAverageRating(foodList) {
+        const averageRatingSpan = document.getElementById("averageRating");
+    
+        const validRatings = foodList
+            .map(item => Number(item.rating))
+            .filter(rating => !isNaN(rating));
+    
+        const totalRating = validRatings.reduce((total, rating) => total + rating, 0);
+        const averageRating = validRatings.length > 0 ? totalRating / validRatings.length : 0;
+    
+        averageRatingSpan.textContent = averageRating.toFixed(2);
+    }
+    
+    
     // Function to count the reviewed places
     function countReviewedPlaces(foodList) {
         return foodList.reduce((count, item) => {

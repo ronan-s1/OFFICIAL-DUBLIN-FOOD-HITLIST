@@ -294,6 +294,13 @@
         "description": "A bit dissapointing tbh, was hyped for the birria tacos but wasn't that great imo. Was quite expensive too almost €20 for what you see above. Staff were nice but place was a bit cramped."
     },
     {
+        "place": "Bloom's Cafe",
+        "rating": "?",
+        "category": ["PENDING", "Dessert"],
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
         "place": "Space Jaru",
         "rating": "?",
         "category": ["PENDING", "American", "Korean"],

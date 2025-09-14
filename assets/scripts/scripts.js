@@ -3,7 +3,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const emptyListDiv = document.getElementById("emptyList");
     const cursorElement = document.querySelector(".cursor");
     const footer = document.querySelector("footer");
-    const catGifContainer = document.getElementById("catGifContainer")
+    const catGifContainer = document.getElementById("catGifContainer");
+    const paginationContainer = document.getElementById("paginationContainer");
+    const paginationControls = document.getElementById("paginationControls");
+
+    // Pagination variables
+    let currentPage = 1;
+    const itemsPerPage = 10;
+    let currentFoodList = [];
 
     const foodEmojis = ["🍕", "🌮", "🌯", "🍣", "🌭", "🍜", "🍪", "🍦", "🥪", "🍩", "🍝", "🍔", "🥐", "🥞", "🍟", "🍖"];
     foodEmojis.push("🍔")
@@ -56,9 +63,11 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error("Error fetching data:", error));
 
 
-    // Function to display the food list
-    function displayFoodList(foodList) {
-        // const container = document.getElementById("foodList");
+    // Function to display the food list with pagination
+    function displayFoodList(foodList, page = 1) {
+        currentFoodList = foodList;
+        currentPage = page;
+        
         const ratingSort = document.getElementById("ratingSort").value;
         if (ratingSort === "asc") {
             foodList.sort((a, b) => a.rating - b.rating);
@@ -66,14 +75,24 @@ document.addEventListener("DOMContentLoaded", function () {
             foodList.sort((a, b) => b.rating - a.rating);
         }
 
-        // Loop through the foodList array and create HTML elements for each item
-        for (let i = 0; i < foodList.length; i += 2) {
+        // Calculate pagination
+        const totalItems = foodList.length;
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+        const startIndex = (currentPage - 1) * itemsPerPage;
+        const endIndex = Math.min(startIndex + itemsPerPage, totalItems);
+        const paginatedList = foodList.slice(startIndex, endIndex);
+
+        // Clear container
+        container.innerHTML = "";
+
+        // Loop through the paginated foodList array and create HTML elements for each item
+        for (let i = 0; i < paginatedList.length; i += 2) {
             // Create a row container for each pair of cards
             const row = document.createElement("div");
             row.className = "row row-cols-1 row-cols-md-2 g-4";
 
-            for (let j = 0; j < 2 && i + j < foodList.length; j++) {
-                const item = foodList[i + j];
+            for (let j = 0; j < 2 && i + j < paginatedList.length; j++) {
+                const item = paginatedList[i + j];
 
                 // Create the card column
                 const col = document.createElement("div");
@@ -87,7 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 const carouselContainer = document.createElement("div");
                 carouselContainer.id = "carouselExampleControls" + Math.floor(Math.random() * 1000); // Unique ID for each carousel
                 carouselContainer.className = "carousel slide card-img-top";
-                carouselContainer.setAttribute("data-bs-ride", "carousel");
 
                 const carouselInner = document.createElement("div");
                 carouselInner.className = "carousel-inner";
@@ -162,14 +180,78 @@ document.addEventListener("DOMContentLoaded", function () {
 
             container.appendChild(row);
         }
+
+        // Generate pagination controls
+        generatePaginationControls(totalPages);
     }
 
+
+    // Function to generate pagination controls
+    function generatePaginationControls(totalPages) {
+        paginationControls.innerHTML = "";
+        
+        if (totalPages <= 1) {
+            paginationContainer.style.display = "none";
+            return;
+        }
+        
+        paginationContainer.style.display = "block";
+
+        // Previous button
+        const prevLi = document.createElement("li");
+        prevLi.className = `page-item ${currentPage === 1 ? 'disabled' : ''}`;
+        const prevLink = document.createElement("a");
+        prevLink.className = "page-link";
+        prevLink.href = "#";
+        prevLink.textContent = "Previous";
+        prevLink.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (currentPage > 1) {
+                displayFoodList(currentFoodList, currentPage - 1);
+            }
+        });
+        prevLi.appendChild(prevLink);
+        paginationControls.appendChild(prevLi);
+
+        // Page numbers
+        for (let i = 1; i <= totalPages; i++) {
+            const li = document.createElement("li");
+            li.className = `page-item ${i === currentPage ? 'active' : ''}`;
+            const link = document.createElement("a");
+            link.className = "page-link";
+            link.href = "#";
+            link.textContent = i;
+            link.addEventListener("click", (e) => {
+                e.preventDefault();
+                displayFoodList(currentFoodList, i);
+            });
+            li.appendChild(link);
+            paginationControls.appendChild(li);
+        }
+
+        // Next button
+        const nextLi = document.createElement("li");
+        nextLi.className = `page-item ${currentPage === totalPages ? 'disabled' : ''}`;
+        const nextLink = document.createElement("a");
+        nextLink.className = "page-link";
+        nextLink.href = "#";
+        nextLink.textContent = "Next";
+        nextLink.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (currentPage < totalPages) {
+                displayFoodList(currentFoodList, currentPage + 1);
+            }
+        });
+        nextLi.appendChild(nextLink);
+        paginationControls.appendChild(nextLi);
+    }
 
     function noFoodData(filteredFoodList) {
         if (filteredFoodList.length === 0) {
             emptyListDiv.style.display = "block";
             catGifContainer.style.display = "none";
             footer.style.display = "none";
+            paginationContainer.style.display = "none";
             return true;
         }
     
@@ -183,6 +265,7 @@ document.addEventListener("DOMContentLoaded", function () {
         emptyListDiv.style.display = "none";
         catGifContainer.style.display = "block";
         footer.style.display = "none";
+        paginationContainer.style.display = "none";
     }
 
     // Function to populate the filter dropdown with unique category values
@@ -250,7 +333,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     return;
                 }
 
-                displayFoodList(filteredFoodList);
+                displayFoodList(filteredFoodList, 1);
             });
             categoryDropdownMenu.addEventListener("click", function(event) {
                 event.stopPropagation();
@@ -273,14 +356,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
 
-            displayFoodList(filteredFoodList);
+            displayFoodList(filteredFoodList, 1);
         });
 
 
         // Add an event listener to the rating sort dropdown
         document.getElementById("ratingSort").addEventListener("change", function () {
             container.innerHTML = "";
-            displayFoodList(foodList);
+            displayFoodList(currentFoodList.length > 0 ? currentFoodList : foodList, 1);
         });
 
 
@@ -291,9 +374,10 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         
             document.getElementById("searchBar").value = "";
+            document.getElementById("ratingSort").value = "";
         
             container.innerHTML = "";
-            displayFoodList(foodList);
+            displayFoodList(foodList, 1);
         });
     }
 

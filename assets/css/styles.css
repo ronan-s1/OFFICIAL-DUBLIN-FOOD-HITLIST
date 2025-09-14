@@ -275,3 +275,208 @@ footer a {
     height: 70px;
     border-radius: 6px;
 }
+
+/* Image Lightbox Modal Styles */
+.image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modalImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.close-modal {
+    position: absolute;
+    top: -50px;
+    right: -10px;
+    font-size: 24px;
+    color: #f38200;
+    cursor: pointer;
+    z-index: 10000;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #f38200;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.close-modal:hover {
+    background: #f38200;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(243, 130, 0, 0.4);
+}
+
+.modal-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    color: #f38200;
+    border: 2px solid #f38200;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    z-index: 10000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.modal-nav:hover {
+    background: #f38200;
+    color: white;
+    transform: translateY(-50%) scale(1.05);
+    box-shadow: 0 6px 20px rgba(243, 130, 0, 0.4);
+}
+
+.prev-btn {
+    left: -80px;
+}
+
+.next-btn {
+    right: -80px;
+}
+
+.prev-btn::before {
+    content: '‹';
+}
+
+.next-btn::before {
+    content: '›';
+}
+
+.image-counter {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f38200;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #f38200;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* Make images clickable */
+.carousel img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.carousel img:hover {
+    transform: scale(1.02);
+}
+
+/* Mobile responsive adjustments for modal */
+@media screen and (max-width: 760px) {
+    .image-modal {
+        padding: 20px;
+    }
+    
+    .modal-content {
+        max-width: 95%;
+        max-height: 85%;
+    }
+    
+    .modal-nav {
+        font-size: 20px;
+        padding: 10px 12px;
+    }
+    
+    .prev-btn {
+        left: -60px;
+    }
+    
+    .next-btn {
+        right: -60px;
+    }
+    
+    .close-modal {
+        top: -45px;
+        right: -5px;
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .image-counter {
+        bottom: -45px;
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+/* Pagination Styles */
+#paginationContainer {
+    width: 80% !important;
+    margin: auto;
+    margin-top: 30px !important;
+}
+
+.pagination .page-link {
+    color: #e07800 !important;
+    background-color: #fff !important;
+    border: 1px solid #e07800 !important;
+    border-radius: 0px !important;
+    transition: none !important;
+}
+
+.pagination .page-link:hover {
+    color: #fff !important;
+    background-color: #e07800 !important;
+    border-color: #e07800 !important;
+}
+
+.pagination .page-item.active .page-link {
+    color: #fff !important;
+    background-color: #e07800 !important;
+    border-color: #e07800 !important;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #c5761b !important;
+    background-color: #f8f9fa !important;
+    border-color: #dee2e6 !important;
+}
+
+@media screen and (max-width: 760px) {
+    #paginationContainer {
+        width: 92% !important;
+    }
+}

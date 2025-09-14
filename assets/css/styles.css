@@ -192,7 +192,7 @@ body{
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon{
-    background-color: #da780077 !important;
+    background-color: #da780085 !important;
     border-radius: 1px;
 }
 
@@ -489,6 +489,18 @@ footer a {
 
 @media screen and (max-width: 760px) {
     #paginationContainer {
-        width: 92% !important;
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #paginationContainer {
+        width: 70% !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #paginationContainer {
+        width: 60% !important;
     }
 }

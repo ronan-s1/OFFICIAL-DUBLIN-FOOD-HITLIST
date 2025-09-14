@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     carouselContainer.innerHTML += `
                         <button class="carousel-control-prev" type="button" data-bs-target="#${carouselContainer.id}" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
+                            <span class="visually-hidden">Prev</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#${carouselContainer.id}" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const prevLink = document.createElement("a");
         prevLink.className = "page-link";
         prevLink.href = "#";
-        prevLink.textContent = "Previous";
+        prevLink.textContent = "Prev";
         prevLink.addEventListener("click", (e) => {
             e.preventDefault();
             if (currentPage > 1) {

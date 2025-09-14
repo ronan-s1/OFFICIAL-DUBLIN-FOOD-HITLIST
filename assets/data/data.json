@@ -24,7 +24,7 @@
         "place": "Mad Egg",
         "rating": 8.1,
         "category": ["American", "Burgers", "Dessert"],
-        "images": ["madegg.jpg", "madegg2.jpg", "madegg3.jpg", "madegg4.jpg", "madegg5.jpg", "madegg6.jpg"],
+        "images": ["madegg.jpg", "madegg2.jpg", "madegg3.jpg", "madegg4.jpg", "madegg5.jpg", "madegg6.jpg", "madegg7.jpg"],
         "description": "Very nice place if you like chicken burgers. The GOAT burger is the best in my opinion. Cheesecakes there are also very good. Worth the price, Staff are nice."
     },
     {
@@ -40,13 +40,6 @@
         "category": ["American", "Student Deal", "Halal"],
         "images": ["wayback.jpg"],
         "description": "<strong>CLOSED!</strong> The venue is nice, lots of seating upstairs. The food is decent and they have a student discount. The price isn't too bad either. The double cheese and bacon burger I got was acc so fat and heavy will defo fill you up."
-    },
-    {
-        "place": "Cinnamon Garden Restaurant",
-        "rating": 8,
-        "category": ["Indian"],
-        "images": ["cinnamon-garden.jpg"],
-        "description": "If you're in Ashbourne and want some indian food, you need to try this place. Food is very good and the venue and decor is cool."
     },
     {
         "place": "Zaytoon",
@@ -175,10 +168,17 @@
         "description": "The vibe is nice, presentation is very good, a bit more on the expensive side but worth it. They have these cat server things so bonus points for that 🙀. Nice for groups."
     },
     {
+        "place": "Yamamori Izakaya",
+        "rating": "7.7",
+        "category": ["Japanese"],
+        "images": ["yamamori-izakaya-1.jpg", "yamamori-izakaya-2.jpg"],
+        "description": "Nice Japanese restaurant in town. The staff were warm and friendly but there might've been a bit of a language barrier. Food was good and the prices were not too bad. The atmosphere was nice and there was lots of seating. We had the fruit sake tasting platter and it was yummy. Would recommend."
+    },
+    {
         "place": "Han Sung",
         "rating": 8,
         "category": ["Korean", "Halal"],
-        "images": ["hansung.jpg", "hansung2.jpg", "hansung3.jpg", "hansung4.jpg", "hansung5.jpg", "hansung6.jpg"],
+        "images": ["hansung1.jpg", "hansung2.jpg", "hansung3.jpg", "hansung4.jpg", "hansung5.jpg"],
         "description": "At the back of this asian store theres a nice korean restaurant that serves one of the most underrated food in town. The chicken mayo is very nice. The Only thing is the seating. The place feels a bit cramped and can be a bit of a struggle trying to find a place to sit. Not ideal if you're going in a big group."
     },
     {
@@ -199,7 +199,7 @@
         "place": "Fasta",
         "rating": 5,
         "category": ["Italian", "Pasta"],
-        "images": ["fasta.png"],
+        "images": ["fasta.jpg", "fasta-2.png"],
         "description": "<strong>CLOSED!</strong> Kinda mid, kinda looks like resident evil food, the venue and atmosphere is really nice though. Unfortunately, Fasta has permanently closed down, rip."
     },
     {
@@ -241,7 +241,7 @@
         "place": "Pi",
         "rating": "8",
         "category": ["Pizza", "Italian", "Dessert"],
-        "images": ["pi.jpg"],
+        "images": ["pi-1.jpg", "pi-2.jpg"],
         "description": "Nice place, if you're looking for neapolitan pizza, this is a really great place to go. The staff are also very friendly. The Nduja pizza was interesting with the honey and that (ask for chilli oil if you like it a bit spicy), would recommend."
     },
     {
@@ -283,8 +283,8 @@
         "place": "Padoca",
         "rating": "8.2",
         "category": ["Brazilian", "Dessert"],
-        "images": ["padoca.jpg"],
-        "description": "Nice Brazilian cafe in town. The food is good and the staff are very friendly. The coxinha was nice but the desserts were sooo good istg had me in tears almost."
+        "images": ["padoca.jpg", "padoca-1.jpg"],
+        "description": "Nice Brazilian cafe in town. The food is good and the staff are very friendly. The coxinha was nice but the desserts were soo so sooo good istg. Truly beautiful."
     },
     {
         "place": "Salsa - Authentic Mexican Food",
@@ -294,17 +294,45 @@
         "description": "A bit dissapointing tbh, was hyped for the birria tacos but wasn't that great imo. Was quite expensive too almost €20 for what you see above. Staff were nice but place was a bit cramped."
     },
     {
-        "place": "Bloom's Cafe",
-        "rating": "?",
-        "category": ["PENDING", "Dessert"],
-        "images": ["placeholder.png"],
-        "description": "???"
+        "place": "Drunken Fish",
+        "rating": "6",
+        "category": ["Korean"],
+        "images": ["drunken-fish.jpg"],
+        "description": "Nice Korean restaurant in town. The food was okay and the staff are very friendly. The seating is nice and many tables. The prices were fine and there was a large portion but the food wasn't that good."
     },
     {
         "place": "Space Jaru",
-        "rating": "?",
-        "category": ["PENDING", "American", "Korean"],
-        "images": ["placeholder.png"],
+        "rating": "8.25",
+        "category": ["American", "Korean"],
+        "images": ["space-jaru-1.jpg"],
+        "description": "Nice Korean restaurant in town. The food is good and the staff are very friendly. The seating is decent. The prices are a little high but worth it. Food was flavourful and portions were good."
+    },
+    {
+        "place": "Reyna",
+        "rating": "7.5",
+        "category": ["PENDING", "Persian", "Halal"],
+        "images": ["reyna1.jpg"],
+        "description": "Nice Persian place in town. It is very similar to Zaytoon but a bit more expensive. The food is good and the staff are friendly. The seating is decent."
+    },
+    {
+        "place": "2 Lads",
+        "rating": "8",
+        "category": ["American", "Brazilian"],
+        "images": ["2lads-1.jpg"],
+        "description": "Nice Brazillian place in town. The food is good and the staff are very friendly. They have nice burgers, if you like meat, this is the place to go. The seating is a bit cramped though."
+    },
+    {
+        "place": "Kasi Cafe",
+        "rating": "6.85",
+        "category": ["Indian"],
+        "images": ["kasi-cafe1.jpg", "kasi-cafe2.jpg"],
+        "description": "Small Indian cafe in town. The food is good but a bit pricey. The pani puri was very good but the chicken biriyani was kinda mid. Not too much seating either."
+    },
+    {
+        "place": "BIGFAN",
+        "rating": "7.7",
+        "category": ["Tapas", "Chinese"],
+        "images": ["bigfan-1.jpg", "bigfan-2.jpg", "bigfan-3.jpg", "bigfan-4.jpg"],
         "description": "???"
     },
     {
@@ -364,37 +392,9 @@
         "description": "???"
     },
     {
-        "place": "BIGFAN",
-        "rating": "?",
-        "category": ["PENDING", "Chinese"],
-        "images": ["placeholder.png"],
-        "description": "???"
-    },
-    {
-        "place": "Mad Yolks",
-        "rating": "?",
-        "category": ["PENDING", "Brunch", "American"],
-        "images": ["placeholder.png"],
-        "description": "???"
-    },
-    {
         "place": "Masa",
         "rating": "?",
         "category": ["PENDING", "Mexican"],
-        "images": ["placeholder.png"],
-        "description": "???"
-    },
-    {
-        "place": "Drunken Fish",
-        "rating": "?",
-        "category": ["PENDING", "Korean"],
-        "images": ["placeholder.png"],
-        "description": "???"
-    },
-    {
-        "place": "Kasi Cafe",
-        "rating": "?",
-        "category": ["PENDING", "Indian"],
         "images": ["placeholder.png"],
         "description": "???"
     },
@@ -406,23 +406,16 @@
         "description": "???"
     },
     {
-        "place": "Reyna",
-        "rating": "?",
-        "category": ["PENDING", "Persian", "Halal"],
-        "images": ["placeholder.png"],
-        "description": "???"
-    },
-    {
-        "place": "2 Lads",
-        "rating": "?",
-        "category": ["American", "Brazilian"],
-        "images": ["placeholder.png"],
-        "description": "???"
-    },
-    {
         "place": "Brasileirinho",
         "rating": "?",
         "category": ["PENDING", "Brazilian"],
+        "images": ["placeholder.png"],
+        "description": "???"
+    },
+    {
+        "place": "Bloom's Cafe",
+        "rating": "?",
+        "category": ["PENDING", "Dessert"],
         "images": ["placeholder.png"],
         "description": "???"
     }

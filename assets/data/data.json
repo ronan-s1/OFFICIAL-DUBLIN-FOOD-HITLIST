@@ -415,7 +415,7 @@
     {
         "place": "2 Lads",
         "rating": "?",
-        "category": ["PENDING", "American", "Brazilian"],
+        "category": ["American", "Brazilian"],
         "images": ["placeholder.png"],
         "description": "???"
     },

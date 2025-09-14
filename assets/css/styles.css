@@ -231,6 +231,18 @@ footer a {
         width: 92% !important;
         margin: auto;
     }
+    
+    .card {
+        border: 5px dashed #f38200 !important;
+        border-radius: 0px !important;
+        margin: 5px !important;
+        box-sizing: border-box !important;
+    }
+    
+    .col-md-6 {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
 }
 
 .cat {

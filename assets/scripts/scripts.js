@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
             populateCategoryFilter(data);
             updatePlacesReviewed(data);
             updateAverageRating(data);
+            setupAIPrompt(data);
         })
         .catch(error => console.error("Error fetching data:", error));
 
@@ -408,5 +409,99 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             return count;
         }, 0);
+    }
+
+    // AI Prompt functionality
+    function setupAIPrompt(foodList) {
+        const aiPromptButton = document.getElementById("aiPromptButton");
+        const aiPromptModal = new bootstrap.Modal(document.getElementById("aiPromptModal"));
+        const aiPromptText = document.getElementById("aiPromptText");
+        const copyPromptBtn = document.getElementById("copyPromptBtn");
+
+        // Generate the AI prompt with all restaurant data
+        function generateAIPrompt() {
+            const reviewedPlaces = foodList.filter(item => !item.category.includes("PENDING"));
+            
+            let prompt = `I'm looking for restaurant recommendations in Dublin! Here's a comprehensive list of ${reviewedPlaces.length} restaurants with detailed reviews and ratings (out of 10). Please analyse this data and recommend the best places based on my preferences and make sure to be concise. Include the Google Maps link for each restaurant and if you suggest a restaurant not from this list, please mention it.
+
+RESTAURANT DATA:
+================
+
+`;
+
+            reviewedPlaces.forEach((restaurant, index) => {
+                const mapsLink = `https://www.google.com/maps/search/${encodeURIComponent(restaurant.place)}`;
+                prompt += `${index + 1}. ${restaurant.place}
+   Rating: ${restaurant.rating}/10
+   Categories: ${restaurant.category.join(", ")}
+   Google Maps: ${mapsLink}
+   Review: ${restaurant.description.replace(/<[^>]*>/g, '')}
+   
+`;
+            });
+
+            prompt += `
+INSTRUCTIONS:
+=============
+Based on the data above, please help me choose where to eat by:
+
+1. Asking me about my preferences (cuisine type, budget, atmosphere, dietary restrictions, etc.)
+2. Explaining why each recommendation fits my preferences
+3. Mentioning any special deals or standout dishes mentioned in the reviews
+4. Considering the ratings and review quality in your recommendations
+
+Please start by asking me what kind of dining experience I'm looking for today!`;
+
+            return prompt;
+        }
+
+        // Show modal and populate prompt when AI button is clicked
+        aiPromptButton.addEventListener("click", function() {
+            const prompt = generateAIPrompt();
+            aiPromptText.value = prompt;
+            aiPromptModal.show();
+        });
+
+        // Copy to clipboard functionality
+        copyPromptBtn.addEventListener("click", function() {
+            aiPromptText.select();
+            aiPromptText.setSelectionRange(0, 99999); // For mobile devices
+            
+            try {
+                navigator.clipboard.writeText(aiPromptText.value).then(function() {
+                    // Success feedback
+                    const originalText = copyPromptBtn.innerHTML;
+                    copyPromptBtn.innerHTML = "Copied!";
+                    copyPromptBtn.style.backgroundColor = "#28a745";
+                    
+                    setTimeout(function() {
+                        copyPromptBtn.innerHTML = originalText;
+                        copyPromptBtn.style.backgroundColor = "#f38200";
+                    }, 2000);
+                }).catch(function() {
+                    // Fallback for older browsers
+                    document.execCommand('copy');
+                    const originalText = copyPromptBtn.innerHTML;
+                    copyPromptBtn.innerHTML = "Copied!";
+                    copyPromptBtn.style.backgroundColor = "#28a745";
+                    
+                    setTimeout(function() {
+                        copyPromptBtn.innerHTML = originalText;
+                        copyPromptBtn.style.backgroundColor = "#f38200";
+                    }, 2000);
+                });
+            } catch (err) {
+                // Final fallback
+                document.execCommand('copy');
+                const originalText = copyPromptBtn.innerHTML;
+                copyPromptBtn.innerHTML = "Copied!";
+                copyPromptBtn.style.backgroundColor = "#28a745";
+                
+                setTimeout(function() {
+                    copyPromptBtn.innerHTML = originalText;
+                    copyPromptBtn.style.backgroundColor = "#f38200";
+                }, 2000);
+            }
+        });
     }
 });

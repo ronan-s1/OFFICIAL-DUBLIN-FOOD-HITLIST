@@ -900,6 +900,11 @@ Please start by asking me what kind of dining experience I'm looking for today!`
                         const filename = await uploadImageToGitHub(token, file, placeName);
                         imageFilenames.push(filename);
                     }
+                    
+                    // If editing, add new images to existing ones
+                    if (isEditing) {
+                        imageFilenames = [...currentData[editingIndex].images, ...imageFilenames];
+                    }
                 } else if (isEditing) {
                     // Keep existing images if editing and no new images uploaded
                     imageFilenames = currentData[editingIndex].images;

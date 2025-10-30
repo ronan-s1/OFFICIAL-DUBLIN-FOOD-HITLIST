@@ -889,29 +889,35 @@ Please start by asking me what kind of dining experience I'm looking for today!`
                 // Handle images
                 let imageFilenames = [];
                 
+                // Get existing images if editing (before any new uploads)
+                const existingImages = isEditing ? [...currentData[editingIndex].images] : [];
+                
                 if (selectedImages.length > 0) {
                     // New images uploaded
                     showStatus(`Uploading ${selectedImages.length} image(s)...`, 'info');
                     submitBtn.innerHTML = `<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Uploading images (0/${selectedImages.length})`;
                     
+                    // Start with existing images if editing
+                    if (isEditing && existingImages.length > 0) {
+                        imageFilenames = [...existingImages];
+                    }
+                    
+                    // Upload and add new images
                     for (let i = 0; i < selectedImages.length; i++) {
                         const file = selectedImages[i];
                         submitBtn.innerHTML = `<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Uploading images (${i + 1}/${selectedImages.length})`;
                         const filename = await uploadImageToGitHub(token, file, placeName);
                         imageFilenames.push(filename);
                     }
-                    
-                    // If editing, add new images to existing ones
-                    if (isEditing) {
-                        imageFilenames = [...currentData[editingIndex].images, ...imageFilenames];
-                    }
                 } else if (isEditing) {
                     // Keep existing images if editing and no new images uploaded
-                    imageFilenames = currentData[editingIndex].images;
+                    imageFilenames = existingImages;
                 } else {
                     // New restaurant with no images
                     imageFilenames.push('placeholder.png');
                 }
+                
+                console.log('Final images array:', imageFilenames); // Debug log
                 
                 // Create restaurant object
                 const restaurantData = {

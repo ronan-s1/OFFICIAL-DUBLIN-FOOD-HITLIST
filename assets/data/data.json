@@ -310,7 +310,7 @@
     {
         "place": "Reyna",
         "rating": "7.5",
-        "category": ["PENDING", "Persian", "Halal"],
+        "category": ["Persian", "Halal"],
         "images": ["reyna1.jpg"],
         "description": "Nice Persian place in town. It is very similar to Zaytoon but a bit more expensive. The food is good and the staff are friendly. The seating is decent."
     },
@@ -409,13 +409,6 @@
         "place": "Brasileirinho",
         "rating": "?",
         "category": ["PENDING", "Brazilian"],
-        "images": ["placeholder.png"],
-        "description": "???"
-    },
-    {
-        "place": "Bloom's Cafe",
-        "rating": "?",
-        "category": ["PENDING", "Dessert"],
         "images": ["placeholder.png"],
         "description": "???"
     }

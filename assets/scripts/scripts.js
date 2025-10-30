@@ -504,4 +504,375 @@ Please start by asking me what kind of dining experience I'm looking for today!`
             }
         });
     }
+
+
+
+
+
+
+
+
+    // ============================================
+    // ADMIN INTERFACE FUNCTIONALITY
+    // ============================================
+    
+
+
+
+
+
+
+    // Check if admin mode is enabled via URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const isAdminMode = urlParams.get('admin') === 'true';
+    
+    if (isAdminMode) {
+        initializeAdminInterface();
+    }
+    
+    function initializeAdminInterface() {
+        const adminInterface = document.getElementById('adminInterface');
+        const tokenSetup = document.getElementById('tokenSetup');
+        const restaurantForm = document.getElementById('restaurantForm');
+        const exitAdminBtn = document.getElementById('exitAdminBtn');
+        const saveTokenBtn = document.getElementById('saveTokenBtn');
+        const githubTokenInput = document.getElementById('githubToken');
+        const filterContainer = document.querySelector('.filter-container');
+        const heading = document.querySelector('.heading h1');
+        
+        // Show admin interface
+        adminInterface.style.display = 'block';
+        
+        // Change heading to ADMIN
+        if (heading) {
+            heading.textContent = 'ADMIN';
+        }
+        
+        // Hide main content when in admin mode
+        container.style.display = 'none';
+        emptyListDiv.style.display = 'none';
+        catGifContainer.style.display = 'none';
+        paginationContainer.style.display = 'none';
+        
+        // Hide filter/navigation bar
+        if (filterContainer) {
+            filterContainer.style.display = 'none';
+        }
+        
+        // Check if token exists
+        const savedToken = localStorage.getItem('github_token');
+        if (savedToken) {
+            tokenSetup.style.display = 'none';
+            restaurantForm.style.display = 'block';
+            setupRestaurantForm(savedToken);
+        }
+        
+        // Save GitHub token
+        saveTokenBtn.addEventListener('click', function() {
+            const token = githubTokenInput.value.trim();
+            if (token) {
+                localStorage.setItem('github_token', token);
+                showStatus('Token saved successfully!', 'success');
+                tokenSetup.style.display = 'none';
+                restaurantForm.style.display = 'block';
+                setupRestaurantForm(token);
+            } else {
+                showStatus('Please enter a valid token', 'danger');
+            }
+        });
+        
+        // Exit admin mode
+        exitAdminBtn.addEventListener('click', function() {
+            window.location.href = window.location.origin + window.location.pathname;
+        });
+    }
+    
+    function setupRestaurantForm(token) {
+        // Fetch current data to populate categories
+        fetch('assets/data/data.json')
+            .then(response => response.json())
+            .then(data => {
+                populateCategoriesForAdmin(data);
+                setupFormHandlers(token, data);
+            })
+            .catch(error => {
+                showStatus('Error loading restaurant data: ' + error.message, 'danger');
+            });
+    }
+    
+    function populateCategoriesForAdmin(data) {
+        const categoryCheckboxes = document.getElementById('categoryCheckboxes');
+        const allCategories = new Set();
+        
+        // Extract all unique categories
+        data.forEach(restaurant => {
+            restaurant.category.forEach(cat => {
+                if (cat !== 'PENDING') {
+                    allCategories.add(cat);
+                }
+            });
+        });
+        
+        const sortedCategories = Array.from(allCategories).sort();
+        
+        // Create checkboxes
+        sortedCategories.forEach(category => {
+            const col = document.createElement('div');
+            col.className = 'col-md-6 col-sm-12';
+            col.innerHTML = `
+                <div class="form-check category-checkbox">
+                    <input class="form-check-input category-check" type="checkbox" value="${category}" id="cat_${category.replace(/\s+/g, '_')}">
+                    <label class="form-check-label" for="cat_${category.replace(/\s+/g, '_')}">
+                        ${category}
+                    </label>
+                </div>
+            `;
+            categoryCheckboxes.appendChild(col);
+        });
+        
+        // Add new category button handler
+        document.getElementById('addCategoryBtn').addEventListener('click', function() {
+            const newCategory = document.getElementById('newCategory').value.trim();
+            if (newCategory) {
+                const col = document.createElement('div');
+                col.className = 'col-md-6 col-sm-12';
+                col.innerHTML = `
+                    <div class="form-check category-checkbox">
+                        <input class="form-check-input category-check" type="checkbox" value="${newCategory}" id="cat_${newCategory.replace(/\s+/g, '_')}" checked>
+                        <label class="form-check-label" for="cat_${newCategory.replace(/\s+/g, '_')}">
+                            ${newCategory}
+                        </label>
+                    </div>
+                `;
+                categoryCheckboxes.appendChild(col);
+                document.getElementById('newCategory').value = '';
+                showStatus('Category added! Make sure to check it.', 'info');
+            }
+        });
+    }
+    
+    function setupFormHandlers(token, currentData) {
+        const form = document.getElementById('addRestaurantForm');
+        const imagesInput = document.getElementById('images');
+        const imagePreview = document.getElementById('imagePreview');
+        let selectedImages = [];
+        
+        // Image preview handler
+        imagesInput.addEventListener('change', function(e) {
+            const files = Array.from(e.target.files);
+            selectedImages = files;
+            displayImagePreviews(files);
+        });
+        
+        function displayImagePreviews(files) {
+            imagePreview.innerHTML = '';
+            files.forEach((file, index) => {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const col = document.createElement('div');
+                    col.className = 'col-md-3 col-sm-6 col-6 image-preview-item';
+                    col.innerHTML = `
+                        <img src="${e.target.result}" class="image-preview-img" alt="Preview">
+                        <button type="button" class="image-preview-remove" data-index="${index}">×</button>
+                    `;
+                    imagePreview.appendChild(col);
+                    
+                    // Remove image handler
+                    col.querySelector('.image-preview-remove').addEventListener('click', function() {
+                        const idx = parseInt(this.getAttribute('data-index'));
+                        selectedImages.splice(idx, 1);
+                        displayImagePreviews(selectedImages);
+                    });
+                };
+                reader.readAsDataURL(file);
+            });
+        }
+        
+        // Form submission handler
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            const placeName = document.getElementById('placeName').value.trim();
+            const rating = document.getElementById('rating').value;
+            const description = document.getElementById('description').value.trim();
+            
+            // Get selected categories
+            const selectedCategories = Array.from(document.querySelectorAll('.category-check:checked'))
+                .map(cb => cb.value);
+            
+            if (selectedCategories.length === 0) {
+                showStatus('Please select at least one category', 'danger');
+                return;
+            }
+            
+            // Disable button and show loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Uploading...';
+            
+            showStatus('Uploading... Please wait.', 'info');
+            
+            try {
+                // Upload images first
+                const imageFilenames = [];
+                if (selectedImages.length > 0) {
+                    showStatus(`Uploading ${selectedImages.length} image(s)...`, 'info');
+                    submitBtn.innerHTML = `<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Uploading images (0/${selectedImages.length})`;
+                    
+                    for (let i = 0; i < selectedImages.length; i++) {
+                        const file = selectedImages[i];
+                        submitBtn.innerHTML = `<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Uploading images (${i + 1}/${selectedImages.length})`;
+                        const filename = await uploadImageToGitHub(token, file, placeName);
+                        imageFilenames.push(filename);
+                    }
+                } else {
+                    imageFilenames.push('placeholder.png');
+                }
+                
+                // Create new restaurant object
+                const newRestaurant = {
+                    place: placeName,
+                    rating: parseFloat(rating).toString(),
+                    category: selectedCategories,
+                    images: imageFilenames,
+                    description: description
+                };
+                
+                // Add to data
+                submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Saving to database...';
+                showStatus('Adding restaurant to database...', 'info');
+                await addRestaurantToData(token, newRestaurant, currentData);
+                
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Success!';
+                showStatus('✅ Restaurant added successfully! Redirecting...', 'success');
+                
+                // Reset form
+                form.reset();
+                imagePreview.innerHTML = '';
+                selectedImages = [];
+                document.querySelectorAll('.category-check').forEach(cb => cb.checked = false);
+                
+                // Reload page after 2 seconds
+                setTimeout(() => {
+                    window.location.reload();
+                }, 2000);
+                
+            } catch (error) {
+                showStatus('❌ Error: ' + error.message, 'danger');
+                // Re-enable button on error
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            }
+        });
+    }
+    
+    // GitHub API Functions
+    async function uploadImageToGitHub(token, file, placeName) {
+        const timestamp = Date.now();
+        const sanitizedName = placeName.toLowerCase().replace(/[^a-z0-9]/g, '-');
+        const extension = file.name.split('.').pop();
+        const filename = `${sanitizedName}-${timestamp}.${extension}`;
+        
+        // Convert file to base64
+        const base64 = await fileToBase64(file);
+        const content = base64.split(',')[1]; // Remove data:image/jpeg;base64, prefix
+        
+        const url = `https://api.github.com/repos/ronan-s1/OFFICIAL-DUBLIN-FOOD-HITLIST/contents/assets/img/food/${filename}`;
+        
+        const response = await fetch(url, {
+            method: 'PUT',
+            headers: {
+                'Authorization': `token ${token}`,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                message: `Add image for ${placeName}`,
+                content: content,
+                branch: 'main'
+            })
+        });
+        
+        if (!response.ok) {
+            const error = await response.json();
+            throw new Error(`Failed to upload image: ${error.message}`);
+        }
+        
+        return filename;
+    }
+    
+    async function addRestaurantToData(token, newRestaurant, currentData) {
+        // Get current file SHA
+        const getUrl = 'https://api.github.com/repos/ronan-s1/OFFICIAL-DUBLIN-FOOD-HITLIST/contents/assets/data/data.json';
+        
+        const getResponse = await fetch(getUrl, {
+            headers: {
+                'Authorization': `token ${token}`
+            }
+        });
+        
+        if (!getResponse.ok) {
+            throw new Error('Failed to fetch current data.json');
+        }
+        
+        const fileData = await getResponse.json();
+        const sha = fileData.sha;
+        
+        // Add new restaurant to data
+        currentData.push(newRestaurant);
+        
+        // Convert to JSON with proper formatting
+        const updatedContent = JSON.stringify(currentData, null, 4);
+        const base64Content = btoa(unescape(encodeURIComponent(updatedContent)));
+        
+        // Update file
+        const putResponse = await fetch(getUrl, {
+            method: 'PUT',
+            headers: {
+                'Authorization': `token ${token}`,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                message: `Add ${newRestaurant.place} to restaurant list`,
+                content: base64Content,
+                sha: sha,
+                branch: 'main'
+            })
+        });
+        
+        if (!putResponse.ok) {
+            const error = await putResponse.json();
+            throw new Error(`Failed to update data.json: ${error.message}`);
+        }
+        
+        return true;
+    }
+    
+    // Utility Functions
+    function fileToBase64(file) {
+        return new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(reader.result);
+            reader.onerror = error => reject(error);
+            reader.readAsDataURL(file);
+        });
+    }
+    
+    function showStatus(message, type) {
+        const statusDiv = document.getElementById('statusMessage');
+        statusDiv.innerHTML = `
+            <div class="alert alert-${type} alert-dismissible fade show" role="alert">
+                ${message}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        `;
+        
+        // Auto-dismiss after 5 seconds for success messages
+        if (type === 'success') {
+            setTimeout(() => {
+                statusDiv.innerHTML = '';
+            }, 5000);
+        }
+    }
 });

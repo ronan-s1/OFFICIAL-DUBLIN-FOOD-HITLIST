@@ -343,17 +343,18 @@
     },
     {
         "place": "Han Sung",
-        "rating": 8,
+        "rating": "8.2",
         "category": [
-            "Korean",
-            "Halal"
+            "Halal",
+            "Korean"
         ],
         "images": [
             "hansung1.jpg",
             "hansung2.jpg",
             "hansung3.jpg",
             "hansung4.jpg",
-            "hansung5.jpg"
+            "hansung5.jpg",
+            "han-sung-1761861523278.jpeg"
         ],
         "description": "At the back of this asian store theres a nice korean restaurant that serves one of the most underrated food in town. The chicken mayo is very nice. The Only thing is the seating. The place feels a bit cramped and can be a bit of a struggle trying to find a place to sit. Not ideal if you're going in a big group."
     },

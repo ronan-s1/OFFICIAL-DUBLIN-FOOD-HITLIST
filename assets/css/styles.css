@@ -876,3 +876,50 @@ body:has(#adminInterface[style*="display: block"]) .filter-container {
         align-items: center;
     }
 }
+
+/* Search Results Styling */
+#searchResults {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 2px solid #e07800;
+    border-radius: 0px;
+    background-color: #fff;
+}
+
+#searchResults:empty {
+    border: none;
+}
+
+.search-result-item {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-result-item:hover {
+    background-color: #fff9f0;
+}
+
+.search-result-item:last-child .border-bottom {
+    border-bottom: none !important;
+}
+
+/* Delete Button Styling */
+#deleteBtn {
+    background-color: #dc3545 !important;
+    border: 2px solid #dc3545 !important;
+    border-radius: 0px !important;
+    color: #fff !important;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#deleteBtn:hover {
+    background-color: #c82333 !important;
+    border-color: #bd2130 !important;
+    transform: scale(1.02);
+}
+
+#deleteBtn:disabled {
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
+}

@@ -127,8 +127,24 @@
 
                         <!-- Restaurant Form -->
                         <div id="restaurantForm" style="display: none;">
-                            <h5>Add New Restaurant</h5>
-                            <form id="addRestaurantForm">
+                            <div class="mb-4">
+                                <button type="button" id="addNewBtn" class="btn btn-warning me-2">Add New Restaurant</button>
+                                <button type="button" id="editExistingBtn" class="btn btn-outline-warning">Edit Existing</button>
+                            </div>
+
+                            <!-- Search for existing restaurant -->
+                            <div id="searchRestaurant" style="display: none;">
+                                <h5>Search Restaurant to Edit</h5>
+                                <div class="mb-3">
+                                    <input type="text" id="restaurantSearch" class="form-control form-control-lg" placeholder="Type restaurant name...">
+                                    <div id="searchResults" class="mt-2"></div>
+                                </div>
+                            </div>
+
+                            <!-- Add/Edit Form -->
+                            <div id="restaurantFormContent">
+                                <h5 id="formTitle">Add New Restaurant</h5>
+                                <form id="addRestaurantForm">
                                 <div class="row">
                                     <div class="col-md-8 mb-3">
                                         <label for="placeName" class="form-label">Restaurant Name *</label>
@@ -163,8 +179,14 @@
                                 </div>
 
                                 <div class="d-grid gap-2">
-                                    <button type="submit" class="btn btn-warning btn-lg">
-                                        <i class="fas fa-plus"></i> Add Restaurant
+                                    <button type="submit" class="btn btn-warning btn-lg" id="submitBtn">
+                                        <i class="fas fa-plus"></i> <span id="submitBtnText">Add Restaurant</span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary" id="cancelEditBtn" style="display: none;">
+                                        Cancel Edit
+                                    </button>
+                                    <button type="button" class="btn btn-danger" id="deleteBtn" style="display: none;">
+                                        <i class="fas fa-trash"></i> Delete Restaurant
                                     </button>
                                 </div>
                             </form>

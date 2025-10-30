@@ -594,10 +594,179 @@ Please start by asking me what kind of dining experience I'm looking for today!`
             .then(data => {
                 populateCategoriesForAdmin(data);
                 setupFormHandlers(token, data);
+                setupEditMode(token, data);
             })
             .catch(error => {
                 showStatus('Error loading restaurant data: ' + error.message, 'danger');
             });
+    }
+    
+    function setupEditMode(token, currentData) {
+        const addNewBtn = document.getElementById('addNewBtn');
+        const editExistingBtn = document.getElementById('editExistingBtn');
+        const searchRestaurant = document.getElementById('searchRestaurant');
+        const restaurantSearch = document.getElementById('restaurantSearch');
+        const searchResults = document.getElementById('searchResults');
+        const restaurantFormContent = document.getElementById('restaurantFormContent');
+        const formTitle = document.getElementById('formTitle');
+        const submitBtnText = document.getElementById('submitBtnText');
+        const cancelEditBtn = document.getElementById('cancelEditBtn');
+        const deleteBtn = document.getElementById('deleteBtn');
+        const form = document.getElementById('addRestaurantForm');
+        
+        let editingRestaurantIndex = -1;
+        
+        // Toggle between add and edit modes
+        addNewBtn.addEventListener('click', function() {
+            searchRestaurant.style.display = 'none';
+            restaurantFormContent.style.display = 'block';
+            formTitle.textContent = 'Add New Restaurant';
+            submitBtnText.textContent = 'Add Restaurant';
+            cancelEditBtn.style.display = 'none';
+            deleteBtn.style.display = 'none';
+            editingRestaurantIndex = -1;
+            form.reset();
+            document.getElementById('imagePreview').innerHTML = '';
+            document.querySelectorAll('.category-check').forEach(cb => cb.checked = false);
+            addNewBtn.classList.add('btn-warning');
+            addNewBtn.classList.remove('btn-outline-warning');
+            editExistingBtn.classList.remove('btn-warning');
+            editExistingBtn.classList.add('btn-outline-warning');
+        });
+        
+        editExistingBtn.addEventListener('click', function() {
+            searchRestaurant.style.display = 'block';
+            restaurantFormContent.style.display = 'none';
+            restaurantSearch.value = '';
+            searchResults.innerHTML = '';
+            editExistingBtn.classList.add('btn-warning');
+            editExistingBtn.classList.remove('btn-outline-warning');
+            addNewBtn.classList.remove('btn-warning');
+            addNewBtn.classList.add('btn-outline-warning');
+        });
+        
+        // Search functionality
+        restaurantSearch.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase().trim();
+            searchResults.innerHTML = '';
+            
+            if (searchTerm.length < 2) return;
+            
+            const matches = currentData.filter(r => 
+                r.place.toLowerCase().includes(searchTerm)
+            ).slice(0, 10); // Limit to 10 results
+            
+            if (matches.length === 0) {
+                searchResults.innerHTML = '<p class="text-muted">No restaurants found</p>';
+                return;
+            }
+            
+            matches.forEach(restaurant => {
+                const index = currentData.indexOf(restaurant);
+                const resultItem = document.createElement('div');
+                resultItem.className = 'search-result-item';
+                resultItem.innerHTML = `
+                    <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
+                        <div>
+                            <strong>${restaurant.place}</strong>
+                            <span class="badge badge-warning ms-2">${restaurant.rating}/10</span>
+                            <br>
+                            <small class="text-muted">${restaurant.category.join(', ')}</small>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-warning edit-restaurant-btn" data-index="${index}">
+                            <i class="fas fa-edit"></i> Edit
+                        </button>
+                    </div>
+                `;
+                searchResults.appendChild(resultItem);
+            });
+            
+            // Add click handlers to edit buttons
+            document.querySelectorAll('.edit-restaurant-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const index = parseInt(this.getAttribute('data-index'));
+                    loadRestaurantForEdit(index, currentData);
+                });
+            });
+        });
+        
+        function loadRestaurantForEdit(index, data) {
+            const restaurant = data[index];
+            editingRestaurantIndex = index;
+            
+            // Switch to form view
+            searchRestaurant.style.display = 'none';
+            restaurantFormContent.style.display = 'block';
+            formTitle.textContent = `Edit: ${restaurant.place}`;
+            submitBtnText.textContent = 'Update Restaurant';
+            cancelEditBtn.style.display = 'block';
+            deleteBtn.style.display = 'block';
+            
+            // Populate form
+            document.getElementById('placeName').value = restaurant.place;
+            document.getElementById('rating').value = parseFloat(restaurant.rating);
+            document.getElementById('description').value = restaurant.description;
+            
+            // Check categories
+            document.querySelectorAll('.category-check').forEach(cb => {
+                cb.checked = restaurant.category.includes(cb.value);
+            });
+            
+            // Show existing images (as text list, not actual images)
+            const imagePreview = document.getElementById('imagePreview');
+            imagePreview.innerHTML = `
+                <div class="col-12 mb-2">
+                    <strong>Current images:</strong> ${restaurant.images.join(', ')}
+                    <br><small class="text-muted">Upload new images to replace these</small>
+                </div>
+            `;
+            
+            // Store data for update
+            form.setAttribute('data-editing-index', index);
+        }
+        
+        cancelEditBtn.addEventListener('click', function() {
+            addNewBtn.click(); // Reset to add mode
+        });
+        
+        // Delete functionality
+        deleteBtn.addEventListener('click', async function() {
+            const restaurant = currentData[editingRestaurantIndex];
+            
+            if (!confirm(`Are you sure you want to delete "${restaurant.place}"? This cannot be undone!`)) {
+                return;
+            }
+            
+            // Double confirmation for safety
+            if (!confirm(`FINAL WARNING: Permanently delete "${restaurant.place}"?`)) {
+                return;
+            }
+            
+            const originalBtnText = deleteBtn.innerHTML;
+            deleteBtn.disabled = true;
+            deleteBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Deleting...';
+            
+            showStatus('Deleting restaurant...', 'info');
+            
+            try {
+                await deleteRestaurantFromData(token, currentData, editingRestaurantIndex);
+                showStatus('✅ Restaurant deleted successfully! Redirecting...', 'success');
+                
+                // Reload page after 2 seconds
+                setTimeout(() => {
+                    window.location.reload();
+                }, 2000);
+                
+            } catch (error) {
+                showStatus('❌ Error: ' + error.message, 'danger');
+                deleteBtn.disabled = false;
+                deleteBtn.innerHTML = originalBtnText;
+            }
+        });
+        
+        // Return editing index for form submission
+        window.getEditingRestaurantIndex = () => editingRestaurantIndex;
+        window.setEditingRestaurantIndex = (index) => { editingRestaurantIndex = index; };
     }
     
     function populateCategoriesForAdmin(data) {
@@ -694,6 +863,8 @@ Please start by asking me what kind of dining experience I'm looking for today!`
             
             const submitBtn = form.querySelector('button[type="submit"]');
             const originalBtnText = submitBtn.innerHTML;
+            const editingIndex = window.getEditingRestaurantIndex ? window.getEditingRestaurantIndex() : -1;
+            const isEditing = editingIndex >= 0;
             
             const placeName = document.getElementById('placeName').value.trim();
             const rating = document.getElementById('rating').value;
@@ -715,9 +886,11 @@ Please start by asking me what kind of dining experience I'm looking for today!`
             showStatus('Uploading... Please wait.', 'info');
             
             try {
-                // Upload images first
-                const imageFilenames = [];
+                // Handle images
+                let imageFilenames = [];
+                
                 if (selectedImages.length > 0) {
+                    // New images uploaded
                     showStatus(`Uploading ${selectedImages.length} image(s)...`, 'info');
                     submitBtn.innerHTML = `<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Uploading images (0/${selectedImages.length})`;
                     
@@ -727,12 +900,16 @@ Please start by asking me what kind of dining experience I'm looking for today!`
                         const filename = await uploadImageToGitHub(token, file, placeName);
                         imageFilenames.push(filename);
                     }
+                } else if (isEditing) {
+                    // Keep existing images if editing and no new images uploaded
+                    imageFilenames = currentData[editingIndex].images;
                 } else {
+                    // New restaurant with no images
                     imageFilenames.push('placeholder.png');
                 }
                 
-                // Create new restaurant object
-                const newRestaurant = {
+                // Create restaurant object
+                const restaurantData = {
                     place: placeName,
                     rating: parseFloat(rating).toString(),
                     category: selectedCategories,
@@ -740,13 +917,20 @@ Please start by asking me what kind of dining experience I'm looking for today!`
                     description: description
                 };
                 
-                // Add to data
+                // Save to database
                 submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Saving to database...';
-                showStatus('Adding restaurant to database...', 'info');
-                await addRestaurantToData(token, newRestaurant, currentData);
                 
-                submitBtn.innerHTML = '<i class="fas fa-check"></i> Success!';
-                showStatus('✅ Restaurant added successfully! Redirecting...', 'success');
+                if (isEditing) {
+                    showStatus('Updating restaurant in database...', 'info');
+                    await updateRestaurantInData(token, restaurantData, currentData, editingIndex);
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Updated!';
+                    showStatus('✅ Restaurant updated successfully! Redirecting...', 'success');
+                } else {
+                    showStatus('Adding restaurant to database...', 'info');
+                    await addRestaurantToData(token, restaurantData, currentData);
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Success!';
+                    showStatus('✅ Restaurant added successfully! Redirecting...', 'success');
+                }
                 
                 // Reset form
                 form.reset();
@@ -835,6 +1019,103 @@ Please start by asking me what kind of dining experience I'm looking for today!`
             },
             body: JSON.stringify({
                 message: `Add ${newRestaurant.place} to restaurant list`,
+                content: base64Content,
+                sha: sha,
+                branch: 'main'
+            })
+        });
+        
+        if (!putResponse.ok) {
+            const error = await putResponse.json();
+            throw new Error(`Failed to update data.json: ${error.message}`);
+        }
+        
+        return true;
+    }
+    
+    async function updateRestaurantInData(token, restaurantData, currentData, index) {
+        // Get current file SHA
+        const getUrl = 'https://api.github.com/repos/ronan-s1/OFFICIAL-DUBLIN-FOOD-HITLIST/contents/assets/data/data.json';
+        
+        const getResponse = await fetch(getUrl, {
+            headers: {
+                'Authorization': `token ${token}`
+            }
+        });
+        
+        if (!getResponse.ok) {
+            throw new Error('Failed to fetch current data.json');
+        }
+        
+        const fileData = await getResponse.json();
+        const sha = fileData.sha;
+        
+        // Update restaurant at index
+        currentData[index] = restaurantData;
+        
+        // Convert to JSON with proper formatting
+        const updatedContent = JSON.stringify(currentData, null, 4);
+        const base64Content = btoa(unescape(encodeURIComponent(updatedContent)));
+        
+        // Update file
+        const putResponse = await fetch(getUrl, {
+            method: 'PUT',
+            headers: {
+                'Authorization': `token ${token}`,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                message: `Update ${restaurantData.place} details`,
+                content: base64Content,
+                sha: sha,
+                branch: 'main'
+            })
+        });
+        
+        if (!putResponse.ok) {
+            const error = await putResponse.json();
+            throw new Error(`Failed to update data.json: ${error.message}`);
+        }
+        
+        return true;
+    }
+    
+    async function deleteRestaurantFromData(token, currentData, index) {
+        // Get current file SHA
+        const getUrl = 'https://api.github.com/repos/ronan-s1/OFFICIAL-DUBLIN-FOOD-HITLIST/contents/assets/data/data.json';
+        
+        const getResponse = await fetch(getUrl, {
+            headers: {
+                'Authorization': `token ${token}`
+            }
+        });
+        
+        if (!getResponse.ok) {
+            throw new Error('Failed to fetch current data.json');
+        }
+        
+        const fileData = await getResponse.json();
+        const sha = fileData.sha;
+        
+        // Store restaurant name before deleting
+        const deletedRestaurantName = currentData[index].place;
+        
+        // Remove restaurant from array
+        currentData.splice(index, 1);
+        
+        // Convert to JSON with proper formatting
+        const updatedContent = JSON.stringify(currentData, null, 4);
+        const base64Content = btoa(unescape(encodeURIComponent(updatedContent)));
+        
+        // Update file
+        const putResponse = await fetch(getUrl, {
+            method: 'PUT',
+            headers: {
+                'Authorization': `token ${token}`,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                message: `Delete ${deletedRestaurantName} from restaurant list`,
                 content: base64Content,
                 sha: sha,
                 branch: 'main'

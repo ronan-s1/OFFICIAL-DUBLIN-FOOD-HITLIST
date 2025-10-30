@@ -788,5 +788,18 @@
             "placeholder.png"
         ],
         "description": "???"
+    },
+    {
+        "place": "Bloom’s Cafe",
+        "rating": "7.7",
+        "category": [
+            "Dessert"
+        ],
+        "images": [
+            "bloom-s-cafe-1761860696994.jpeg",
+            "bloom-s-cafe-1761860698329.jpeg",
+            "bloom-s-cafe-1761860699960.jpeg"
+        ],
+        "description": "Small little cafe. They have the fruit desserts. The mango and pear are the best ones would recommend. It’s filled with cream and in the middle there’s this jelly like filling."
     }
 ]

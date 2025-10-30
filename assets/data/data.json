@@ -2,414 +2,816 @@
     {
         "place": "Featherblade",
         "rating": 6.9,
-        "category": ["Steakhouse", "Burgers", "Dessert"],
-        "images": ["featherblade2.jpg", "featherblade3.jpg", "featherblade1.jpg"],
+        "category": [
+            "Steakhouse",
+            "Burgers",
+            "Dessert"
+        ],
+        "images": [
+            "featherblade2.jpg",
+            "featherblade3.jpg",
+            "featherblade1.jpg"
+        ],
         "description": "You get what you pay for. Do NOT get that crab tostada, very mid cracker thingy with a bit of crab on top. The steak was alright though, the chips were really good though. The cheesecake was very nice. Seating is good and the place is quite nice. The staff are also very friendly."
     },
     {
         "place": "Gaucho's Dog",
         "rating": 8.7,
-        "category": ["Brazilian", "Hotdogs", "Dessert"],
-        "images": ["gauchos.png"],
+        "category": [
+            "Brazilian",
+            "Hotdogs",
+            "Dessert"
+        ],
+        "images": [
+            "gauchos.png"
+        ],
         "description": "Very good place, best hot dogs in Dublin from what I know. Unfortunately they closed the one on tara street."
     },
     {
         "place": "Dash Burger",
         "rating": 7.2,
-        "category": ["American"],
-        "images": ["dashburger.jpg"],
+        "category": [
+            "American"
+        ],
+        "images": [
+            "dashburger.jpg"
+        ],
         "description": "The food was good and the place seemed to be quite popular. The price is okay for what you get, expect to spend between €12-€25. The seating was a bit crowded and the place was a bit cramped. If you like smash burgers, it's worth a try."
     },
     {
         "place": "Mad Egg",
         "rating": 8.1,
-        "category": ["American", "Burgers", "Dessert"],
-        "images": ["madegg.jpg", "madegg2.jpg", "madegg3.jpg", "madegg4.jpg", "madegg5.jpg", "madegg6.jpg", "madegg7.jpg"],
+        "category": [
+            "American",
+            "Burgers",
+            "Dessert"
+        ],
+        "images": [
+            "madegg.jpg",
+            "madegg2.jpg",
+            "madegg3.jpg",
+            "madegg4.jpg",
+            "madegg5.jpg",
+            "madegg6.jpg",
+            "madegg7.jpg"
+        ],
         "description": "Very nice place if you like chicken burgers. The GOAT burger is the best in my opinion. Cheesecakes there are also very good. Worth the price, Staff are nice."
     },
     {
         "place": "BAH33º",
         "rating": 6.9,
-        "category": ["Buffet", "Brazilian", "Dessert"],
-        "images": ["bah2.jpg", "bah1.jpg", "bah3.jpg", "bah4.jpg"],
+        "category": [
+            "Buffet",
+            "Brazilian",
+            "Dessert"
+        ],
+        "images": [
+            "bah2.jpg",
+            "bah1.jpg",
+            "bah3.jpg",
+            "bah4.jpg"
+        ],
         "description": "Brazillian buffet in town that serves lots of meat. The staff are great and services was excellent. The quality of the food was good but the place is expensive (€60pp). The grilled pineapple with cinnamon was actually surprisingly good. The seating was also nice and atompshere was good."
     },
     {
         "place": "Wayback Burgers",
         "rating": 7.1,
-        "category": ["American", "Student Deal", "Halal"],
-        "images": ["wayback.jpg"],
+        "category": [
+            "American",
+            "Student Deal",
+            "Halal"
+        ],
+        "images": [
+            "wayback.jpg"
+        ],
         "description": "<strong>CLOSED!</strong> The venue is nice, lots of seating upstairs. The food is decent and they have a student discount. The price isn't too bad either. The double cheese and bacon burger I got was acc so fat and heavy will defo fill you up."
     },
     {
         "place": "Zaytoon",
         "rating": 8,
-        "category": ["Persian", "Halal", "Dessert"],
-        "images": ["zaytoon.jpg", "zaytoon2.jpg", "zaytoon3.jpg"],
+        "category": [
+            "Persian",
+            "Halal",
+            "Dessert"
+        ],
+        "images": [
+            "zaytoon.jpg",
+            "zaytoon2.jpg",
+            "zaytoon3.jpg"
+        ],
         "description": "Nice persian restaurant with great food. I would recommend the lamb doner. Can be a bit awkward to eat though but still very nice."
     },
     {
         "place": "Born for Burgers",
         "rating": "8",
-        "category": ["American", "Halal", "Student Deal"],
-        "images": ["bornforburgers.jpg"],
+        "category": [
+            "American",
+            "Halal",
+            "Student Deal"
+        ],
+        "images": [
+            "bornforburgers.jpg"
+        ],
         "description": "Very nice burger joint in town for a decent price. The quality of the food was high from the meat to the buns. The only thing is that the place could have more variety in the menu."
     },
     {
         "place": "Krewe",
         "rating": 7.2,
-        "category": ["American", "Burgers", "Bar", "Dessert"],
-        "images": ["krewe.jpg", "krewe2.jpg"],
+        "category": [
+            "American",
+            "Burgers",
+            "Bar",
+            "Dessert"
+        ],
+        "images": [
+            "krewe.jpg",
+            "krewe2.jpg"
+        ],
         "description": "Nice place, food was good and the place was full. A bit pricey though. Loaded fries are swag."
     },
     {
         "place": "Brewdog",
         "rating": 6.6,
-        "category": ["American", "Burgers", "Bar", "Student Deal", "Dessert"],
-        "images": ["brewdog.jpg"],
+        "category": [
+            "American",
+            "Burgers",
+            "Bar",
+            "Student Deal",
+            "Dessert"
+        ],
+        "images": [
+            "brewdog.jpg"
+        ],
         "description": "The venue is very nice, always seems busy. The food is good but overpriced tbh. There are better places out there but it's nice to try out once in a while. They have a couple of cool deals from time to time. Also if you beat the waiter in rock paper scissors you get free dessert 😎"
     },
     {
         "place": "Hot Chix by Ruby's",
         "rating": 8.7,
-        "category": ["American", "Burgers", "Bar", "Dessert"],
-        "images": ["hotchix.png"],
+        "category": [
+            "American",
+            "Burgers",
+            "Bar",
+            "Dessert"
+        ],
+        "images": [
+            "hotchix.png"
+        ],
         "description": "very nice place, burgers are good and on Wednesdays its half price on food. Cheesecake is also good but isn't really a cheesecake."
     },
     {
         "place": "OH! MY STREET FOOD",
         "rating": 7,
-        "category": ["Chinese"],
-        "images": ["ohmy-spicebag.jpg", "ohmy-rice.jpg", "ohmy-inside.jpg"],
+        "category": [
+            "Chinese"
+        ],
+        "images": [
+            "ohmy-spicebag.jpg",
+            "ohmy-rice.jpg",
+            "ohmy-inside.jpg"
+        ],
         "description": "Xian burger is pretty good, over priced now. Spice bags are very nice too but just not worth the price anymore."
     },
     {
         "place": "Wowburger",
         "rating": 7.3,
-        "category": ["American", "Burgers", "Student Deal"],
-        "images": ["wowburger2.jpg", "wowburger3.jpg", "wowburger.png"],
+        "category": [
+            "American",
+            "Burgers",
+            "Student Deal"
+        ],
+        "images": [
+            "wowburger2.jpg",
+            "wowburger3.jpg",
+            "wowburger.png"
+        ],
         "description": "Good burgers, nice student deal. The wowburger near grafton street opposite Brown Thomas over cook the fries though. Atmosphere in all there locations are nice."
     },
     {
         "place": "Charlies 3",
         "rating": 7,
-        "category": ["Chinese"],
-        "images": ["charlies3.jpg"],
+        "category": [
+            "Chinese"
+        ],
+        "images": [
+            "charlies3.jpg"
+        ],
         "description": "The typical chinese, nothing crazy. Decent portion for the price and food is good enough. (2nd Oct 2024) After massive public outrage on the rating we have revisited Charlie's however my opinion hasn't change much. The chow mein was fine, nothing amazing, too wet. The seating there isn't great actually, just wooden flat seats, not so comfy. Service was alright, the food did come quite fast tbf."
     },
     {
         "place": "Star Pizza",
         "rating": 8,
-        "category": ["American", "Pizza"],
-        "images": ["starpizza2.jpg", "starpizza.gif", "starpizza3.jpg", "starpizza4.jpg"],
+        "category": [
+            "American",
+            "Pizza"
+        ],
+        "images": [
+            "starpizza2.jpg",
+            "starpizza.gif",
+            "starpizza3.jpg",
+            "starpizza4.jpg"
+        ],
         "description": "This is the go to. Nice little pizza and burger place on talbot street. All day special goes hard, worth the price. Great chips and surprisingly the slushies there are prob the best I ever had. Only downside is that it's on talbot street."
     },
     {
         "place": "Wok on Inn",
         "rating": 7,
-        "category": ["Chinese"],
-        "images": ["wokoninn2.jpg", "wokoninn.gif"],
+        "category": [
+            "Chinese"
+        ],
+        "images": [
+            "wokoninn2.jpg",
+            "wokoninn.gif"
+        ],
         "description": "Very nice spicy box, big portion. However do NOT get it past like 10pm, they just chuck random stuff in there and for this reason they have gotten a lower score"
     },
     {
         "place": "Brother Hubbard (North)",
         "rating": 5,
-        "category": ["Brunch"],
-        "images": ["brotherhubbard.jpg"],
+        "category": [
+            "Brunch"
+        ],
+        "images": [
+            "brotherhubbard.jpg"
+        ],
         "description": "mid, thats about it. Venue and atmosphere is very nice though. If you're vegan or vegetarian I guess it's good."
     },
     {
         "place": "Arisu",
         "rating": 6.2,
-        "category": ["Korean", "Halal"],
-        "images": ["arisu.jpg", "arisu.gif"],
+        "category": [
+            "Korean",
+            "Halal"
+        ],
+        "images": [
+            "arisu.jpg",
+            "arisu.gif"
+        ],
         "description": "This place use to be better, now they made the portions smaller. Also quite expensive. Staff are friendly and the atmosphere is nice."
     },
     {
         "place": "Pizza Max",
         "rating": 2,
-        "category": ["American", "Pizza"],
-        "images": ["pizzamax.jpg"],
+        "category": [
+            "American",
+            "Pizza"
+        ],
+        "images": [
+            "pizzamax.jpg"
+        ],
         "description": "very mid, microwave ah food. Lucky it's even getting mentioned. Doesn't even deserve a picture."
     },
     {
         "place": "Shake Dog",
         "rating": 7.8,
-        "category": ["American", "Burgers", "Hotdogs", "Student Deal", "Dessert"],
-        "images": ["shakedog.png"],
+        "category": [
+            "American",
+            "Burgers",
+            "Hotdogs",
+            "Student Deal",
+            "Dessert"
+        ],
+        "images": [
+            "shakedog.png"
+        ],
         "description": "Pretty good food, good milkshakes and they got a nice student deal. Solid place to munch."
     },
     {
         "place": "Captain Americas",
         "rating": 7.2,
-        "category": ["American", "Burgers", "Bar", "Student Deal", "Dessert"],
-        "images": ["captainamericas2.png", "captainamericas.png"],
+        "category": [
+            "American",
+            "Burgers",
+            "Bar",
+            "Student Deal",
+            "Dessert"
+        ],
+        "images": [
+            "captainamericas2.png",
+            "captainamericas.png"
+        ],
         "description": "Decent place on Grafton street. They got student deal (€10.95) which is quite good. The nachos are pretty good too."
     },
     {
         "place": "Chimac",
         "rating": 8.35,
-        "category": ["Korean", "Burgers", "Brunch"],
-        "images": ["chimac.jpg"],
+        "category": [
+            "Korean",
+            "Burgers",
+            "Brunch"
+        ],
+        "images": [
+            "chimac.jpg"
+        ],
         "description": "Nice place where you can get Korean style burgers. The K-BBQ burger and poutine are great. Ice-cream sandwich is so ass though don't get, it was like €8 a for super tough, mid ice-cream sandwich."
     },
     {
         "place": "Takara ramen & deli sushi bar",
         "rating": 6.9,
-        "category": ["Japanese"],
-        "images": ["takara.jpg"],
+        "category": [
+            "Japanese"
+        ],
+        "images": [
+            "takara.jpg"
+        ],
         "description": "Honestly? Overrated. Food is decent and place looks nice but I don't get why there's always a queue outside the place."
     },
     {
         "place": "Fujiyama",
         "rating": 7.8,
-        "category": ["Japanese", "Dessert"],
-        "images": ["fujiyama1.jpg", "fujiyama2.jpg", "fujiyama3.jpg"],
+        "category": [
+            "Japanese",
+            "Dessert"
+        ],
+        "images": [
+            "fujiyama1.jpg",
+            "fujiyama2.jpg",
+            "fujiyama3.jpg"
+        ],
         "description": "The vibe is nice, presentation is very good, a bit more on the expensive side but worth it. They have these cat server things so bonus points for that 🙀. Nice for groups."
     },
     {
         "place": "Yamamori Izakaya",
         "rating": "7.7",
-        "category": ["Japanese"],
-        "images": ["yamamori-izakaya-1.jpg", "yamamori-izakaya-2.jpg"],
+        "category": [
+            "Japanese"
+        ],
+        "images": [
+            "yamamori-izakaya-1.jpg",
+            "yamamori-izakaya-2.jpg"
+        ],
         "description": "Nice Japanese restaurant in town. The staff were warm and friendly but there might've been a bit of a language barrier. Food was good and the prices were not too bad. The atmosphere was nice and there was lots of seating. We had the fruit sake tasting platter and it was yummy. Would recommend."
     },
     {
         "place": "Han Sung",
         "rating": 8,
-        "category": ["Korean", "Halal"],
-        "images": ["hansung1.jpg", "hansung2.jpg", "hansung3.jpg", "hansung4.jpg", "hansung5.jpg"],
+        "category": [
+            "Korean",
+            "Halal"
+        ],
+        "images": [
+            "hansung1.jpg",
+            "hansung2.jpg",
+            "hansung3.jpg",
+            "hansung4.jpg",
+            "hansung5.jpg"
+        ],
         "description": "At the back of this asian store theres a nice korean restaurant that serves one of the most underrated food in town. The chicken mayo is very nice. The Only thing is the seating. The place feels a bit cramped and can be a bit of a struggle trying to find a place to sit. Not ideal if you're going in a big group."
     },
     {
         "place": "White Rabbit Capel Street",
         "rating": 6.5,
-        "category": ["Korean"],
-        "images": ["whiterabbit.jpg", "whiterabbit2.png"],
+        "category": [
+            "Korean"
+        ],
+        "images": [
+            "whiterabbit.jpg",
+            "whiterabbit2.png"
+        ],
         "description": "Nice food, good for corn dogs. However there's like barely anywhere to sit. Slightly overpriced too. I would rather go to Han Sung tbh."
     },
     {
         "place": "Hannah BBQ",
         "rating": 7,
-        "category": ["Persian", "Halal", "Dessert"],
-        "images": ["hannah-bbq.jpg", "hannah-bbq2.jpg"],
+        "category": [
+            "Persian",
+            "Halal",
+            "Dessert"
+        ],
+        "images": [
+            "hannah-bbq.jpg",
+            "hannah-bbq2.jpg"
+        ],
         "description": "Kebabs and wraps kinda place, basically a less boujee Zaytoon. The kebab is decent and for the price you can't complain. The baklava though? Its a bit dry but its huge and only €6 so defo worth it. If you go home, microwave it for like 20ish seconds and have it with vanilla ice-cream, it's amazing."
     },
     {
         "place": "Fasta",
         "rating": 5,
-        "category": ["Italian", "Pasta"],
-        "images": ["fasta.jpg", "fasta-2.png"],
+        "category": [
+            "Italian",
+            "Pasta"
+        ],
+        "images": [
+            "fasta.jpg",
+            "fasta-2.png"
+        ],
         "description": "<strong>CLOSED!</strong> Kinda mid, kinda looks like resident evil food, the venue and atmosphere is really nice though. Unfortunately, Fasta has permanently closed down, rip."
     },
     {
         "place": "Chopsticks",
         "rating": 6.8,
-        "category": ["Chinese"],
-        "images": ["chopsticks.gif"],
+        "category": [
+            "Chinese"
+        ],
+        "images": [
+            "chopsticks.gif"
+        ],
         "description": "Chinese dine-in/takeaway place in Ilac. For the price the food is quite good, tiny bit sus though ngl but nevertheless food is good."
     },
     {
         "place": "Andhra Bhavan",
         "rating": 8,
-        "category": ["Indian", "Bar", "Dessert"],
-        "images": ["andhra.jpg", "andhra2.jpg", "andhra3.jpg"],
+        "category": [
+            "Indian",
+            "Bar",
+            "Dessert"
+        ],
+        "images": [
+            "andhra.jpg",
+            "andhra2.jpg",
+            "andhra3.jpg"
+        ],
         "description": "Nice south indian restaurant in town. Food was very nice and the place was a vibe. Food is a bit spicy though so yeah. The chicken 65 went hard ngl."
     },
     {
         "place": "IKEA",
         "rating": 7.5,
-        "category": ["Swedish", "Dessert"],
-        "images": ["ikea.jpg", "ikea2.jpg", "ikea3.jpg", "ikea4.jpg", "ikea5.jpg"],
+        "category": [
+            "Swedish",
+            "Dessert"
+        ],
+        "images": [
+            "ikea.jpg",
+            "ikea2.jpg",
+            "ikea3.jpg",
+            "ikea4.jpg",
+            "ikea5.jpg"
+        ],
         "description": "Nice atmosphere with many options. Cheesecake slapped and so did the Daim cake. The meatballs were good too. Would recommend to go munch there. Soft serve icecream was also good quality. The kids meal portion is actually quite big too so lowkey you could get like 3 kids meals, get more food and save money."
     },
     {
         "place": "Bison Bar & BBQ",
         "rating": 8,
-        "category": ["American", "Bar", "Student Deal", "Dessert"],
-        "images": ["bisonbar.jpg", "bisonbar2.jpg", "bisonbar3.jpg", "bisonbar4.jpg", "bisonbar5.jpg"],
+        "category": [
+            "American",
+            "Bar",
+            "Student Deal",
+            "Dessert"
+        ],
+        "images": [
+            "bisonbar.jpg",
+            "bisonbar2.jpg",
+            "bisonbar3.jpg",
+            "bisonbar4.jpg",
+            "bisonbar5.jpg"
+        ],
         "description": "The atmosphere and vibe was cool. Nice place for a brisket. The burgers are nice and they also have a student deal. The peach cobler was okay, a bit hard and crunchy but everything else was great."
     },
     {
         "place": "Wing's World Cuisine",
         "rating": 7,
-        "category": ["Buffet", "Chinese", "Indian", "Japanese", "Halal", "Student Deal", "Dessert"],
-        "images": ["wings.jpg", "wings2.jpg"],
+        "category": [
+            "Buffet",
+            "Chinese",
+            "Indian",
+            "Japanese",
+            "Halal",
+            "Student Deal",
+            "Dessert"
+        ],
+        "images": [
+            "wings.jpg",
+            "wings2.jpg"
+        ],
         "description": "Decent buffet in the city center. Dinner is better than lunch, more variety and seems fresher. There's lots of diferent types of cuisines so if you're a picky eater its fine. Don't expect the best quality food though."
     },
     {
         "place": "Pi",
         "rating": "8",
-        "category": ["Pizza", "Italian", "Dessert"],
-        "images": ["pi-1.jpg", "pi-2.jpg"],
+        "category": [
+            "Pizza",
+            "Italian",
+            "Dessert"
+        ],
+        "images": [
+            "pi-1.jpg",
+            "pi-2.jpg"
+        ],
         "description": "Nice place, if you're looking for neapolitan pizza, this is a really great place to go. The staff are also very friendly. The Nduja pizza was interesting with the honey and that (ask for chilli oil if you like it a bit spicy), would recommend."
     },
     {
         "place": "Bambino",
         "rating": "7",
-        "category": ["American", "Pizza"],
-        "images": ["bambinos.jpg"],
+        "category": [
+            "American",
+            "Pizza"
+        ],
+        "images": [
+            "bambinos.jpg"
+        ],
         "description": "Nice place to get NYC style pizza slice in town. Good pizza, okay prices. The place is a bit small and can be a bit cramped."
     },
     {
         "place": "Tokyo Kitchen",
         "rating": "8",
-        "category": ["Japanese", "Korean"],
-        "images": ["tokyo1.jpg", "tokyo2.jpg", "tokyo3.jpg"],
+        "category": [
+            "Japanese",
+            "Korean"
+        ],
+        "images": [
+            "tokyo1.jpg",
+            "tokyo2.jpg",
+            "tokyo3.jpg"
+        ],
         "description": "Nice small place in Smithsfield, has good food, good portions and good prices. The katsu curry is very nice."
     },
     {
         "place": "Paesano",
         "rating": 6.1,
-        "category": ["Italian", "Pizza", "Pasta"],
-        "images": ["paesano.jpg"],
+        "category": [
+            "Italian",
+            "Pizza",
+            "Pasta"
+        ],
+        "images": [
+            "paesano.jpg"
+        ],
         "description": "Cheap food - not bad, would rather go star pizza though."
     },
     {
         "place": "Dolce Sicily",
         "rating": "7.1",
-        "category": ["Italian", "Dessert"],
-        "images": ["dolcesicily.jpg ", "dolcesicily2.jpg"],
+        "category": [
+            "Italian",
+            "Dessert"
+        ],
+        "images": [
+            "dolcesicily.jpg ",
+            "dolcesicily2.jpg"
+        ],
         "description": "Small cafe in town, very nice pastries and cakes. We got the pistachio tiramisu and it was very light and fluffy however there wasn't much of a pistachio taste. It's a bit pricey but worth it once in a while. Took the jar home too lmao."
     },
     {
         "place": "Boeuf and Frites",
         "rating": "7",
-        "category": ["Steakhouse", "Dessert"],
-        "images": ["b_and_f_1.jpg", "b_and_f_2.jpg", "b_and_f_3.jpg", "b_and_f_4.jpg"],
+        "category": [
+            "Steakhouse",
+            "Dessert"
+        ],
+        "images": [
+            "b_and_f_1.jpg",
+            "b_and_f_2.jpg",
+            "b_and_f_3.jpg",
+            "b_and_f_4.jpg"
+        ],
         "description": "The atmosphere was nice and food was okay. My steak was NOT medium rare, it was mooing. Chips were good and the garlic bread was amazing. Staff seemed busy but were alright. The profiteroles were nice too. Would get a higher rating if my steak was cooked as I asked."
     },
     {
         "place": "Padoca",
         "rating": "8.2",
-        "category": ["Brazilian", "Dessert"],
-        "images": ["padoca.jpg", "padoca-1.jpg"],
+        "category": [
+            "Brazilian",
+            "Dessert"
+        ],
+        "images": [
+            "padoca.jpg",
+            "padoca-1.jpg"
+        ],
         "description": "Nice Brazilian cafe in town. The food is good and the staff are very friendly. The coxinha was nice but the desserts were soo so sooo good istg. Truly beautiful."
     },
     {
         "place": "Salsa - Authentic Mexican Food",
         "rating": "6.2",
-        "category": ["Mexican"],
-        "images": ["salsa.jpg"],
+        "category": [
+            "Mexican"
+        ],
+        "images": [
+            "salsa.jpg"
+        ],
         "description": "A bit dissapointing tbh, was hyped for the birria tacos but wasn't that great imo. Was quite expensive too almost €20 for what you see above. Staff were nice but place was a bit cramped."
     },
     {
         "place": "Drunken Fish",
         "rating": "6",
-        "category": ["Korean"],
-        "images": ["drunken-fish.jpg"],
+        "category": [
+            "Korean"
+        ],
+        "images": [
+            "drunken-fish.jpg"
+        ],
         "description": "Nice Korean restaurant in town. The food was okay and the staff are very friendly. The seating is nice and many tables. The prices were fine and there was a large portion but the food wasn't that good."
     },
     {
         "place": "Space Jaru",
         "rating": "8.25",
-        "category": ["American", "Korean"],
-        "images": ["space-jaru-1.jpg"],
+        "category": [
+            "American",
+            "Korean"
+        ],
+        "images": [
+            "space-jaru-1.jpg"
+        ],
         "description": "Nice Korean restaurant in town. The food is good and the staff are very friendly. The seating is decent. The prices are a little high but worth it. Food was flavourful and portions were good."
     },
     {
         "place": "Reyna",
         "rating": "7.5",
-        "category": ["Persian", "Halal"],
-        "images": ["reyna1.jpg"],
+        "category": [
+            "PENDING",
+            "Persian",
+            "Halal"
+        ],
+        "images": [
+            "reyna1.jpg"
+        ],
         "description": "Nice Persian place in town. It is very similar to Zaytoon but a bit more expensive. The food is good and the staff are friendly. The seating is decent."
     },
     {
         "place": "2 Lads",
         "rating": "8",
-        "category": ["American", "Brazilian"],
-        "images": ["2lads-1.jpg"],
+        "category": [
+            "American",
+            "Brazilian"
+        ],
+        "images": [
+            "2lads-1.jpg"
+        ],
         "description": "Nice Brazillian place in town. The food is good and the staff are very friendly. They have nice burgers, if you like meat, this is the place to go. The seating is a bit cramped though."
     },
     {
         "place": "Kasi Cafe",
         "rating": "6.85",
-        "category": ["Indian"],
-        "images": ["kasi-cafe1.jpg", "kasi-cafe2.jpg"],
+        "category": [
+            "Indian"
+        ],
+        "images": [
+            "kasi-cafe1.jpg",
+            "kasi-cafe2.jpg"
+        ],
         "description": "Small Indian cafe in town. The food is good but a bit pricey. The pani puri was very good but the chicken biriyani was kinda mid. Not too much seating either."
     },
     {
         "place": "BIGFAN",
         "rating": "7.7",
-        "category": ["Tapas", "Chinese"],
-        "images": ["bigfan-1.jpg", "bigfan-2.jpg", "bigfan-3.jpg", "bigfan-4.jpg"],
+        "category": [
+            "Tapas",
+            "Chinese"
+        ],
+        "images": [
+            "bigfan-1.jpg",
+            "bigfan-2.jpg",
+            "bigfan-3.jpg",
+            "bigfan-4.jpg"
+        ],
         "description": "A nice tapas spot in the city center with friendly staff and quality food. We had 5-6 dishes, each had a unique some kind of Asian-American fusion. The outdoor seating can feel a bit tight, but the creative menu makes it worth the visit. The price was decent too."
     },
     {
         "place": "Happy's Bar & Street Food",
         "rating": "?",
-        "category": ["PENDING", "American", "Bar"],
-        "images": ["placeholder.png"],
+        "category": [
+            "PENDING",
+            "American",
+            "Bar"
+        ],
+        "images": [
+            "placeholder.png"
+        ],
         "description": "???"
     },
     {
         "place": "El Siliencio",
         "rating": "?",
-        "category": ["PENDING", "Bar", "Mexican"],
-        "images": ["placeholder.png"],
+        "category": [
+            "PENDING",
+            "Bar",
+            "Mexican"
+        ],
+        "images": [
+            "placeholder.png"
+        ],
         "description": "???"
     },
     {
         "place": "Hei.GaGa",
         "rating": "?",
-        "category": ["PENDING", "Dessert", "Chinese"],
-        "images": ["placeholder.png"],
+        "category": [
+            "PENDING",
+            "Dessert",
+            "Chinese"
+        ],
+        "images": [
+            "placeholder.png"
+        ],
         "description": "???"
     },
     {
         "place": "The Rolling Stove at Pillar Bar",
         "rating": "?",
-        "category": ["PENDING"],
-        "images": ["placeholder.png"],
+        "category": [
+            "PENDING"
+        ],
+        "images": [
+            "placeholder.png"
+        ],
         "description": "???"
     },
     {
         "place": "The Sweetest Thing",
         "rating": "?",
-        "category": ["PENDING", "Dessert"],
-        "images": ["placeholder.png"],
+        "category": [
+            "PENDING",
+            "Dessert"
+        ],
+        "images": [
+            "placeholder.png"
+        ],
         "description": "???"
     },
     {
         "place": "Masa",
         "rating": "?",
-        "category": ["PENDING", "Mexican"],
-        "images": ["placeholder.png"],
+        "category": [
+            "PENDING",
+            "Mexican"
+        ],
+        "images": [
+            "placeholder.png"
+        ],
         "description": "???"
     },
     {
         "place": "Hang dai",
         "rating": "?",
-        "category": ["PENDING", "Chinese", "Bar"],
-        "images": ["placeholder.png"],
+        "category": [
+            "PENDING",
+            "Chinese",
+            "Bar"
+        ],
+        "images": [
+            "placeholder.png"
+        ],
         "description": "???"
     },
     {
         "place": "Shouk",
         "rating": "?",
-        "category": ["PENDING", "Persian"],
-        "images": ["placeholder.png"],
+        "category": [
+            "PENDING",
+            "Persian"
+        ],
+        "images": [
+            "placeholder.png"
+        ],
         "description": "???"
     },
     {
         "place": "Masa",
         "rating": "?",
-        "category": ["PENDING", "Mexican"],
-        "images": ["placeholder.png"],
+        "category": [
+            "PENDING",
+            "Mexican"
+        ],
+        "images": [
+            "placeholder.png"
+        ],
         "description": "???"
     },
     {
         "place": "Declan & Donal's Deli",
         "rating": "?",
-        "category": ["PENDING", "Brunch"],
-        "images": ["placeholder.png"],
+        "category": [
+            "PENDING",
+            "Brunch"
+        ],
+        "images": [
+            "placeholder.png"
+        ],
         "description": "???"
     },
     {
         "place": "Brasileirinho",
         "rating": "?",
-        "category": ["PENDING", "Brazilian"],
-        "images": ["placeholder.png"],
+        "category": [
+            "PENDING",
+            "Brazilian"
+        ],
+        "images": [
+            "placeholder.png"
+        ],
         "description": "???"
+    },
+    {
+        "place": "Bloom's Cafe",
+        "rating": "?",
+        "category": [
+            "PENDING",
+            "Dessert"
+        ],
+        "images": [
+            "placeholder.png"
+        ],
+        "description": "???"
+    },
+    {
+        "place": "Bloom's Cafe",
+        "rating": "7.7",
+        "category": [
+            "Dessert"
+        ],
+        "images": [
+            "bloom-s-cafe-1761857924990.jpeg",
+            "bloom-s-cafe-1761857926532.jpeg",
+            "bloom-s-cafe-1761857928275.jpeg"
+        ],
+        "description": "Small little cafe. They have the fruit desserts. The mango and pear are the best ones would recommend. It’s filled with cream and in the middle there’s this jelly like filling."
     }
 ]

@@ -46,6 +46,7 @@
     margin: auto;
     border: 5px dashed #f38200 !important;
     border-radius: 0px !important;
+    background-color: #fff !important;
 }
 
 .card-text {

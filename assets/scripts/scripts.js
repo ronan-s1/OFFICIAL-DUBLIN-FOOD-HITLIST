@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // XSS Protection: Escape HTML special characters
+    function escapeHtml(unsafe) {
+        if (typeof unsafe !== 'string') return unsafe;
+        return unsafe
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+    }
+
     const container = document.getElementById("foodList");
     const emptyListDiv = document.getElementById("emptyList");
     const cursorElement = document.querySelector(".cursor");
@@ -157,9 +168,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 cardBody.innerHTML += `
                     <h5 class="card-title">
-                        <span class="place-title">${item.place}</span>
+                        <span class="place-title">${escapeHtml(item.place)}</span>
                         <span class="silly-arrow">➟</span>
-                        <span class="rating-title">${item.rating}/10</span>
+                        <span class="rating-title">${escapeHtml(item.rating)}/10</span>
                     </h5>`;
 
                 // Add a badge for each category
@@ -170,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     cardBody.appendChild(categoryBadge);
                 });
 
-                cardBody.innerHTML += `<p class="card-text">${item.description}</p>`;
+                cardBody.innerHTML += `<p class="card-text">${escapeHtml(item.description)}</p>`;
                 cardBody.appendChild(mapButton);
 
                 card.appendChild(carouselContainer);

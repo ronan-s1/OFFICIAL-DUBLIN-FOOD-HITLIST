@@ -16,16 +16,16 @@
     },
     {
         "place": "Gaucho's Dog",
-        "rating": 8.7,
+        "rating": "8.7",
         "category": [
             "Brazilian",
-            "Hotdogs",
-            "Dessert"
+            "Dessert",
+            "Hotdogs"
         ],
         "images": [
             "gauchos.png"
         ],
-        "description": "Very good place, best hot dogs in Dublin from what I know. Unfortunately they closed the one on tara street."
+        "description": "Best hot dogs in Dublin from what I know. Unfortunately they closed the one on tara street."
     },
     {
         "place": "Dash Burger",
@@ -350,11 +350,11 @@
         ],
         "images": [
             "hansung1.jpg",
-            "han-sung-1761861523278.jpeg",
-            "hansung5.jpg",
-            "hansung4.jpg",
+            "hansung2.jpg",
             "hansung3.jpg",
-            "hansung2.jpg"
+            "hansung4.jpg",
+            "hansung5.jpg",
+            "han-sung-1761861523278.jpeg"
         ],
         "description": "At the back of this asian store theres a nice korean restaurant that serves one of the most underrated food in town. The chicken mayo is very nice. The Only thing is the seating. The place feels a bit cramped and can be a bit of a struggle trying to find a place to sit. Not ideal if you're going in a big group."
     },

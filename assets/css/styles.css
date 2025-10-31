@@ -676,6 +676,8 @@ footer a {
     margin-bottom: 50px;
 }
 
+
+
 /* Hide pagination when admin interface is shown */
 body:has(#adminInterface[style*="display: block"]) #paginationContainer,
 body:has(#adminInterface[style*="display: block"]) .filter-container {
@@ -766,6 +768,12 @@ body:has(#adminInterface[style*="display: block"]) .filter-container {
 .image-preview-item {
     position: relative;
     padding: 5px;
+    cursor: move;
+    transition: opacity 0.3s;
+}
+
+.image-preview-item[draggable="true"]:hover {
+    opacity: 0.8;
 }
 
 .image-preview-img {
@@ -793,6 +801,15 @@ body:has(#adminInterface[style*="display: block"]) .filter-container {
 
 .image-preview-remove:hover {
     background-color: #cc0000;
+}
+
+.image-filename {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    color: #666;
+    margin-top: 5px;
+    word-break: break-all;
 }
 
 /* Status Messages */
@@ -922,4 +939,26 @@ body:has(#adminInterface[style*="display: block"]) .filter-container {
 #deleteBtn:disabled {
     background-color: #6c757d !important;
     border-color: #6c757d !important;
+}
+
+/* Admin Mode Toggle Buttons */
+#addNewBtn, #editExistingBtn {
+    font-size: 16px;
+    padding: 12px 20px;
+    min-height: 48px;
+}
+
+/* Mobile styling for Add/Edit toggle buttons */
+@media screen and (max-width: 760px) {
+    #addNewBtn, #editExistingBtn {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+        margin-right: 0 !important;
+        font-size: 18px;
+        padding: 14px;
+    }
+    
+    #addNewBtn {
+        margin-bottom: 10px;
+    }
 }

@@ -712,17 +712,94 @@ Please start by asking me what kind of dining experience I'm looking for today!`
                 cb.checked = restaurant.category.includes(cb.value);
             });
             
-            // Show existing images (as text list, not actual images)
-            const imagePreview = document.getElementById('imagePreview');
-            imagePreview.innerHTML = `
-                <div class="col-12 mb-2">
-                    <strong>Current images:</strong> ${restaurant.images.join(', ')}
-                    <br><small class="text-muted">Upload new images to replace these</small>
-                </div>
-            `;
+            // Show existing images with preview, delete, and reorder options
+            displayExistingImages(restaurant.images);
             
             // Store data for update
             form.setAttribute('data-editing-index', index);
+        }
+        
+        function displayExistingImages(images) {
+            const imagePreview = document.getElementById('imagePreview');
+            imagePreview.innerHTML = `
+                <div class="col-12 mb-3">
+                    <strong>Current Images:</strong>
+                    <small class="text-muted d-block">Click × to remove, drag to reorder</small>
+                </div>
+            `;
+            
+            images.forEach((filename, index) => {
+                const col = document.createElement('div');
+                col.className = 'col-md-3 col-sm-6 col-6 image-preview-item';
+                col.setAttribute('draggable', 'true');
+                col.setAttribute('data-image-index', index);
+                col.innerHTML = `
+                    <img src="assets/img/food/${filename}" class="image-preview-img" alt="${filename}" onerror="this.src='assets/img/food/placeholder.png'">
+                    <button type="button" class="image-preview-remove" data-filename="${filename}">×</button>
+                    <small class="image-filename">${filename}</small>
+                `;
+                imagePreview.appendChild(col);
+                
+                // Remove image handler
+                col.querySelector('.image-preview-remove').addEventListener('click', function() {
+                    const filenameToRemove = this.getAttribute('data-filename');
+                    const updatedImages = images.filter(img => img !== filenameToRemove);
+                    displayExistingImages(updatedImages);
+                    // Store updated images array
+                    window.currentEditingImages = updatedImages;
+                });
+                
+                // Drag and drop handlers
+                col.addEventListener('dragstart', handleDragStart);
+                col.addEventListener('dragover', handleDragOver);
+                col.addEventListener('drop', handleDrop);
+                col.addEventListener('dragend', handleDragEnd);
+            });
+            
+            // Store current images array
+            window.currentEditingImages = [...images];
+        }
+        
+        let draggedElement = null;
+        
+        function handleDragStart(e) {
+            draggedElement = this;
+            this.style.opacity = '0.4';
+            e.dataTransfer.effectAllowed = 'move';
+        }
+        
+        function handleDragOver(e) {
+            if (e.preventDefault) {
+                e.preventDefault();
+            }
+            e.dataTransfer.dropEffect = 'move';
+            return false;
+        }
+        
+        function handleDrop(e) {
+            if (e.stopPropagation) {
+                e.stopPropagation();
+            }
+            
+            if (draggedElement !== this) {
+                const allItems = Array.from(document.querySelectorAll('.image-preview-item[data-image-index]'));
+                const draggedIndex = allItems.indexOf(draggedElement);
+                const targetIndex = allItems.indexOf(this);
+                
+                // Reorder the images array
+                const images = window.currentEditingImages;
+                const [movedItem] = images.splice(draggedIndex, 1);
+                images.splice(targetIndex, 0, movedItem);
+                
+                // Redisplay
+                displayExistingImages(images);
+            }
+            
+            return false;
+        }
+        
+        function handleDragEnd(e) {
+            this.style.opacity = '1';
         }
         
         cancelEditBtn.addEventListener('click', function() {
@@ -889,8 +966,10 @@ Please start by asking me what kind of dining experience I'm looking for today!`
                 // Handle images
                 let imageFilenames = [];
                 
-                // Get existing images if editing (before any new uploads)
-                const existingImages = isEditing ? [...currentData[editingIndex].images] : [];
+                // Get existing images if editing (use managed images if available)
+                const existingImages = isEditing && window.currentEditingImages 
+                    ? [...window.currentEditingImages] 
+                    : (isEditing ? [...currentData[editingIndex].images] : []);
                 
                 if (selectedImages.length > 0) {
                     // New images uploaded

@@ -118,6 +118,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 const carouselContainer = document.createElement("div");
                 carouselContainer.id = "carouselExampleControls" + Math.floor(Math.random() * 1000); // Unique ID for each carousel
                 carouselContainer.className = "carousel slide card-img-top";
+                carouselContainer.setAttribute("data-bs-ride", "false"); // Disable auto-sliding
+                carouselContainer.setAttribute("data-bs-interval", "false"); // Disable auto-sliding interval
 
                 const carouselInner = document.createElement("div");
                 carouselInner.className = "carousel-inner";

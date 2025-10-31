@@ -770,6 +770,13 @@ body:has(#adminInterface[style*="display: block"]) .filter-container {
     padding: 5px;
     cursor: move;
     transition: opacity 0.3s;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.image-preview-item img {
+    -webkit-touch-callout: none; /* Prevent iOS long-press menu */
+    pointer-events: none; /* Prevent image context menu */
 }
 
 .image-preview-item[draggable="true"]:hover {
@@ -810,6 +817,50 @@ body:has(#adminInterface[style*="display: block"]) .filter-container {
     color: #666;
     margin-top: 5px;
     word-break: break-all;
+}
+
+/* Image Reorder Buttons */
+.image-reorder-btns {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+    z-index: 15;
+}
+
+.image-reorder-btn {
+    background-color: #e07800;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.image-reorder-btn:hover {
+    background-color: #c56900;
+    transform: scale(1.1);
+}
+
+.image-reorder-btn:active {
+    transform: scale(0.95);
+}
+
+/* Hide drag cursor on mobile */
+@media screen and (max-width: 768px) {
+    .image-preview-item {
+        cursor: default;
+    }
 }
 
 /* Status Messages */

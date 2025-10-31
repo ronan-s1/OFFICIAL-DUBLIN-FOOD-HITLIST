@@ -737,7 +737,7 @@ Please start by asking me what kind of dining experience I'm looking for today!`
             imagePreview.innerHTML = `
                 <div class="col-12 mb-3">
                     <strong>Current Images:</strong>
-                    <small class="text-muted d-block">Click × to remove, drag to reorder</small>
+                    <small class="text-muted d-block">Click × to remove, use arrows to reorder</small>
                 </div>
             `;
             
@@ -746,9 +746,18 @@ Please start by asking me what kind of dining experience I'm looking for today!`
                 col.className = 'col-md-3 col-sm-6 col-6 image-preview-item';
                 col.setAttribute('draggable', 'true');
                 col.setAttribute('data-image-index', index);
+                
+                // Show reorder buttons (up/down arrows)
+                const showUpBtn = index > 0;
+                const showDownBtn = index < images.length - 1;
+                
                 col.innerHTML = `
                     <img src="assets/img/food/${filename}" class="image-preview-img" alt="${filename}" onerror="this.src='assets/img/food/placeholder.png'">
                     <button type="button" class="image-preview-remove" data-filename="${filename}">×</button>
+                    <div class="image-reorder-btns">
+                        ${showUpBtn ? '<button type="button" class="image-reorder-btn image-move-up" data-index="' + index + '">↑</button>' : ''}
+                        ${showDownBtn ? '<button type="button" class="image-reorder-btn image-move-down" data-index="' + index + '">↓</button>' : ''}
+                    </div>
                     <small class="image-filename">${filename}</small>
                 `;
                 imagePreview.appendChild(col);
@@ -762,7 +771,35 @@ Please start by asking me what kind of dining experience I'm looking for today!`
                     window.currentEditingImages = updatedImages;
                 });
                 
-                // Drag and drop handlers
+                // Move up handler
+                const moveUpBtn = col.querySelector('.image-move-up');
+                if (moveUpBtn) {
+                    moveUpBtn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const idx = parseInt(this.getAttribute('data-index'));
+                        if (idx > 0) {
+                            const reorderedImages = [...images];
+                            [reorderedImages[idx - 1], reorderedImages[idx]] = [reorderedImages[idx], reorderedImages[idx - 1]];
+                            displayExistingImages(reorderedImages);
+                        }
+                    });
+                }
+                
+                // Move down handler
+                const moveDownBtn = col.querySelector('.image-move-down');
+                if (moveDownBtn) {
+                    moveDownBtn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const idx = parseInt(this.getAttribute('data-index'));
+                        if (idx < images.length - 1) {
+                            const reorderedImages = [...images];
+                            [reorderedImages[idx], reorderedImages[idx + 1]] = [reorderedImages[idx + 1], reorderedImages[idx]];
+                            displayExistingImages(reorderedImages);
+                        }
+                    });
+                }
+                
+                // Drag and drop handlers (still work on desktop)
                 col.addEventListener('dragstart', handleDragStart);
                 col.addEventListener('dragover', handleDragOver);
                 col.addEventListener('drop', handleDrop);

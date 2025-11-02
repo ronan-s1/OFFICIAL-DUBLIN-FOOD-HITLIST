@@ -800,5 +800,16 @@
             "bloom-s-cafe-1761860699960.jpeg"
         ],
         "description": "Small little cafe. They have the fruit desserts. The mango and pear are the best ones would recommend. It’s filled with cream and in the middle there’s this jelly like filling."
+    },
+    {
+        "place": "Sushie",
+        "rating": "6.6",
+        "category": [
+            "Japanese"
+        ],
+        "images": [
+            "sushie-1762109055893.jpeg"
+        ],
+        "description": "Finding out how to order and stuff was a bit confusing. The sushi was decent, nothing amazing but good enough. Nice presentation. Nice atmosphere and staff."
     }
 ]

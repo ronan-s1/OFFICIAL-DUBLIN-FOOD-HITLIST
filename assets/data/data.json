@@ -811,5 +811,17 @@
             "sushie-1762109055893.jpeg"
         ],
         "description": "Finding out how to order and stuff was a bit confusing. The sushi was decent, nothing amazing but good enough. Nice presentation. Nice atmosphere and staff."
+    },
+    {
+        "place": "Chiya",
+        "rating": "6.4",
+        "category": [
+            "Halal",
+            "Persian"
+        ],
+        "images": [
+            "chiya-1762460087784.jpeg"
+        ],
+        "description": "Similar to zaytoon and reyna. Price is a bit cheaper. Seats were a small bit cramped. Food was overall good but small bit salty."
     }
 ]
